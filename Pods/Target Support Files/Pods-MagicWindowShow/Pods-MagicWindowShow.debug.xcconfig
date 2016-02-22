@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "$(PODS_ROOT)/MagicWindowSDK/MagicWindowSDK" "$(PODS_ROOT)/libWeChatSDK" $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/JASidePanels" "${PODS_ROOT}/Headers/Public/MagicWindowSDK" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/libWeChatSDK"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/MagicWindowSDK/MagicWindowSDK" "$(PODS_ROOT)/libWeChatSDK" $(inherited) "${PODS_ROOT}/MagicWindowSDK/MagicWindowSDK" $(inherited) "${PODS_ROOT}/libWeChatSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/JASidePanels" -isystem "${PODS_ROOT}/Headers/Public/MagicWindowSDK" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/libWeChatSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"JASidePanels" -l"MagicWindowSDK" -l"SDWebImage" -l"WeChatSDK" -l"c++" -l"sqlite3.0" -l"z" -framework "AdSupport" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "ImageIO" -framework "QuartzCore" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods
