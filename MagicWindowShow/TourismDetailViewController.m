@@ -19,6 +19,16 @@
 
 @implementation DetailBtnCell
 
+@end
+
+@interface DetailBannerCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UIImageView *uberView;
+
+@end
+
+@implementation DetailBannerCell
+
 
 @end
 
@@ -31,6 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +60,24 @@
     if (indexPath.row ==0)
     {
         NSString *identifier = @"detailBannerCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        DetailBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        
+        if ([MWApi isActiveOfmwKey:Home_detail_uber])
+        {
+            [MWApi configAdViewWithKey:Home_detail_uber withTargetView:cell.uberView withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+                
+                [cell.uberView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"uber"]];
+            } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+                
+            } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+                return nil;
+            }];
+        }
+        else
+        {
+            cell.uberView.hidden = YES;
+        }
+        
         return cell;
     }
     else if (indexPath.row == 1)
@@ -57,6 +85,7 @@
         NSString *identifier = @"TourismCell";
         [tableView registerNib:[UINib nibWithNibName:@"TourismCell" bundle:nil] forCellReuseIdentifier:@"TourismCell"];
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+
         return cell;
     }
     else
@@ -67,6 +96,7 @@
             [cell.btnView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"sanya_btn"]];
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
+            cell.btnView.hidden = YES;
         } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
             return nil;
         }];

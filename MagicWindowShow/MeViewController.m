@@ -10,6 +10,7 @@
 #import <MagicWindowSDK/MWApi.h>
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
+#import "CommonService.h"
 
 @implementation MeCell
 
@@ -25,6 +26,12 @@
 @end
 
 @implementation MeViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:2 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,7 +54,7 @@
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 11;
+    return 13;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,7 +67,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TopCell"];
         return cell;
     }
-    if (indexPath.row == 1 || indexPath.row == 4)
+    if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 6)
     {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpaceCell"];
         return cell;
@@ -71,54 +78,68 @@
         switch (indexPath.row) {
             case 2:
             {
+                CommonService *service = [[CommonService alloc] init];
+                if ([service hasLogin])
+                {
+                    title = @"退出";
+                }
+                else
+                {
+                    title = @"登录";
+                }
+                imgName = @"icon-0";
+                break;
+            }
+            case 4:
+            {
                 mwkey = me_01;
                 title = @"我的消息";
                 imgName = @"icon-1";
                 break;
             }
-            case 3:
+            case 5:
             {
                 mwkey = me_02;
                 title = @"功能介绍";
                 imgName = @"icon-2";
                 break;
             }
-            case 5:
+            case 7:
             {
                 mwkey = me_03;
                 title = @"意见反馈";
                 imgName = @"icon-3";
                 break;
             }
-            case 6:
+            case 8:
             {
                 mwkey = me_04;
                 title = @"用户满意度调查，赢Apple Watch!";
                 imgName = @"icon-4";
                 break;
             }
-            case 7:
+            case 9:
             {
                 mwkey = me_05;
                 title = @"分享应用给好友";
                 imgName = @"icon-5";
                 break;
             }
-            case 8:
+            case 10:
             {
                 mwkey = me_06;
                 title = @"邀请好友赢积分";
                 imgName = @"icon-6";
                 break;
             }
-            case 9:
+            case 11:
             {
                 mwkey = me_07;
                 title = @"去App Store给我们个好评吧!";
                 imgName = @"icon-7";
                 break;
             }
-            case 10:
+            case 12:
             {
                 title = @"引导页";
                 imgName = @"icon-8";
@@ -159,7 +180,7 @@
     {
         return 175;
     }
-    else if (indexPath.row == 1 || indexPath.row == 4)
+    else if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 6)
     {
         return 15;
     }
@@ -171,10 +192,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 10)
+    if (indexPath.row == 2)
     {
-        UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        [self.navigationController pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"HelpVC"] animated:YES];
+        CommonService *service = [[CommonService alloc] init];
+        if ([service hasLogin])
+        {
+            [service saveUserName:nil];
+            [MWApi cancelUserProfile];
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        }
+        else
+        {
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"loginVC"] animated:YES];
+        }
+    }
+    
+    if (indexPath.row == 12)
+    {
+        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HelpVC"] animated:YES];
     }
 }
 

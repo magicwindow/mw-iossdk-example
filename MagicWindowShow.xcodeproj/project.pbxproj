@@ -45,6 +45,18 @@
 		37857FC41C23A64700D3FE51 /* O2OViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37857FC31C23A64700D3FE51 /* O2OViewController.m */; };
 		37857FC81C23E5AC00D3FE51 /* BtnViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37857FC61C23E5AC00D3FE51 /* BtnViewCell.m */; };
 		37857FC91C23E5AC00D3FE51 /* BtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37857FC71C23E5AC00D3FE51 /* BtnViewCell.xib */; };
+		379A0CE21C7EAB97007A3A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0CE11C7EAB97007A3A8F /* main.m */; };
+		379A0CE51C7EAB97007A3A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0CE41C7EAB97007A3A8F /* AppDelegate.m */; };
+		379A0CEB1C7EAB97007A3A8F /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379A0CE91C7EAB97007A3A8F /* Main2.storyboard */; };
+		379A0CED1C7EAB97007A3A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379A0CEC1C7EAB97007A3A8F /* Assets.xcassets */; };
+		379A0CF01C7EAB97007A3A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379A0CEE1C7EAB97007A3A8F /* LaunchScreen.storyboard */; };
+		379A0CFB1C7EAB97007A3A8F /* MagicWindowShow2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0CFA1C7EAB97007A3A8F /* MagicWindowShow2Tests.m */; };
+		379A0D061C7EAB97007A3A8F /* MagicWindowShow2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D051C7EAB97007A3A8F /* MagicWindowShow2UITests.m */; };
+		379A0D1E1C7EB169007A3A8F /* DianShangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D131C7EB169007A3A8F /* DianShangViewController.m */; };
+		379A0D311C7ED260007A3A8F /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D301C7ED260007A3A8F /* GoodsDetailViewController.m */; };
+		379A0D341C7F1B71007A3A8F /* CityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D331C7F1B71007A3A8F /* CityPickerViewController.m */; };
+		379A0D361C7FF5B6007A3A8F /* CityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 379A0D351C7FF5B6007A3A8F /* CityList.plist */; };
+		379A0D391C804675007A3A8F /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D381C804675007A3A8F /* ChineseToPinyin.m */; };
 		37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B21C771C7471FB00C85C5C /* libSDWebImage.a */; };
 		37B4040D1BA2C63000393EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040C1BA2C63000393EA0 /* main.m */; };
 		37B404101BA2C63000393EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040F1BA2C63000393EA0 /* AppDelegate.m */; };
@@ -54,10 +66,42 @@
 		37B404271BA2C63000393EA0 /* MagicWindowShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B404261BA2C63000393EA0 /* MagicWindowShowTests.m */; };
 		37B404321BA2C75700393EA0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B404311BA2C75700393EA0 /* HomeViewController.m */; };
 		37B404351BA2C7DD00393EA0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B404341BA2C7DD00393EA0 /* MeViewController.m */; };
+		37E5F0BA1C815D850085B7DE /* DianShangDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0B91C815D850085B7DE /* DianShangDetailViewController.m */; };
+		37E5F0BD1C8163AB0085B7DE /* ShoppinglistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0BC1C8163AB0085B7DE /* ShoppinglistViewController.m */; };
+		37E5F0C01C8165820085B7DE /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0BF1C8165820085B7DE /* OrderDetailsViewController.m */; };
+		37E5F0C31C8165CB0085B7DE /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C21C8165CB0085B7DE /* PaymentViewController.m */; };
+		37E5F0C61C8165FA0085B7DE /* PaySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C51C8165FA0085B7DE /* PaySuccessViewController.m */; };
+		37E5F0C91C842BB90085B7DE /* LoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C81C842BB90085B7DE /* LoginViewController2.m */; };
+		37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0CB1C842FB10085B7DE /* CommonService.m */; };
+		37E5F0CD1C842FDF0085B7DE /* BannerScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730BAB91C0DB67F00EB2C2E /* BannerScrollCell.m */; };
+		37E5F0CE1C842FEA0085B7DE /* BannerScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3730BABB1C0DB68C00EB2C2E /* BannerScrollCell.xib */; };
+		37E5F0CF1C842FF20085B7DE /* BtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37084D371C180640001A730E /* BtnView.m */; };
+		37E5F0D01C842FF60085B7DE /* BtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37084D391C180916001A730E /* BtnView.xib */; };
+		37E5F0D11C842FFD0085B7DE /* BtnViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37857FC61C23E5AC00D3FE51 /* BtnViewCell.m */; };
+		37E5F0D21C842FFF0085B7DE /* BtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37857FC71C23E5AC00D3FE51 /* BtnViewCell.xib */; };
+		37E5F0D31C8430060085B7DE /* FullIamge2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37084D3C1C18248A001A730E /* FullIamge2Cell.m */; };
+		37E5F0D41C8430090085B7DE /* FullIamge2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37084D3D1C18248A001A730E /* FullIamge2Cell.xib */; };
+		37E5F0D51C8430140085B7DE /* ImageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37084D321C17FF62001A730E /* ImageTableCell.m */; };
+		37E5F0D61C8430170085B7DE /* ImageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37084D331C17FF62001A730E /* ImageTableCell.xib */; };
+		597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		379A0CF71C7EAB97007A3A8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B403FF1BA2C63000393EA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379A0CDD1C7EAB97007A3A8F;
+			remoteInfo = MagicWindowShow2;
+		};
+		379A0D021C7EAB97007A3A8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B403FF1BA2C63000393EA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379A0CDD1C7EAB97007A3A8F;
+			remoteInfo = MagicWindowShow2;
+		};
 		37B404211BA2C63000393EA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37B403FF1BA2C63000393EA0 /* Project object */;
@@ -140,6 +184,29 @@
 		37857FC51C23E5AC00D3FE51 /* BtnViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnViewCell.h; sourceTree = "<group>"; };
 		37857FC61C23E5AC00D3FE51 /* BtnViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnViewCell.m; sourceTree = "<group>"; };
 		37857FC71C23E5AC00D3FE51 /* BtnViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BtnViewCell.xib; sourceTree = "<group>"; };
+		379A0CDE1C7EAB97007A3A8F /* MagicWindowShow2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicWindowShow2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		379A0CE11C7EAB97007A3A8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		379A0CE31C7EAB97007A3A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		379A0CE41C7EAB97007A3A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		379A0CEA1C7EAB97007A3A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
+		379A0CEC1C7EAB97007A3A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		379A0CEF1C7EAB97007A3A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		379A0CF11C7EAB97007A3A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379A0CF61C7EAB97007A3A8F /* MagicWindowShow2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicWindowShow2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379A0CFA1C7EAB97007A3A8F /* MagicWindowShow2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicWindowShow2Tests.m; sourceTree = "<group>"; };
+		379A0CFC1C7EAB97007A3A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379A0D011C7EAB97007A3A8F /* MagicWindowShow2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicWindowShow2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379A0D051C7EAB97007A3A8F /* MagicWindowShow2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicWindowShow2UITests.m; sourceTree = "<group>"; };
+		379A0D071C7EAB97007A3A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379A0D121C7EB169007A3A8F /* DianShangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DianShangViewController.h; sourceTree = "<group>"; };
+		379A0D131C7EB169007A3A8F /* DianShangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DianShangViewController.m; sourceTree = "<group>"; };
+		379A0D2F1C7ED260007A3A8F /* GoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
+		379A0D301C7ED260007A3A8F /* GoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
+		379A0D321C7F1B71007A3A8F /* CityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityPickerViewController.h; path = MagicWindowShow/CityPickerViewController.h; sourceTree = SOURCE_ROOT; };
+		379A0D331C7F1B71007A3A8F /* CityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityPickerViewController.m; path = MagicWindowShow/CityPickerViewController.m; sourceTree = SOURCE_ROOT; };
+		379A0D351C7FF5B6007A3A8F /* CityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CityList.plist; path = MagicWindowShow/CityList.plist; sourceTree = SOURCE_ROOT; };
+		379A0D371C804675007A3A8F /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyin.h; path = MagicWindowShow/ChineseToPinyin.h; sourceTree = SOURCE_ROOT; };
+		379A0D381C804675007A3A8F /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyin.m; path = MagicWindowShow/ChineseToPinyin.m; sourceTree = SOURCE_ROOT; };
 		37B21C771C7471FB00C85C5C /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		37B404071BA2C63000393EA0 /* MagicWindowShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicWindowShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B4040B1BA2C63000393EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,12 +223,53 @@
 		37B404311BA2C75700393EA0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		37B404331BA2C7DD00393EA0 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		37B404341BA2C7DD00393EA0 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		37E5F0B81C815D850085B7DE /* DianShangDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DianShangDetailViewController.h; path = MagicWindowShow/DianShangDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		37E5F0B91C815D850085B7DE /* DianShangDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DianShangDetailViewController.m; path = MagicWindowShow/DianShangDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		37E5F0BB1C8163AB0085B7DE /* ShoppinglistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppinglistViewController.h; path = MagicWindowShow/ShoppinglistViewController.h; sourceTree = SOURCE_ROOT; };
+		37E5F0BC1C8163AB0085B7DE /* ShoppinglistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppinglistViewController.m; path = MagicWindowShow/ShoppinglistViewController.m; sourceTree = SOURCE_ROOT; };
+		37E5F0BE1C8165820085B7DE /* OrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDetailsViewController.h; path = MagicWindowShow/OrderDetailsViewController.h; sourceTree = SOURCE_ROOT; };
+		37E5F0BF1C8165820085B7DE /* OrderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDetailsViewController.m; path = MagicWindowShow/OrderDetailsViewController.m; sourceTree = SOURCE_ROOT; };
+		37E5F0C11C8165CB0085B7DE /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentViewController.h; path = MagicWindowShow/PaymentViewController.h; sourceTree = SOURCE_ROOT; };
+		37E5F0C21C8165CB0085B7DE /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentViewController.m; path = MagicWindowShow/PaymentViewController.m; sourceTree = SOURCE_ROOT; };
+		37E5F0C41C8165FA0085B7DE /* PaySuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySuccessViewController.h; path = MagicWindowShow/PaySuccessViewController.h; sourceTree = SOURCE_ROOT; };
+		37E5F0C51C8165FA0085B7DE /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySuccessViewController.m; path = MagicWindowShow/PaySuccessViewController.m; sourceTree = SOURCE_ROOT; };
+		37E5F0C71C842BB90085B7DE /* LoginViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController2.h; sourceTree = "<group>"; };
+		37E5F0C81C842BB90085B7DE /* LoginViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController2.m; sourceTree = "<group>"; };
+		37E5F0CA1C842FB10085B7DE /* CommonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonService.h; sourceTree = "<group>"; };
+		37E5F0CB1C842FB10085B7DE /* CommonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonService.m; sourceTree = "<group>"; };
+		37E5F0D71C84445D0085B7DE /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		37E5F0D81C845BB80085B7DE /* MagicWindowShow2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MagicWindowShow2.entitlements; sourceTree = "<group>"; };
 		560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.debug.xcconfig"; sourceTree = "<group>"; };
+		79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.release.xcconfig"; sourceTree = "<group>"; };
+		AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
+		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		379A0CDB1C7EAB97007A3A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CF31C7EAB97007A3A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CFE1C7EAB97007A3A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37B404041BA2C63000393EA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +305,7 @@
 				374812A01C748B1400C6F49A /* libJASidePanels.a */,
 				37B21C771C7471FB00C85C5C /* libSDWebImage.a */,
 				E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */,
+				AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +327,16 @@
 				37084D071C17D47E001A730E /* O2ODetailViewController.m */,
 				37084D281C17FD9B001A730E /* DianShangViewController.h */,
 				37084D291C17FD9B001A730E /* DianShangViewController.m */,
+				37E5F0B81C815D850085B7DE /* DianShangDetailViewController.h */,
+				37E5F0B91C815D850085B7DE /* DianShangDetailViewController.m */,
+				37E5F0BB1C8163AB0085B7DE /* ShoppinglistViewController.h */,
+				37E5F0BC1C8163AB0085B7DE /* ShoppinglistViewController.m */,
+				37E5F0BE1C8165820085B7DE /* OrderDetailsViewController.h */,
+				37E5F0BF1C8165820085B7DE /* OrderDetailsViewController.m */,
+				37E5F0C11C8165CB0085B7DE /* PaymentViewController.h */,
+				37E5F0C21C8165CB0085B7DE /* PaymentViewController.m */,
+				37E5F0C41C8165FA0085B7DE /* PaySuccessViewController.h */,
+				37E5F0C51C8165FA0085B7DE /* PaySuccessViewController.m */,
 				371B34F41C195A2400610673 /* NewsViewController.h */,
 				371B34F51C195A2400610673 /* NewsViewController.m */,
 				37857F201C228D2400D3FE51 /* WebViewController.h */,
@@ -243,12 +362,73 @@
 			name = framework;
 			sourceTree = "<group>";
 		};
+		379A0CDF1C7EAB97007A3A8F /* MagicWindowShow2 */ = {
+			isa = PBXGroup;
+			children = (
+				37E5F0D81C845BB80085B7DE /* MagicWindowShow2.entitlements */,
+				379A0D111C7EB169007A3A8F /* controller */,
+				379A0CE31C7EAB97007A3A8F /* AppDelegate.h */,
+				379A0CE41C7EAB97007A3A8F /* AppDelegate.m */,
+				37E5F0D71C84445D0085B7DE /* GlobalDefine.h */,
+				37E5F0CA1C842FB10085B7DE /* CommonService.h */,
+				37E5F0CB1C842FB10085B7DE /* CommonService.m */,
+				379A0CE91C7EAB97007A3A8F /* Main2.storyboard */,
+				379A0CEC1C7EAB97007A3A8F /* Assets.xcassets */,
+				379A0CEE1C7EAB97007A3A8F /* LaunchScreen.storyboard */,
+				379A0CF11C7EAB97007A3A8F /* Info.plist */,
+				379A0CE01C7EAB97007A3A8F /* Supporting Files */,
+			);
+			path = MagicWindowShow2;
+			sourceTree = "<group>";
+		};
+		379A0CE01C7EAB97007A3A8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				379A0CE11C7EAB97007A3A8F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		379A0CF91C7EAB97007A3A8F /* MagicWindowShow2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				379A0CFA1C7EAB97007A3A8F /* MagicWindowShow2Tests.m */,
+				379A0CFC1C7EAB97007A3A8F /* Info.plist */,
+			);
+			path = MagicWindowShow2Tests;
+			sourceTree = "<group>";
+		};
+		379A0D041C7EAB97007A3A8F /* MagicWindowShow2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				379A0D051C7EAB97007A3A8F /* MagicWindowShow2UITests.m */,
+				379A0D071C7EAB97007A3A8F /* Info.plist */,
+			);
+			path = MagicWindowShow2UITests;
+			sourceTree = "<group>";
+		};
+		379A0D111C7EB169007A3A8F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				379A0D121C7EB169007A3A8F /* DianShangViewController.h */,
+				379A0D131C7EB169007A3A8F /* DianShangViewController.m */,
+				379A0D2F1C7ED260007A3A8F /* GoodsDetailViewController.h */,
+				379A0D301C7ED260007A3A8F /* GoodsDetailViewController.m */,
+				37E5F0C71C842BB90085B7DE /* LoginViewController2.h */,
+				37E5F0C81C842BB90085B7DE /* LoginViewController2.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		37B403FE1BA2C63000393EA0 = {
 			isa = PBXGroup;
 			children = (
 				3779F33D1BB68F5200CD446A /* framework */,
 				37B404091BA2C63000393EA0 /* MagicWindowShow */,
 				37B404231BA2C63000393EA0 /* MagicWindowShowTests */,
+				379A0CDF1C7EAB97007A3A8F /* MagicWindowShow2 */,
+				379A0CF91C7EAB97007A3A8F /* MagicWindowShow2Tests */,
+				379A0D041C7EAB97007A3A8F /* MagicWindowShow2UITests */,
 				37B404081BA2C63000393EA0 /* Products */,
 				8F3B1F57CA819C70250CC5C4 /* Pods */,
 				0477D39ADEFF1091CF935AED /* Frameworks */,
@@ -260,6 +440,9 @@
 			children = (
 				37B404071BA2C63000393EA0 /* MagicWindowShow.app */,
 				37B404201BA2C63000393EA0 /* MagicWindowShow.xctest */,
+				379A0CDE1C7EAB97007A3A8F /* MagicWindowShow2.app */,
+				379A0CF61C7EAB97007A3A8F /* MagicWindowShow2Tests.xctest */,
+				379A0D011C7EAB97007A3A8F /* MagicWindowShow2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +460,11 @@
 				3767796C1C76E8A3002872BF /* CommonService.m */,
 				3767796E1C76E8D8002872BF /* HelpViewController.h */,
 				3767796F1C76E8D8002872BF /* HelpViewController.m */,
+				379A0D321C7F1B71007A3A8F /* CityPickerViewController.h */,
+				379A0D331C7F1B71007A3A8F /* CityPickerViewController.m */,
+				379A0D351C7FF5B6007A3A8F /* CityList.plist */,
+				379A0D371C804675007A3A8F /* ChineseToPinyin.h */,
+				379A0D381C804675007A3A8F /* ChineseToPinyin.m */,
 				37B404141BA2C63000393EA0 /* Main.storyboard */,
 				37B404171BA2C63000393EA0 /* Images.xcassets */,
 				37B404191BA2C63000393EA0 /* LaunchScreen.xib */,
@@ -359,6 +547,8 @@
 			children = (
 				560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */,
 				F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */,
+				FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */,
+				79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -366,6 +556,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		379A0CDD1C7EAB97007A3A8F /* MagicWindowShow2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379A0D0E1C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2" */;
+			buildPhases = (
+				8A704CA91599DCE97EEB76EA /* Check Pods Manifest.lock */,
+				379A0CDA1C7EAB97007A3A8F /* Sources */,
+				379A0CDB1C7EAB97007A3A8F /* Frameworks */,
+				379A0CDC1C7EAB97007A3A8F /* Resources */,
+				C27352E859B09B9C756E1639 /* Embed Pods Frameworks */,
+				F8938C5199487752CE32F49D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicWindowShow2;
+			productName = MagicWindowShow2;
+			productReference = 379A0CDE1C7EAB97007A3A8F /* MagicWindowShow2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		379A0CF51C7EAB97007A3A8F /* MagicWindowShow2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379A0D0F1C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2Tests" */;
+			buildPhases = (
+				379A0CF21C7EAB97007A3A8F /* Sources */,
+				379A0CF31C7EAB97007A3A8F /* Frameworks */,
+				379A0CF41C7EAB97007A3A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379A0CF81C7EAB97007A3A8F /* PBXTargetDependency */,
+			);
+			name = MagicWindowShow2Tests;
+			productName = MagicWindowShow2Tests;
+			productReference = 379A0CF61C7EAB97007A3A8F /* MagicWindowShow2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		379A0D001C7EAB97007A3A8F /* MagicWindowShow2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379A0D101C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2UITests" */;
+			buildPhases = (
+				379A0CFD1C7EAB97007A3A8F /* Sources */,
+				379A0CFE1C7EAB97007A3A8F /* Frameworks */,
+				379A0CFF1C7EAB97007A3A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379A0D031C7EAB97007A3A8F /* PBXTargetDependency */,
+			);
+			name = MagicWindowShow2UITests;
+			productName = MagicWindowShow2UITests;
+			productReference = 379A0D011C7EAB97007A3A8F /* MagicWindowShow2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		37B404061BA2C63000393EA0 /* MagicWindowShow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B4042A1BA2C63000393EA0 /* Build configuration list for PBXNativeTarget "MagicWindowShow" */;
@@ -413,6 +659,23 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = cafei;
 				TargetAttributes = {
+					379A0CDD1C7EAB97007A3A8F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LVB5NG7NJ5;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					379A0CF51C7EAB97007A3A8F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 379A0CDD1C7EAB97007A3A8F;
+					};
+					379A0D001C7EAB97007A3A8F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 379A0CDD1C7EAB97007A3A8F;
+					};
 					37B404061BA2C63000393EA0 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = LVB5NG7NJ5;
@@ -443,11 +706,43 @@
 			targets = (
 				37B404061BA2C63000393EA0 /* MagicWindowShow */,
 				37B4041F1BA2C63000393EA0 /* MagicWindowShowTests */,
+				379A0CDD1C7EAB97007A3A8F /* MagicWindowShow2 */,
+				379A0CF51C7EAB97007A3A8F /* MagicWindowShow2Tests */,
+				379A0D001C7EAB97007A3A8F /* MagicWindowShow2UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		379A0CDC1C7EAB97007A3A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379A0CF01C7EAB97007A3A8F /* LaunchScreen.storyboard in Resources */,
+				379A0CED1C7EAB97007A3A8F /* Assets.xcassets in Resources */,
+				37E5F0D41C8430090085B7DE /* FullIamge2Cell.xib in Resources */,
+				37E5F0CE1C842FEA0085B7DE /* BannerScrollCell.xib in Resources */,
+				37E5F0D01C842FF60085B7DE /* BtnView.xib in Resources */,
+				379A0CEB1C7EAB97007A3A8F /* Main2.storyboard in Resources */,
+				37E5F0D21C842FFF0085B7DE /* BtnViewCell.xib in Resources */,
+				37E5F0D61C8430170085B7DE /* ImageTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CF41C7EAB97007A3A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CFF1C7EAB97007A3A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37B404051BA2C63000393EA0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +760,7 @@
 				3730BABC1C0DB68C00EB2C2E /* BannerScrollCell.xib in Resources */,
 				37B404181BA2C63000393EA0 /* Images.xcassets in Resources */,
 				37084D351C17FF62001A730E /* ImageTableCell.xib in Resources */,
+				379A0D361C7FF5B6007A3A8F /* CityList.plist in Resources */,
 				3774E82D1C16AEBF00FBDD74 /* FullImageCell.xib in Resources */,
 				374AB8621C788A9600B457A0 /* DianshangHelpView.xib in Resources */,
 			);
@@ -480,6 +776,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8A704CA91599DCE97EEB76EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B4ECDF304FAD84567A4BE921 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +806,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C27352E859B09B9C756E1639 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C293D4D5CE59B5C0D3FA29AF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,6 +834,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8938C5199487752CE32F49D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF7B3B843899B786992608BB /* Embed Pods Frameworks */ = {
@@ -528,6 +869,40 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		379A0CDA1C7EAB97007A3A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E5F0D31C8430060085B7DE /* FullIamge2Cell.m in Sources */,
+				379A0CE51C7EAB97007A3A8F /* AppDelegate.m in Sources */,
+				37E5F0C91C842BB90085B7DE /* LoginViewController2.m in Sources */,
+				37E5F0D51C8430140085B7DE /* ImageTableCell.m in Sources */,
+				379A0D1E1C7EB169007A3A8F /* DianShangViewController.m in Sources */,
+				37E5F0CD1C842FDF0085B7DE /* BannerScrollCell.m in Sources */,
+				379A0CE21C7EAB97007A3A8F /* main.m in Sources */,
+				379A0D311C7ED260007A3A8F /* GoodsDetailViewController.m in Sources */,
+				37E5F0CF1C842FF20085B7DE /* BtnView.m in Sources */,
+				37E5F0D11C842FFD0085B7DE /* BtnViewCell.m in Sources */,
+				37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CF21C7EAB97007A3A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379A0CFB1C7EAB97007A3A8F /* MagicWindowShow2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379A0CFD1C7EAB97007A3A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379A0D061C7EAB97007A3A8F /* MagicWindowShow2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37B404031BA2C63000393EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,6 +910,9 @@
 				37084D081C17D47E001A730E /* O2ODetailViewController.m in Sources */,
 				3730BAAF1C0D729300EB2C2E /* ViewController.m in Sources */,
 				371D6FED1C53745F00DACF68 /* TourismDetailViewController.m in Sources */,
+				37E5F0C31C8165CB0085B7DE /* PaymentViewController.m in Sources */,
+				37E5F0BA1C815D850085B7DE /* DianShangDetailViewController.m in Sources */,
+				379A0D341C7F1B71007A3A8F /* CityPickerViewController.m in Sources */,
 				371B34F61C195A2400610673 /* NewsViewController.m in Sources */,
 				3730BABA1C0DB67F00EB2C2E /* BannerScrollCell.m in Sources */,
 				37B404101BA2C63000393EA0 /* AppDelegate.m in Sources */,
@@ -554,10 +932,14 @@
 				37B404351BA2C7DD00393EA0 /* MeViewController.m in Sources */,
 				3730BAA11C0D4ED700EB2C2E /* LeftViewController.m in Sources */,
 				37084D0C1C17D4F1001A730E /* O2OTableCell.m in Sources */,
+				37E5F0C01C8165820085B7DE /* OrderDetailsViewController.m in Sources */,
 				37084D381C180640001A730E /* BtnView.m in Sources */,
 				37857FC41C23A64700D3FE51 /* O2OViewController.m in Sources */,
 				3728A81F1BA6B0F300D7E087 /* FullImageCell.m in Sources */,
 				37B404321BA2C75700393EA0 /* HomeViewController.m in Sources */,
+				37E5F0BD1C8163AB0085B7DE /* ShoppinglistViewController.m in Sources */,
+				37E5F0C61C8165FA0085B7DE /* PaySuccessViewController.m in Sources */,
+				379A0D391C804675007A3A8F /* ChineseToPinyin.m in Sources */,
 				37084D3E1C18248A001A730E /* FullIamge2Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +955,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		379A0CF81C7EAB97007A3A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379A0CDD1C7EAB97007A3A8F /* MagicWindowShow2 */;
+			targetProxy = 379A0CF71C7EAB97007A3A8F /* PBXContainerItemProxy */;
+		};
+		379A0D031C7EAB97007A3A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379A0CDD1C7EAB97007A3A8F /* MagicWindowShow2 */;
+			targetProxy = 379A0D021C7EAB97007A3A8F /* PBXContainerItemProxy */;
+		};
 		37B404221BA2C63000393EA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 37B404061BA2C63000393EA0 /* MagicWindowShow */;
@@ -581,6 +973,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		379A0CE91C7EAB97007A3A8F /* Main2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379A0CEA1C7EAB97007A3A8F /* Base */,
+			);
+			name = Main2.storyboard;
+			sourceTree = "<group>";
+		};
+		379A0CEE1C7EAB97007A3A8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379A0CEF1C7EAB97007A3A8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		37B404141BA2C63000393EA0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -600,6 +1008,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		379A0D081C7EAB97007A3A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MagicWindowShow2/MagicWindowShow2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MagicWindowShow2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.MagicWindowShow2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		379A0D091C7EAB97007A3A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MagicWindowShow2/MagicWindowShow2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MagicWindowShow2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mw.MagicWindowShow2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		379A0D0A1C7EAB97007A3A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MagicWindowShow2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liehong.MagicWindowShow2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicWindowShow2.app/MagicWindowShow2";
+			};
+			name = Debug;
+		};
+		379A0D0B1C7EAB97007A3A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MagicWindowShow2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liehong.MagicWindowShow2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicWindowShow2.app/MagicWindowShow2";
+			};
+			name = Release;
+		};
+		379A0D0C1C7EAB97007A3A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MagicWindowShow2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liehong.MagicWindowShow2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MagicWindowShow2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		379A0D0D1C7EAB97007A3A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MagicWindowShow2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liehong.MagicWindowShow2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MagicWindowShow2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		37B404281BA2C63000393EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -636,7 +1140,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -673,7 +1177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -772,6 +1276,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		379A0D0E1C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379A0D081C7EAB97007A3A8F /* Debug */,
+				379A0D091C7EAB97007A3A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379A0D0F1C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379A0D0A1C7EAB97007A3A8F /* Debug */,
+				379A0D0B1C7EAB97007A3A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379A0D101C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379A0D0C1C7EAB97007A3A8F /* Debug */,
+				379A0D0D1C7EAB97007A3A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37B404021BA2C63000393EA0 /* Build configuration list for PBXProject "MagicWindowShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

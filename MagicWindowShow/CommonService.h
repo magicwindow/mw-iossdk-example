@@ -13,5 +13,7 @@
 - (BOOL)isFirstLauch;
 - (BOOL)isLvyouFirstLauch;
 - (BOOL)isDianshangFirstLauch;
+- (void)saveUserName:(nullable NSString *)userName;
+- (BOOL)hasLogin;
 
 @end

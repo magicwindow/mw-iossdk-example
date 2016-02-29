@@ -12,7 +12,6 @@
 
 @implementation ProfileCell
 
-
 @end
 
 @implementation MenuCell
@@ -21,6 +20,9 @@
 @end
 
 @interface LeftViewController ()
+{
+    IBOutlet UITableView *_tableView;
+}
 
 @end
 
@@ -62,31 +64,26 @@
             }
             case 2:
             {
-                cell.title.text = @"O2O";
-                imgName = @"O2O";
-                break;
-            }
-            case 3:
-            {
                 cell.title.text = @"电商（活动演示）";
                 imgName = @"dianshang";
                 break;
             }
-            case 4:
+            case 3:
             {
-                cell.title.text = @"资讯";
-                imgName = @"news";
+                cell.title.text = @"O2O";
+                imgName = @"O2O";
                 break;
             }
-            case 5:
+            case 4:
             {
                 cell.title.text = @"图库";
                 imgName = @"tuku";
                 break;
             }
-            case 6:
+            case 5:
             {
-                cell.title.text = @"设置";
+                cell.title.text = @"资讯";
+                imgName = @"news";
                 break;
             }
                 
@@ -128,22 +125,22 @@
         }
         case 2:
         {
-            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"]];
+            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"]];
             break;
         }
         case 3:
         {
-            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"]];
+            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"]];
             break;
         }
         case 4:
         {
-            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"newsNav"]];
+            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"tukuNav"]];
             break;
         }
         case 5:
         {
-            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"tukuNav"]];
+            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"newsNav"]];
             break;
         }
             

@@ -13,3 +13,8 @@ target 'MagicWindowShowTests' do
 
 end
 
+target 'MagicWindowShow2' do
+    pod ‘SDWebImage’
+    pod ‘JASidePanels’
+    pod 'MagicWindowSDK'
+end

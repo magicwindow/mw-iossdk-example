@@ -280,9 +280,12 @@
     else
     {
         NSArray *list = @[@"美国嘉宝米粉零食专场",@"母婴用品最强备货季",@"海量童装春款上新",@"儿童营养品终极狂欢",@"六一儿童狂欢购",@"母婴商品量贩囤货周",@"儿童玩具动漫馆",@"7大品牌奶粉新年惠"];
+        
         NSString *identifier = @"FullIamge2Cell";
-        [tableView registerNib:[UINib nibWithNibName:@"FullIamge2Cell" bundle:nil] forCellReuseIdentifier:identifier];
-        FullIamge2Cell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        
+        //不复用cell，由于每个cell都是一个魔窗位，cell不能复用，否则点击事件会发生错乱
+        FullIamge2Cell *cell = (FullIamge2Cell *)[[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+        
         if([_mwkeyDic objectForKey:mwkey] != nil)
         {
             [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:cell.imgView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
@@ -337,7 +340,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC"] animated:YES];
 }
 
 

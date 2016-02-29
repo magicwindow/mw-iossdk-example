@@ -15,6 +15,6 @@
 
 @end
 
-@interface MeViewController : UIViewController
+@interface MeViewController : UITableViewController
 
 @end

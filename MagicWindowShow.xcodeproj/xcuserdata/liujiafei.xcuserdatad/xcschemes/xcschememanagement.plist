@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MagicWindowShow2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>379A0CDD1C7EAB97007A3A8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>379A0CF51C7EAB97007A3A8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>379A0D001C7EAB97007A3A8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>37B404061BA2C63000393EA0</key>
 		<dict>
 			<key>primary</key>

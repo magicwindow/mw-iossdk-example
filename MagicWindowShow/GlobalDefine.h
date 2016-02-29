@@ -24,6 +24,7 @@
 #define Home_07                 @"T71AYHOK"//旅游07
 #define Home_08                 @"1LRLZD5S"//旅游08
 #define Home_detail_01          @"4FX10Z6U"//旅游详情页按钮
+#define Home_detail_uber        @"BKN6W4LC"//uber打车
 #define O2O_banner01            @"7ENR7767"//O2Obanner01
 #define O2O_banner02            @"Z0GT40VY"//O2Obanner02
 #define O2O_banner03            @"RA0M0SPI"//O2Obanner03
@@ -85,6 +86,12 @@
 #define me_05                   @"34DTLMWG"//个人中心05
 #define me_06                   @"TIYZ95FO"//个人中心06
 #define me_07                   @"KK30UEPY"//个人中心07
+
+//custom event
+#define event_order             @"MFG32141"
+#define event_goods             @"RSZL7DSS"
+#define event_shoppingList      @"C8MKRWOM"
+#define even_pay                @"4G9HDD06"
 
 
 #endif /* GlobalDefine_h */
