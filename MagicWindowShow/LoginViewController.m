@@ -7,8 +7,15 @@
 //
 
 #import "LoginViewController.h"
+#import <MagicWindowSDK/MWApi.h>
+#import <MagicWindowSDK/MWApiObject.h>
+#import "CommonService.h"
 
 @interface LoginViewController ()
+{
+    IBOutlet UITextField *_userName;
+    IBOutlet UITextField *_password;
+}
 
 @end
 
@@ -22,7 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading   the view.
+    // Do any additional setup after loading the view.
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +45,25 @@
 
 - (void)loginPressed:(id)sender
 {
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SideVC"] animated:YES];
+    if (_userName.text.length == 0 || _password.text.length == 0)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"请输入用户名和密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+        return;
+    }
+    
+    MWUserProfile *userProfile = [[MWUserProfile alloc] init];
+    userProfile.mwUserName = _userName.text;
+    userProfile.mwUserId = @"0000001";
+    CommonService *service = [[CommonService alloc] init];
+    [service saveUserName:_userName.text];
+    [MWApi setUserProfile:userProfile];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction)textFiledReturnEditing:(id)sender {
+    [sender resignFirstResponder];
 }
 
 /*

@@ -19,8 +19,9 @@
 #import "TourismDetailViewController.h"
 #import "CommonService.h"
 #import "HomeHelpView.h"
+#import "CityPickerViewController.h"
 
-@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,CityPickerDelegate>
 
 @property (nonatomic, strong, nullable) NSArray *keyList;
 @property (nonatomic, strong) NSArray *labelList;
@@ -70,6 +71,7 @@
             [self.mwkeyDic setObject:obj forKey:obj];
         }];
     }
+    
 }
 
 - (void)updateCampaign
@@ -302,20 +304,36 @@
     }
 }
 
+#pragma mark CityPickerDelegate
+- (void)updateCity:(NSString *)city
+{
+    [self.navigationItem.rightBarButtonItem setTitle:city];
+}
+
+- (void)selectCityBtnPressed:(id)sender
+{
+    CityPickerViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"CityVC"];
+    controller.delegate = self;
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 - (void)dealloc
 {
     //移除通知
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue destinationViewController] isKindOfClass:[CityPickerViewController class]])
+    {
+        CityPickerViewController *controller = [segue destinationViewController];
+        controller.delegate = self;
+    }
 }
-*/
+
 
 @end
