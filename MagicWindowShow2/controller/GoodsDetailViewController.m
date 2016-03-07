@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *label1;
 @property (nonatomic, weak) IBOutlet UILabel *label2;
 @property (nonatomic, weak) IBOutlet UILabel *label3;
+@property (nonatomic, weak) IBOutlet UILabel *label4;
 
 @end
 
@@ -33,16 +34,16 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    [super viewWillAppear:animated];
     NSArray *viewControllers = self.navigationController.viewControllers;
-    if (viewControllers.count == 2)
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DianShangVC"];
+    if (![viewControllers[0] isKindOfClass:[controller class]])
     {
-        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DianShangVC"];
-        controller.navigationItem.hidesBackButton = YES;
         NSMutableArray *arr = [NSMutableArray arrayWithArray:viewControllers];
-        [arr insertObject:controller atIndex:1];
+        controller.navigationItem.hidesBackButton = YES;
+        [arr replaceObjectAtIndex:0 withObject:controller];
         self.navigationController.viewControllers = arr;
     }
 }
@@ -60,6 +61,7 @@
     if (self.name1 != nil) cell.label1.text = self.name1;
     if (self.name2 != nil) cell.label2.text = self.name2;
     if (self.name3 != nil) cell.label3.text = self.name3;
+    if (self.name4 != nil) cell.label4.text = self.name4;
     return cell;
 
 }
@@ -70,7 +72,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 556;//CGRectGetWidth(self.view.frame)*556/750;
+    return CGRectGetWidth(self.view.frame)*590/400;
 }
 
 - (void)didReceiveMemoryWarning {

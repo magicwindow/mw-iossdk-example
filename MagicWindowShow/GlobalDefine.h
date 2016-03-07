@@ -23,8 +23,10 @@
 #define Home_06                 @"I1TBOQM7"//旅游06
 #define Home_07                 @"T71AYHOK"//旅游07
 #define Home_08                 @"1LRLZD5S"//旅游08
-#define Home_detail_01          @"4FX10Z6U"//旅游详情页按钮
+#define Home_detail_dianping    @"4FX10Z6U"//大众点评
 #define Home_detail_uber        @"BKN6W4LC"//uber打车
+#define Home_detail_hotel       @"K3VYH2WM"//携程酒店
+#define Home_detail_plane       @"MU7TBW1E"//携程机票
 #define O2O_banner01            @"7ENR7767"//O2Obanner01
 #define O2O_banner02            @"Z0GT40VY"//O2Obanner02
 #define O2O_banner03            @"RA0M0SPI"//O2Obanner03

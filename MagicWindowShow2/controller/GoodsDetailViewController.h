@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GoodsDetailViewController : UIViewController
+@interface GoodsDetailViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *name1;
 @property (nonatomic, strong) NSString *name2;
 @property (nonatomic, strong) NSString *name3;
+@property (nonatomic, strong) NSString *name4;
 
 @end

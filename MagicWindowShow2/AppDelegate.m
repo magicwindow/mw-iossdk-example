@@ -23,10 +23,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main2" bundle:[NSBundle mainBundle]];
+    CommonService *service = [[CommonService alloc] init];
+    if ([service hasLogin])
+    {
+        self.window.rootViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"DianShangNav"];
+    }
+    else
+    {
+        self.window.rootViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"loginNav"];
+    }
+        
     //注册魔窗
     [MWApi registerApp:APP_KEY];
     //注册魔窗mlink事件
     [self registerMlink];
+    
     return YES;
 }
 

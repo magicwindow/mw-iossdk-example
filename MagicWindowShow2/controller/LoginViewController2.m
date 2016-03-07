@@ -31,12 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    CommonService *service = [[CommonService alloc] init];
-    if ([service hasLogin])
-    {
-        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DianShangVC"] animated:YES];
-    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -80,7 +74,9 @@
     {
         [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DianShangVC"] animated:YES];
     }
+    
 }
+
 
 -(IBAction)textFiledReturnEditing:(id)sender {
     [sender resignFirstResponder];
