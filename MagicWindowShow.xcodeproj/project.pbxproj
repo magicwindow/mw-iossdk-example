@@ -93,6 +93,7 @@
 		37E5F0C91C842BB90085B7DE /* LoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C81C842BB90085B7DE /* LoginViewController2.m */; };
 		37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0CB1C842FB10085B7DE /* CommonService.m */; };
 		597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */; };
+		CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +265,8 @@
 		560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.debug.xcconfig"; sourceTree = "<group>"; };
 		79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.release.xcconfig"; sourceTree = "<group>"; };
 		AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaViewController.h; sourceTree = "<group>"; };
+		CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaViewController.m; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -411,6 +414,8 @@
 				378DE25E1C8D1F0C0053F169 /* TukuViewController.m */,
 				378DE2611C8D1F0C0053F169 /* WebViewController.h */,
 				378DE2621C8D1F0C0053F169 /* WebViewController.m */,
+				CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */,
+				CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */,
 			);
 			name = controller;
 			path = MagicWindowShow/controller;
@@ -1002,6 +1007,7 @@
 				378DE2AB1C8D1F0C0053F169 /* FullIamge2Cell.m in Sources */,
 				378DE2961C8D1F0C0053F169 /* O2ODetailViewController.m in Sources */,
 				378DE2901C8D1F0C0053F169 /* HelpViewController.m in Sources */,
+				CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */,
 				378DE2A21C8D1F0C0053F169 /* BannerScrollCell.m in Sources */,
 				378DE2AD1C8D1F0C0053F169 /* FullImageCell.m in Sources */,
 				378DE2A81C8D1F0C0053F169 /* ChineseToPinyin.m in Sources */,

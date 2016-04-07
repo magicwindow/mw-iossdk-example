@@ -291,7 +291,7 @@
     }
     if (indexPath.row == 1)
     {
-        TourismDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"tourismDVC"];
+        TourismDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"sanyaVC"];
         [self.navigationController pushViewController:detailVC animated:YES];
     }
     else
