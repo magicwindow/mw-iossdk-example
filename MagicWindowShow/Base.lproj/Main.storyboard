@@ -1382,9 +1382,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-VR-zg7">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-Sg-Snp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-Sg-Snp">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1393,7 +1393,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="MzD-VR-zg7" secondAttribute="height" multiplier="40:9" id="4Q6-eg-6yM"/>
                                                 <constraint firstItem="yVE-Sg-Snp" firstAttribute="leading" secondItem="MzD-VR-zg7" secondAttribute="leading" id="EBx-PK-A7e">
-                                                    <variation key="widthClass=compact" constant="8"/>
+                                                    <variation key="widthClass=compact" constant="12"/>
                                                 </constraint>
                                                 <constraint firstAttribute="bottom" secondItem="yVE-Sg-Snp" secondAttribute="bottom" id="KRC-A4-yK3">
                                                     <variation key="widthClass=compact" constant="8"/>
@@ -1402,7 +1402,7 @@
                                                     <variation key="widthClass=compact" constant="8"/>
                                                 </constraint>
                                                 <constraint firstAttribute="trailing" secondItem="yVE-Sg-Snp" secondAttribute="trailing" id="wev-Tw-7VH">
-                                                    <variation key="widthClass=compact" constant="8"/>
+                                                    <variation key="widthClass=compact" constant="12"/>
                                                 </constraint>
                                             </constraints>
                                             <variation key="default">
