@@ -13,5 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *bookImageView2;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageViewWidthConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *itemHeightConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *itemHeightConstraint2;
 
 @end

@@ -103,7 +103,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="限时特惠" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-fM-cKc">
-                                        <rect key="frame" x="243" y="102" width="65" height="26"/>
+                                        <rect key="frame" x="243" y="98" width="65" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0VQ-fM-cKc" secondAttribute="height" multiplier="5:2" id="LlC-B2-5xW"/>
                                             <constraint firstAttribute="height" constant="26" id="jlM-tI-sCI"/>
@@ -120,7 +120,7 @@
                                     <constraint firstAttribute="bottom" secondItem="bA2-Of-ARr" secondAttribute="bottom" constant="2" id="Ke8-vc-epL"/>
                                     <constraint firstAttribute="bottom" secondItem="Mjb-uy-pCi" secondAttribute="bottom" constant="2" id="OYI-JW-BDS"/>
                                     <constraint firstAttribute="bottom" secondItem="iYq-XM-k7x" secondAttribute="bottom" constant="2" id="QSF-fl-20F"/>
-                                    <constraint firstAttribute="bottom" secondItem="0VQ-fM-cKc" secondAttribute="bottom" id="aKb-Re-CEq"/>
+                                    <constraint firstAttribute="bottom" secondItem="0VQ-fM-cKc" secondAttribute="bottom" constant="4" id="aKb-Re-CEq"/>
                                     <constraint firstItem="iYq-XM-k7x" firstAttribute="leading" secondItem="Mmb-RU-nIU" secondAttribute="trailing" constant="8" id="g3R-o2-5Hj"/>
                                     <constraint firstItem="Mjb-uy-pCi" firstAttribute="leading" secondItem="iYq-XM-k7x" secondAttribute="trailing" id="gUN-mq-ES6"/>
                                     <constraint firstItem="Mmb-RU-nIU" firstAttribute="leading" secondItem="30b-9U-eAj" secondAttribute="leading" constant="8" id="k9q-dn-x2l"/>
@@ -174,7 +174,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="限时特惠" translatesAutoresizingMaskIntoConstraints="NO" id="izV-2q-SNt">
-                                        <rect key="frame" x="247" y="100" width="65" height="26"/>
+                                        <rect key="frame" x="247" y="98" width="65" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="izV-2q-SNt" secondAttribute="height" multiplier="5:2" id="Wcw-a2-DcM"/>
                                             <constraint firstAttribute="height" constant="26" id="YG6-I5-Mlf"/>
@@ -190,7 +190,7 @@
                                 <constraints>
                                     <constraint firstItem="izV-2q-SNt" firstAttribute="width" secondItem="izV-2q-SNt" secondAttribute="height" multiplier="5:2" id="09N-Er-oGz"/>
                                     <constraint firstItem="vDV-pD-Gok" firstAttribute="leading" secondItem="0Nt-Em-MaE" secondAttribute="trailing" constant="8" id="0at-pE-Ejm"/>
-                                    <constraint firstAttribute="bottom" secondItem="izV-2q-SNt" secondAttribute="bottom" constant="2" id="36G-qJ-jyQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="izV-2q-SNt" secondAttribute="bottom" constant="4" id="36G-qJ-jyQ"/>
                                     <constraint firstAttribute="height" constant="128" id="CzZ-a7-Mtw"/>
                                     <constraint firstItem="0Nt-Em-MaE" firstAttribute="top" secondItem="jxa-mY-V0q" secondAttribute="top" constant="8" id="F8n-sT-85m"/>
                                     <constraint firstAttribute="bottom" secondItem="vDV-pD-Gok" secondAttribute="bottom" constant="2" id="GPy-il-160"/>
@@ -234,6 +234,8 @@
                 <outlet property="bookImageView1" destination="0VQ-fM-cKc" id="cyH-xV-m4W"/>
                 <outlet property="bookImageView2" destination="izV-2q-SNt" id="nkJ-Cf-nvD"/>
                 <outlet property="imageViewWidthConstraint" destination="VHr-fz-aQ2" id="pt5-y2-35m"/>
+                <outlet property="itemHeightConstraint" destination="tu4-ZL-1ts" id="Mdg-Bg-2jL"/>
+                <outlet property="itemHeightConstraint2" destination="CzZ-a7-Mtw" id="mQa-vc-S3k"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
         </tableViewCell>

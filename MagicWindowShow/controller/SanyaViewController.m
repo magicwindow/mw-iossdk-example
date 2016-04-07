@@ -99,6 +99,8 @@
         [tableView registerNib:[UINib nibWithNibName:@"SanyaPlaneCell" bundle:nil] forCellReuseIdentifier:@"SanyaPlaneCell"];
         SanyaPlaneCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         cell.imageViewWidthConstraint.constant = CGRectGetWidth(tableView.frame)*120/400;
+        cell.itemHeightConstraint.constant = cell.imageViewWidthConstraint.constant + 16;
+        cell.itemHeightConstraint2.constant = cell.imageViewWidthConstraint.constant + 16;
         [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookImageView1 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             [cell.bookImageView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"限时特惠"]];
             
@@ -147,7 +149,7 @@
         }
         case 4:
         {
-            height = 45 + (CGRectGetWidth(tableView.frame)*120/400)*2 + 16;
+            height = 45 + (CGRectGetWidth(tableView.frame)*120/400)*2 + 32;
             break;
         }
         default:
