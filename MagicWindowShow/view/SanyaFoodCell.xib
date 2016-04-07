@@ -52,9 +52,62 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-xV-rea" userLabel="Food">
                         <rect key="frame" x="0.0" y="45" width="400" height="180"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="蟹" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-mh-gfY">
+                                <rect key="frame" x="8" y="8" width="114" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="9jN-Nm-4mF"/>
+                                    <constraint firstAttribute="height" constant="114" id="cXD-z7-XKU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="鸡" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-6x-fa3">
+                                <rect key="frame" x="278" y="8" width="114" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="eRp-ky-dgZ"/>
+                                    <constraint firstAttribute="width" constant="114" id="lV1-R9-hH2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="粉" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-1J-B6r">
+                                <rect key="frame" x="143" y="8" width="114" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="0PH-wh-eKH"/>
+                                    <constraint firstAttribute="height" constant="114" id="fEI-oZ-rDv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和乐蟹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBi-2T-yeB">
+                                <rect key="frame" x="40" y="130" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陵水酸粉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KX6-uZ-8IM">
+                                <rect key="frame" x="166" y="130" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文昌鸡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-VJ-A4a">
+                                <rect key="frame" x="310" y="130" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rBi-2T-yeB" firstAttribute="centerX" secondItem="0hN-mh-gfY" secondAttribute="centerX" id="BJJ-PY-3G2"/>
+                            <constraint firstItem="uBB-6x-fa3" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="Cim-j8-0FG"/>
+                            <constraint firstItem="KX6-uZ-8IM" firstAttribute="top" secondItem="nkY-1J-B6r" secondAttribute="bottom" constant="8" id="FKy-iz-kyU"/>
+                            <constraint firstItem="H1c-VJ-A4a" firstAttribute="top" secondItem="uBB-6x-fa3" secondAttribute="bottom" constant="8" id="HNo-Td-9Zi"/>
+                            <constraint firstItem="H1c-VJ-A4a" firstAttribute="centerX" secondItem="uBB-6x-fa3" secondAttribute="centerX" id="X6I-MJ-IX2"/>
+                            <constraint firstItem="0hN-mh-gfY" firstAttribute="leading" secondItem="nRt-xV-rea" secondAttribute="leading" constant="8" id="biK-fR-r0k"/>
+                            <constraint firstItem="rBi-2T-yeB" firstAttribute="top" secondItem="0hN-mh-gfY" secondAttribute="bottom" constant="8" id="cXF-ek-2EL"/>
+                            <constraint firstItem="nkY-1J-B6r" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="cua-L5-GCf"/>
                             <constraint firstAttribute="width" secondItem="nRt-xV-rea" secondAttribute="height" multiplier="400:180" id="gDi-9F-1ij"/>
+                            <constraint firstItem="KX6-uZ-8IM" firstAttribute="centerX" secondItem="nkY-1J-B6r" secondAttribute="centerX" id="gL5-au-gL9"/>
+                            <constraint firstItem="nkY-1J-B6r" firstAttribute="centerX" secondItem="nRt-xV-rea" secondAttribute="centerX" id="jFM-Lx-L1R"/>
+                            <constraint firstAttribute="trailing" secondItem="uBB-6x-fa3" secondAttribute="trailing" constant="8" id="rR0-vr-WdY"/>
+                            <constraint firstItem="0hN-mh-gfY" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="zZq-aK-Mhf"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xc-P5-6ky" userLabel="MoreFood">
@@ -107,7 +160,10 @@
     </objects>
     <resources>
         <image name="更多美食" width="473" height="124"/>
+        <image name="粉" width="308" height="309"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>
+        <image name="蟹" width="305" height="309"/>
+        <image name="鸡" width="308" height="309"/>
     </resources>
 </document>

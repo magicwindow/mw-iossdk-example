@@ -136,7 +136,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxa-mY-V0q" userLabel="Flight2">
-                                <rect key="frame" x="8" y="135" width="384" height="128"/>
+                                <rect key="frame" x="8" y="130" width="384" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="机加酒2" translatesAutoresizingMaskIntoConstraints="NO" id="0Nt-Em-MaE">
                                         <rect key="frame" x="0.0" y="8" width="120" height="120"/>
@@ -209,7 +209,6 @@
                                     <constraint firstAttribute="bottom" secondItem="dxC-I4-VXr" secondAttribute="bottom" constant="2" id="pHV-ef-eLA"/>
                                     <constraint firstAttribute="trailing" secondItem="05O-A5-sbs" secondAttribute="trailing" id="pN9-t5-pWc"/>
                                     <constraint firstItem="05O-A5-sbs" firstAttribute="top" secondItem="jxa-mY-V0q" secondAttribute="top" constant="27" id="sXK-aK-idM"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="yBD-Up-4OO"/>
                                     <constraint firstItem="05O-A5-sbs" firstAttribute="leading" secondItem="0Nt-Em-MaE" secondAttribute="trailing" constant="8" id="zUz-AL-oxm"/>
                                 </constraints>
                                 <variation key="default">
@@ -225,7 +224,7 @@
                             <constraint firstAttribute="trailing" secondItem="30b-9U-eAj" secondAttribute="trailing" constant="8" id="Nbu-uZ-EPp"/>
                             <constraint firstItem="30b-9U-eAj" firstAttribute="top" secondItem="qOg-g6-bqC" secondAttribute="top" id="awE-fv-OVe"/>
                             <constraint firstAttribute="trailing" secondItem="jxa-mY-V0q" secondAttribute="trailing" constant="8" id="oZf-Ms-X0I"/>
-                            <constraint firstItem="jxa-mY-V0q" firstAttribute="top" secondItem="30b-9U-eAj" secondAttribute="bottom" constant="7" id="pVv-Pz-RCc"/>
+                            <constraint firstItem="jxa-mY-V0q" firstAttribute="top" secondItem="30b-9U-eAj" secondAttribute="bottom" constant="2" id="pVv-Pz-RCc"/>
                             <constraint firstItem="jxa-mY-V0q" firstAttribute="leading" secondItem="qOg-g6-bqC" secondAttribute="leading" constant="8" id="txW-po-ohk"/>
                         </constraints>
                     </view>
