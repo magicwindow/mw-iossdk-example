@@ -134,6 +134,11 @@
             height = CGRectGetWidth(tableView.frame)*207/400 + 45 + 60 + 10;
             break;
         }
+        case 3:
+        {
+            height = 45 + 207 + 60 + 10;
+            break;
+        }
         default:
             height = CGRectGetWidth(tableView.frame)*326/400;
             break;

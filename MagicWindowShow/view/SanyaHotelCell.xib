@@ -61,10 +61,16 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ms4-5F-5RR" secondAttribute="bottom" id="PQG-Qg-DhG"/>
                             <constraint firstAttribute="width" secondItem="0dw-cM-fjI" secondAttribute="height" multiplier="400:207" id="Qnc-K7-cWf"/>
+                            <constraint firstAttribute="height" constant="207" id="THf-pG-D2j"/>
                             <constraint firstAttribute="trailing" secondItem="ms4-5F-5RR" secondAttribute="trailing" id="csq-mc-0Cr"/>
                             <constraint firstItem="ms4-5F-5RR" firstAttribute="leading" secondItem="0dw-cM-fjI" secondAttribute="leading" id="k5x-gw-GKT"/>
                             <constraint firstItem="ms4-5F-5RR" firstAttribute="top" secondItem="0dw-cM-fjI" secondAttribute="top" id="yzb-kr-uTa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qnc-K7-cWf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5um-L2-aDK" userLabel="Detail">
                         <rect key="frame" x="0.0" y="252" width="400" height="60"/>
@@ -77,10 +83,10 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-Dv-ho4" userLabel="Detail">
-                                <rect key="frame" x="60" y="9" width="200" height="43"/>
+                                <rect key="frame" x="60" y="9" width="238" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚湾红树林度假世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q4-Oy-Hl8">
-                                        <rect key="frame" x="0.0" y="0.0" width="184" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚湾红树林度假世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5q4-Oy-Hl8">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Tgg-yZ-eSI"/>
                                         </constraints>
@@ -107,7 +113,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="A1E-Q4-OBA"/>
-                                    <constraint firstAttribute="trailing" secondItem="5q4-Oy-Hl8" secondAttribute="trailing" constant="16" id="AmY-kX-qtq"/>
+                                    <constraint firstAttribute="trailing" secondItem="5q4-Oy-Hl8" secondAttribute="trailing" constant="8" id="AmY-kX-qtq"/>
                                     <constraint firstItem="AYB-UR-jpv" firstAttribute="centerY" secondItem="T3G-1F-BSX" secondAttribute="centerY" id="Apa-Nb-NuQ"/>
                                     <constraint firstItem="T3G-1F-BSX" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="leading" id="oX7-sj-od3"/>
                                     <constraint firstItem="5q4-Oy-Hl8" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="leading" id="uel-6u-tiN"/>
@@ -115,6 +121,11 @@
                                     <constraint firstItem="5q4-Oy-Hl8" firstAttribute="top" secondItem="jeJ-Dv-ho4" secondAttribute="top" id="wnz-4v-MLA"/>
                                     <constraint firstItem="T3G-1F-BSX" firstAttribute="top" secondItem="5q4-Oy-Hl8" secondAttribute="bottom" constant="1" id="zLH-kl-0m1"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A1E-Q4-OBA"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzx-7d-ICk">
                                 <rect key="frame" x="306" y="10" width="86" height="40"/>
@@ -127,15 +138,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="60" id="9Xu-zc-J6B"/>
                             <constraint firstAttribute="bottom" secondItem="jeJ-Dv-ho4" secondAttribute="bottom" constant="8" id="AWD-PP-qXb"/>
                             <constraint firstAttribute="trailing" secondItem="zzx-7d-ICk" secondAttribute="trailing" constant="8" id="FBI-nQ-Vib"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="top" secondItem="5um-L2-aDK" secondAttribute="top" constant="9" id="LaC-0v-N0H"/>
                             <constraint firstItem="zzx-7d-ICk" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="Xm6-NB-Itp"/>
+                            <constraint firstItem="zzx-7d-ICk" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="trailing" constant="8" id="kF9-b2-5Qh"/>
                             <constraint firstAttribute="width" secondItem="5um-L2-aDK" secondAttribute="height" multiplier="20:3" id="nWh-QK-pal"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="leading" secondItem="bPq-Dn-Gk0" secondAttribute="trailing" constant="8" id="qPw-vF-JV7"/>
                             <constraint firstItem="bPq-Dn-Gk0" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="yTb-kv-PkQ"/>
                             <constraint firstItem="bPq-Dn-Gk0" firstAttribute="leading" secondItem="5um-L2-aDK" secondAttribute="leading" constant="8" id="yYb-WE-uC7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nWh-QK-pal"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
