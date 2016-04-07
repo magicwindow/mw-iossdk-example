@@ -81,16 +81,6 @@
                                 <color key="textColor" red="0.16470588235294117" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离你5km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-4I-5KS">
-                                <rect key="frame" x="84" y="19" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="P1i-OL-OON"/>
-                                    <constraint firstAttribute="height" constant="21" id="wRk-Jd-Yna"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IZ-tf-xTW" userLabel="uberView">
                                 <rect key="frame" x="243" y="5" width="150" height="50"/>
                                 <subviews>
@@ -171,17 +161,39 @@
                                     <constraint firstAttribute="width" constant="150" id="wbP-Ll-yMj"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离你5km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-4I-5KS">
+                                <rect key="frame" x="84" y="19" width="144" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="P1i-OL-OON"/>
+                                    <constraint firstAttribute="height" constant="21" id="wRk-Jd-Yna"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P1i-OL-OON"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eiG-SD-qSh" firstAttribute="leading" secondItem="geb-tT-asW" secondAttribute="leading" constant="8" id="7J7-li-Pmt"/>
+                            <constraint firstItem="7IZ-tf-xTW" firstAttribute="leading" secondItem="JbI-4I-5KS" secondAttribute="trailing" constant="15" id="Haq-Dv-rr0"/>
                             <constraint firstItem="7IZ-tf-xTW" firstAttribute="centerY" secondItem="geb-tT-asW" secondAttribute="centerY" id="Q7q-Ul-RMH"/>
+                            <constraint firstAttribute="height" constant="60" id="VKi-yI-7gG"/>
                             <constraint firstItem="eiG-SD-qSh" firstAttribute="centerY" secondItem="geb-tT-asW" secondAttribute="centerY" id="av2-Hn-oex"/>
                             <constraint firstAttribute="trailing" secondItem="7IZ-tf-xTW" secondAttribute="trailing" constant="7" id="hiz-UO-QSx"/>
                             <constraint firstItem="JbI-4I-5KS" firstAttribute="centerY" secondItem="geb-tT-asW" secondAttribute="centerY" id="my9-LJ-R7F"/>
                             <constraint firstItem="JbI-4I-5KS" firstAttribute="leading" secondItem="eiG-SD-qSh" secondAttribute="trailing" constant="8" id="rTO-D1-Q3e"/>
                             <constraint firstAttribute="width" secondItem="geb-tT-asW" secondAttribute="height" multiplier="20:3" id="rgj-Sn-5rc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rgj-Sn-5rc"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
