@@ -1443,7 +1443,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-VR-zg7">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-Sg-Snp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-Sg-Snp">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
@@ -1483,7 +1483,7 @@
                                                     <include reference="yVE-Sg-Snp"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="4Q6-eg-6yM"/>
+                                                    <exclude reference="4Q6-eg-6yM"/>
                                                     <include reference="EBx-PK-A7e"/>
                                                     <include reference="KRC-A4-yK3"/>
                                                     <include reference="Pax-RI-Y3R"/>
@@ -1498,6 +1498,9 @@
                                         <constraint firstAttribute="trailing" secondItem="MzD-VR-zg7" secondAttribute="trailing" id="5ix-Ls-ypF"/>
                                         <constraint firstItem="MzD-VR-zg7" firstAttribute="leading" secondItem="5KI-FF-6c5" secondAttribute="leading" id="8eF-A6-KHx"/>
                                         <constraint firstItem="Rv6-Je-oGK" firstAttribute="top" secondItem="5KI-FF-6c5" secondAttribute="top" id="At3-ge-kuf"/>
+                                        <constraint firstAttribute="bottom" secondItem="MzD-VR-zg7" secondAttribute="bottom" constant="11" id="DdS-PF-3gD">
+                                            <variation key="widthClass=compact" constant="10"/>
+                                        </constraint>
                                         <constraint firstAttribute="trailing" secondItem="Rv6-Je-oGK" secondAttribute="trailing" id="R6N-JW-zvH"/>
                                         <constraint firstItem="MzD-VR-zg7" firstAttribute="top" secondItem="Rv6-Je-oGK" secondAttribute="bottom" id="VyG-Mn-63o"/>
                                     </constraints>
@@ -1507,12 +1510,13 @@
                                             <exclude reference="MzD-VR-zg7"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="5ix-Ls-ypF"/>
-                                            <exclude reference="8eF-A6-KHx"/>
-                                            <exclude reference="VyG-Mn-63o"/>
                                             <exclude reference="1TB-TE-c0N"/>
                                             <exclude reference="At3-ge-kuf"/>
                                             <exclude reference="R6N-JW-zvH"/>
+                                            <exclude reference="5ix-Ls-ypF"/>
+                                            <exclude reference="8eF-A6-KHx"/>
+                                            <exclude reference="DdS-PF-3gD"/>
+                                            <exclude reference="VyG-Mn-63o"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -1521,12 +1525,13 @@
                                             <include reference="MzD-VR-zg7"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="5ix-Ls-ypF"/>
-                                            <include reference="8eF-A6-KHx"/>
-                                            <include reference="VyG-Mn-63o"/>
                                             <include reference="1TB-TE-c0N"/>
                                             <include reference="At3-ge-kuf"/>
                                             <include reference="R6N-JW-zvH"/>
+                                            <include reference="5ix-Ls-ypF"/>
+                                            <include reference="8eF-A6-KHx"/>
+                                            <include reference="DdS-PF-3gD"/>
+                                            <include reference="VyG-Mn-63o"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

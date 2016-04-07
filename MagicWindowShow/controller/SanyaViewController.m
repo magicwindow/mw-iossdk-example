@@ -126,7 +126,7 @@
     switch (indexPath.row) {
         case 0:
         {
-            height = CGRectGetWidth(tableView.frame)*326/400;
+            height = 300;
             break;
         }
         case 1:
