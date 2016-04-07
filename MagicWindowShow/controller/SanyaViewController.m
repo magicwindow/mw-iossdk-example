@@ -11,6 +11,7 @@
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
 #import "SanyaMapCell.h"
+#import "SanyaFoodCell.h"
 
 @interface SanyaBannerCell : UITableViewCell
 
@@ -46,8 +47,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 1) {
-        NSString *identifier = @"sanyaMapCell";
-        [tableView registerNib:[UINib nibWithNibName:@"SanyaMapCell" bundle:nil] forCellReuseIdentifier:@"sanyaMapCell"];
+        NSString *identifier = @"SanyaMapCell";
+        [tableView registerNib:[UINib nibWithNibName:@"SanyaMapCell" bundle:nil] forCellReuseIdentifier:@"SanyaMapCell"];
         SanyaMapCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if ([MWApi isActiveOfmwKey:Home_detail_uber]) {
             [MWApi configAdViewWithKey:Home_detail_uber withTargetView:cell.uberButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
@@ -61,8 +62,21 @@
             cell.uberView.hidden = YES;
         }
         return cell;
+    } else if (indexPath.row == 2) {
+        NSString *identifier = @"SanyaFoodCell";
+        [tableView registerNib:[UINib nibWithNibName:@"SanyaFoodCell" bundle:nil] forCellReuseIdentifier:@"SanyaFoodCell"];
+        SanyaFoodCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [MWApi configAdViewWithKey:Home_detail_dianping withTargetView:cell.moreFoodButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            
+        } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+            
+        } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+            return nil;
+        }];
+        
+        return cell;
     } else {
-        NSString *identifier = @"sanyaBannerCell";
+        NSString *identifier = @"SanyaBannerCell";
         SanyaBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         return cell;
     }

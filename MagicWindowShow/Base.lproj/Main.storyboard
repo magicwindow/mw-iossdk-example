@@ -1181,7 +1181,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sanyaBannerCell" rowHeight="326" id="3Hq-9Z-e6I" customClass="SanyaBannerCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SanyaBannerCell" rowHeight="326" id="3Hq-9Z-e6I" customClass="SanyaBannerCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="326"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hq-9Z-e6I" id="5KI-FF-6c5">

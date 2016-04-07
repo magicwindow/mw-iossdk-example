@@ -96,6 +96,8 @@
 		CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */; };
 		CD22FD6F1CB6259200D83A19 /* SanyaMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */; };
 		CD22FD721CB62D1200D83A19 /* SanyaMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */; };
+		CD22FD761CB636C900D83A19 /* SanyaFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */; };
+		CD22FD771CB636C900D83A19 /* SanyaFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -272,6 +274,9 @@
 		CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaMapCell.xib; sourceTree = "<group>"; };
 		CD22FD701CB62D1200D83A19 /* SanyaMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaMapCell.h; sourceTree = "<group>"; };
 		CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaMapCell.m; sourceTree = "<group>"; };
+		CD22FD731CB636C900D83A19 /* SanyaFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaFoodCell.h; sourceTree = "<group>"; };
+		CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaFoodCell.m; sourceTree = "<group>"; };
+		CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaFoodCell.xib; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -480,6 +485,9 @@
 				CD22FD701CB62D1200D83A19 /* SanyaMapCell.h */,
 				CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */,
 				CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */,
+				CD22FD731CB636C900D83A19 /* SanyaFoodCell.h */,
+				CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */,
+				CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */,
 			);
 			name = view;
 			path = MagicWindowShow/view;
@@ -827,6 +835,7 @@
 				378DE23A1C880DEA0053F169 /* picList.json in Resources */,
 				37B404161BA2C63000393EA0 /* Main.storyboard in Resources */,
 				378DE2B91C8D1F0C0053F169 /* TwoImageCell.xib in Resources */,
+				CD22FD771CB636C900D83A19 /* SanyaFoodCell.xib in Resources */,
 				378DE2A51C8D1F0C0053F169 /* BtnView.xib in Resources */,
 				378DE23B1C880DEA0053F169 /* travelList.json in Resources */,
 				37B4041B1BA2C63000393EA0 /* LaunchScreen.xib in Resources */,
@@ -1030,6 +1039,7 @@
 				378DE29E1C8D1F0C0053F169 /* ViewController.m in Sources */,
 				378DE2981C8D1F0C0053F169 /* OrderDetailsViewController.m in Sources */,
 				378DE2951C8D1F0C0053F169 /* NewsViewController.m in Sources */,
+				CD22FD761CB636C900D83A19 /* SanyaFoodCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
