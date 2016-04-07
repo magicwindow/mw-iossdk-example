@@ -98,6 +98,8 @@
 		CD22FD721CB62D1200D83A19 /* SanyaMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */; };
 		CD22FD761CB636C900D83A19 /* SanyaFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */; };
 		CD22FD771CB636C900D83A19 /* SanyaFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */; };
+		CD22FD7B1CB63D4600D83A19 /* SanyaHotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD791CB63D4600D83A19 /* SanyaHotelCell.m */; };
+		CD22FD7C1CB63D4600D83A19 /* SanyaHotelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD7A1CB63D4600D83A19 /* SanyaHotelCell.xib */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -277,6 +279,9 @@
 		CD22FD731CB636C900D83A19 /* SanyaFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaFoodCell.h; sourceTree = "<group>"; };
 		CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaFoodCell.m; sourceTree = "<group>"; };
 		CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaFoodCell.xib; sourceTree = "<group>"; };
+		CD22FD781CB63D4600D83A19 /* SanyaHotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaHotelCell.h; sourceTree = "<group>"; };
+		CD22FD791CB63D4600D83A19 /* SanyaHotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaHotelCell.m; sourceTree = "<group>"; };
+		CD22FD7A1CB63D4600D83A19 /* SanyaHotelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaHotelCell.xib; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -488,6 +493,9 @@
 				CD22FD731CB636C900D83A19 /* SanyaFoodCell.h */,
 				CD22FD741CB636C900D83A19 /* SanyaFoodCell.m */,
 				CD22FD751CB636C900D83A19 /* SanyaFoodCell.xib */,
+				CD22FD781CB63D4600D83A19 /* SanyaHotelCell.h */,
+				CD22FD791CB63D4600D83A19 /* SanyaHotelCell.m */,
+				CD22FD7A1CB63D4600D83A19 /* SanyaHotelCell.xib */,
 			);
 			name = view;
 			path = MagicWindowShow/view;
@@ -835,6 +843,7 @@
 				378DE23A1C880DEA0053F169 /* picList.json in Resources */,
 				37B404161BA2C63000393EA0 /* Main.storyboard in Resources */,
 				378DE2B91C8D1F0C0053F169 /* TwoImageCell.xib in Resources */,
+				CD22FD7C1CB63D4600D83A19 /* SanyaHotelCell.xib in Resources */,
 				CD22FD771CB636C900D83A19 /* SanyaFoodCell.xib in Resources */,
 				378DE2A51C8D1F0C0053F169 /* BtnView.xib in Resources */,
 				378DE23B1C880DEA0053F169 /* travelList.json in Resources */,
@@ -1016,6 +1025,7 @@
 				378DE2231C8706B10053F169 /* OpenService.m in Sources */,
 				378DE2301C87D8570053F169 /* ResourceService.m in Sources */,
 				378DE2931C8D1F0C0053F169 /* LoginViewController.m in Sources */,
+				CD22FD7B1CB63D4600D83A19 /* SanyaHotelCell.m in Sources */,
 				378DE2B11C8D1F0C0053F169 /* ImageTableCell.m in Sources */,
 				378DE2991C8D1F0C0053F169 /* PaymentViewController.m in Sources */,
 				378DE2B81C8D1F0C0053F169 /* TwoImageCell.m in Sources */,

@@ -12,6 +12,7 @@
 #import "UIImageView+WebCache.h"
 #import "SanyaMapCell.h"
 #import "SanyaFoodCell.h"
+#import "SanyaHotelCell.h"
 
 @interface SanyaBannerCell : UITableViewCell
 
@@ -41,7 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 
@@ -67,6 +68,19 @@
         [tableView registerNib:[UINib nibWithNibName:@"SanyaFoodCell" bundle:nil] forCellReuseIdentifier:@"SanyaFoodCell"];
         SanyaFoodCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         [MWApi configAdViewWithKey:Home_detail_dianping withTargetView:cell.moreFoodButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            
+        } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+            
+        } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+            return nil;
+        }];
+        
+        return cell;
+    } else if (indexPath.row == 3) {
+        NSString *identifier = @"SanyaHotelCell";
+        [tableView registerNib:[UINib nibWithNibName:@"SanyaHotelCell" bundle:nil] forCellReuseIdentifier:@"SanyaHotelCell"];
+        SanyaHotelCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [MWApi configAdViewWithKey:Home_detail_hotel withTargetView:cell.bookButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
