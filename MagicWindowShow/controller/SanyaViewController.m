@@ -13,6 +13,7 @@
 #import "SanyaMapCell.h"
 #import "SanyaFoodCell.h"
 #import "SanyaHotelCell.h"
+#import "SanyaPlaneCell.h"
 
 @interface SanyaBannerCell : UITableViewCell
 
@@ -42,7 +43,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 
@@ -89,7 +90,29 @@
         }];
         
         return cell;
-    } else {
+    } else if (indexPath.row == 4) {
+        NSString *identifier = @"SanyaPlaneCell";
+        [tableView registerNib:[UINib nibWithNibName:@"SanyaPlaneCell" bundle:nil] forCellReuseIdentifier:@"SanyaPlaneCell"];
+        SanyaPlaneCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        
+        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookButton1 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            
+        } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+            
+        } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+            return nil;
+        }];
+        
+        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookButton2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            
+        } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+            
+        } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+            return nil;
+        }];
+        
+        return cell;
+    }else {
         NSString *identifier = @"SanyaBannerCell";
         SanyaBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         return cell;
