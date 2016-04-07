@@ -94,6 +94,8 @@
 		37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0CB1C842FB10085B7DE /* CommonService.m */; };
 		597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */; };
 		CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */; };
+		CD22FD6F1CB6259200D83A19 /* SanyaMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */; };
+		CD22FD721CB62D1200D83A19 /* SanyaMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -267,6 +269,9 @@
 		AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaViewController.h; sourceTree = "<group>"; };
 		CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaViewController.m; sourceTree = "<group>"; };
+		CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaMapCell.xib; sourceTree = "<group>"; };
+		CD22FD701CB62D1200D83A19 /* SanyaMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaMapCell.h; sourceTree = "<group>"; };
+		CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaMapCell.m; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -472,6 +477,9 @@
 				378DE28A1C8D1F0C0053F169 /* TwoImageCell.h */,
 				378DE28B1C8D1F0C0053F169 /* TwoImageCell.m */,
 				378DE28C1C8D1F0C0053F169 /* TwoImageCell.xib */,
+				CD22FD701CB62D1200D83A19 /* SanyaMapCell.h */,
+				CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */,
+				CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */,
 			);
 			name = view;
 			path = MagicWindowShow/view;
@@ -829,6 +837,7 @@
 				378DE2A31C8D1F0C0053F169 /* BannerScrollCell.xib in Resources */,
 				378DE2391C880DEA0053F169 /* o2oList.json in Resources */,
 				378DE2B71C8D1F0C0053F169 /* TourismCell.xib in Resources */,
+				CD22FD6F1CB6259200D83A19 /* SanyaMapCell.xib in Resources */,
 				379A0D361C7FF5B6007A3A8F /* CityList.plist in Resources */,
 				378DE2AE1C8D1F0C0053F169 /* FullImageCell.xib in Resources */,
 				378DE2381C880DEA0053F169 /* newsList.json in Resources */,
@@ -992,6 +1001,7 @@
 				378DE2221C8706B10053F169 /* CommonService.m in Sources */,
 				37B4040D1BA2C63000393EA0 /* main.m in Sources */,
 				378DE2A41C8D1F0C0053F169 /* BtnView.m in Sources */,
+				CD22FD721CB62D1200D83A19 /* SanyaMapCell.m in Sources */,
 				378DE2A01C8D1F0C0053F169 /* BaseDomain.m in Sources */,
 				378DE2A11C8D1F0C0053F169 /* ShowDomain.m in Sources */,
 				378DE2231C8706B10053F169 /* OpenService.m in Sources */,

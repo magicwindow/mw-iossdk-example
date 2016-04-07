@@ -10,6 +10,7 @@
 #import <MagicWindowSDK/MWApi.h>
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
+#import "SanyaMapCell.h"
 
 @interface SanyaBannerCell : UITableViewCell
 
@@ -24,11 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.allowsSelection = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,9 +45,27 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *identifier = @"sanyaBannerCell";
-    SanyaBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    return cell;
+    if (indexPath.row == 1) {
+        NSString *identifier = @"sanyaMapCell";
+        [tableView registerNib:[UINib nibWithNibName:@"SanyaMapCell" bundle:nil] forCellReuseIdentifier:@"sanyaMapCell"];
+        SanyaMapCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if ([MWApi isActiveOfmwKey:Home_detail_uber]) {
+            [MWApi configAdViewWithKey:Home_detail_uber withTargetView:cell.uberButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+                
+            } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+                
+            } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
+                return nil;
+            }];
+        } else {
+            cell.uberView.hidden = YES;
+        }
+        return cell;
+    } else {
+        NSString *identifier = @"sanyaBannerCell";
+        SanyaBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        return cell;
+    }
 }
 
 #pragma mark UITableViewDelegate

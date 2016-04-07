@@ -1185,7 +1185,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="326"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hq-9Z-e6I" id="5KI-FF-6c5">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="325"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="326"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rv6-Je-oGK">
@@ -1210,7 +1210,8 @@
                                                                     <exclude reference="Vao-VZ-fNf"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact">
+                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="1" width="101" height="33"/>
                                                                 <mask key="constraints">
                                                                     <include reference="Vao-VZ-fNf"/>
                                                                 </mask>
@@ -1221,6 +1222,9 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="34" width="101" height="21"/>
+                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1243,13 +1247,13 @@
                                                         </mask>
                                                         <mask key="constraints">
                                                             <exclude reference="6yi-NB-nRr"/>
-                                                            <exclude reference="0wo-As-Cqz"/>
-                                                            <exclude reference="GA5-Ra-FYk"/>
-                                                            <exclude reference="aeU-7T-lNL"/>
                                                             <exclude reference="DZB-Mz-deL"/>
                                                             <exclude reference="hBC-GF-CA0"/>
                                                             <exclude reference="hrG-X2-mRI"/>
                                                             <exclude reference="zyi-ZL-fZb"/>
+                                                            <exclude reference="0wo-As-Cqz"/>
+                                                            <exclude reference="GA5-Ra-FYk"/>
+                                                            <exclude reference="aeU-7T-lNL"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="widthClass=compact">
@@ -1259,13 +1263,13 @@
                                                         </mask>
                                                         <mask key="constraints">
                                                             <include reference="6yi-NB-nRr"/>
-                                                            <include reference="0wo-As-Cqz"/>
-                                                            <include reference="GA5-Ra-FYk"/>
-                                                            <include reference="aeU-7T-lNL"/>
                                                             <include reference="DZB-Mz-deL"/>
                                                             <include reference="hBC-GF-CA0"/>
                                                             <include reference="hrG-X2-mRI"/>
                                                             <include reference="zyi-ZL-fZb"/>
+                                                            <include reference="0wo-As-Cqz"/>
+                                                            <include reference="GA5-Ra-FYk"/>
+                                                            <include reference="aeU-7T-lNL"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
@@ -1345,16 +1349,16 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="NAx-q4-g86"/>
+                                                    <exclude reference="32M-R5-FML"/>
+                                                    <exclude reference="NVA-F8-Wmx"/>
+                                                    <exclude reference="yHs-s0-ehC"/>
+                                                    <exclude reference="yc2-ar-xM5"/>
                                                     <exclude reference="ZTB-DH-orP"/>
                                                     <exclude reference="bdv-q7-k3Q"/>
                                                     <exclude reference="cbq-vX-7r0"/>
                                                     <exclude reference="yu6-0w-lmb"/>
                                                     <exclude reference="56e-cH-p95"/>
                                                     <exclude reference="nxY-p2-Y5p"/>
-                                                    <exclude reference="yc2-ar-xM5"/>
-                                                    <exclude reference="32M-R5-FML"/>
-                                                    <exclude reference="NVA-F8-Wmx"/>
-                                                    <exclude reference="yHs-s0-ehC"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -1366,16 +1370,16 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="NAx-q4-g86"/>
+                                                    <include reference="32M-R5-FML"/>
+                                                    <include reference="NVA-F8-Wmx"/>
+                                                    <include reference="yHs-s0-ehC"/>
+                                                    <include reference="yc2-ar-xM5"/>
                                                     <include reference="ZTB-DH-orP"/>
                                                     <include reference="bdv-q7-k3Q"/>
                                                     <include reference="cbq-vX-7r0"/>
                                                     <include reference="yu6-0w-lmb"/>
                                                     <include reference="56e-cH-p95"/>
                                                     <include reference="nxY-p2-Y5p"/>
-                                                    <include reference="yc2-ar-xM5"/>
-                                                    <include reference="32M-R5-FML"/>
-                                                    <include reference="NVA-F8-Wmx"/>
-                                                    <include reference="yHs-s0-ehC"/>
                                                 </mask>
                                             </variation>
                                         </view>
@@ -1446,12 +1450,12 @@
                                             <exclude reference="MzD-VR-zg7"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="1TB-TE-c0N"/>
-                                            <exclude reference="At3-ge-kuf"/>
-                                            <exclude reference="R6N-JW-zvH"/>
                                             <exclude reference="5ix-Ls-ypF"/>
                                             <exclude reference="8eF-A6-KHx"/>
                                             <exclude reference="VyG-Mn-63o"/>
+                                            <exclude reference="1TB-TE-c0N"/>
+                                            <exclude reference="At3-ge-kuf"/>
+                                            <exclude reference="R6N-JW-zvH"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -1460,12 +1464,12 @@
                                             <include reference="MzD-VR-zg7"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="1TB-TE-c0N"/>
-                                            <include reference="At3-ge-kuf"/>
-                                            <include reference="R6N-JW-zvH"/>
                                             <include reference="5ix-Ls-ypF"/>
                                             <include reference="8eF-A6-KHx"/>
                                             <include reference="VyG-Mn-63o"/>
+                                            <include reference="1TB-TE-c0N"/>
+                                            <include reference="At3-ge-kuf"/>
+                                            <include reference="R6N-JW-zvH"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -1474,7 +1478,7 @@
                                 <rect key="frame" x="0.0" y="354" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Hz-1T-3Sm" id="7MB-Eq-IP7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1482,7 +1486,7 @@
                                 <rect key="frame" x="0.0" y="398" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xrm-AP-W2s" id="sVV-uN-Qy8">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
