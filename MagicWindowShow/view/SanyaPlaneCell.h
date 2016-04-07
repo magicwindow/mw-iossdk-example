@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SanyaPlaneCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIButton *bookButton1;
-@property (strong, nonatomic) IBOutlet UIButton *bookButton2;
+@property (strong, nonatomic) IBOutlet UIImageView *bookImageView1;
+@property (strong, nonatomic) IBOutlet UIImageView *bookImageView2;
+
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageViewWidthConstraint;
 
 @end

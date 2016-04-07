@@ -84,7 +84,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IZ-tf-xTW" userLabel="uberView">
                                 <rect key="frame" x="243" y="5" width="150" height="50"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="打车" translatesAutoresizingMaskIntoConstraints="NO" id="tog-7M-udP">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="打车" translatesAutoresizingMaskIntoConstraints="NO" id="tog-7M-udP">
                                         <rect key="frame" x="20" y="7" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="7fp-Y5-q0v"/>
@@ -133,29 +133,14 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W50-zm-VwP">
-                                        <rect key="frame" x="10" y="6" width="140" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="HeE-DS-8QJ"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="HeE-DS-8QJ"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="W50-zm-VwP" firstAttribute="top" secondItem="7IZ-tf-xTW" secondAttribute="top" constant="6" id="Amy-eE-qpM"/>
                                     <constraint firstAttribute="trailing" secondItem="V9e-yM-97I" secondAttribute="trailing" constant="8" id="G9w-Ww-kJX"/>
                                     <constraint firstItem="tog-7M-udP" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="JUd-7h-pkg"/>
                                     <constraint firstAttribute="height" constant="50" id="Jo4-Oj-N7a"/>
                                     <constraint firstItem="hil-3J-Afj" firstAttribute="leading" secondItem="7IZ-tf-xTW" secondAttribute="leading" constant="2" id="KbS-ka-rnh"/>
-                                    <constraint firstAttribute="bottom" secondItem="W50-zm-VwP" secondAttribute="bottom" constant="6" id="PXM-S4-nc6"/>
-                                    <constraint firstAttribute="trailing" secondItem="W50-zm-VwP" secondAttribute="trailing" id="Tap-cZ-0U9"/>
                                     <constraint firstItem="tog-7M-udP" firstAttribute="leading" secondItem="hil-3J-Afj" secondAttribute="trailing" constant="16" id="UhQ-08-7W4"/>
-                                    <constraint firstItem="W50-zm-VwP" firstAttribute="leading" secondItem="7IZ-tf-xTW" secondAttribute="leading" constant="10" id="cKq-Pm-5wD"/>
                                     <constraint firstItem="hil-3J-Afj" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="jbk-Kk-oID"/>
                                     <constraint firstItem="V9e-yM-97I" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="sb8-e8-Tp1"/>
                                     <constraint firstAttribute="width" constant="150" id="wbP-Ll-yMj"/>
@@ -210,7 +195,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="uberButton" destination="W50-zm-VwP" id="QeC-xo-I4R"/>
+                <outlet property="texiIcon" destination="tog-7M-udP" id="25h-u5-qoD"/>
+                <outlet property="texiLabel" destination="V9e-yM-97I" id="Eav-TV-Prl"/>
                 <outlet property="uberView" destination="7IZ-tf-xTW" id="9a5-IK-QDZ"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>

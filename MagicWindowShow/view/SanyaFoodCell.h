@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SanyaFoodCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIButton *moreFoodButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *foodImageWidthConstraint;
+@property (strong, nonatomic) IBOutlet UIImageView *moreFoodImageView;
 
 @end

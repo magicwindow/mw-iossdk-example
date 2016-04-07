@@ -14,6 +14,7 @@
 #import "SanyaFoodCell.h"
 #import "SanyaHotelCell.h"
 #import "SanyaPlaneCell.h"
+#import <SDWebImage/UIButton+WebCache.h>
 
 @interface SanyaBannerCell : UITableViewCell
 
@@ -53,8 +54,8 @@
         [tableView registerNib:[UINib nibWithNibName:@"SanyaMapCell" bundle:nil] forCellReuseIdentifier:@"SanyaMapCell"];
         SanyaMapCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if ([MWApi isActiveOfmwKey:Home_detail_uber]) {
-            [MWApi configAdViewWithKey:Home_detail_uber withTargetView:cell.uberButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
-                
+            [MWApi configAdViewWithKey:Home_detail_uber withTargetView:cell.texiIcon withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+                [cell.texiIcon sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"打车"]];
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 
             } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
@@ -68,7 +69,9 @@
         NSString *identifier = @"SanyaFoodCell";
         [tableView registerNib:[UINib nibWithNibName:@"SanyaFoodCell" bundle:nil] forCellReuseIdentifier:@"SanyaFoodCell"];
         SanyaFoodCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        [MWApi configAdViewWithKey:Home_detail_dianping withTargetView:cell.moreFoodButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+        cell.foodImageWidthConstraint.constant = (CGRectGetWidth(tableView.frame) - 8 * 2 - 20 * 2) / 3;
+        [MWApi configAdViewWithKey:Home_detail_dianping withTargetView:cell.moreFoodImageView withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            [cell.moreFoodImageView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"更多美食"]];
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
@@ -81,7 +84,8 @@
         NSString *identifier = @"SanyaHotelCell";
         [tableView registerNib:[UINib nibWithNibName:@"SanyaHotelCell" bundle:nil] forCellReuseIdentifier:@"SanyaHotelCell"];
         SanyaHotelCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        [MWApi configAdViewWithKey:Home_detail_hotel withTargetView:cell.bookButton withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+        [MWApi configAdViewWithKey:Home_detail_hotel withTargetView:cell.bookImageView withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            [cell.bookImageView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"预定按钮"]];
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
@@ -94,8 +98,9 @@
         NSString *identifier = @"SanyaPlaneCell";
         [tableView registerNib:[UINib nibWithNibName:@"SanyaPlaneCell" bundle:nil] forCellReuseIdentifier:@"SanyaPlaneCell"];
         SanyaPlaneCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        
-        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookButton1 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+        cell.imageViewWidthConstraint.constant = CGRectGetWidth(tableView.frame)*120/400;
+        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookImageView1 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            [cell.bookImageView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"限时特惠"]];
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
@@ -103,7 +108,8 @@
             return nil;
         }];
         
-        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookButton2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookImageView2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            [cell.bookImageView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"限时特惠"]];
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
             
@@ -126,7 +132,7 @@
     switch (indexPath.row) {
         case 0:
         {
-            height = 300;
+            height = CGRectGetWidth(tableView.frame)*225/400 + 91 + 10;
             break;
         }
         case 1:
@@ -137,6 +143,11 @@
         case 3:
         {
             height = 45 + 207 + 60 + 10;
+            break;
+        }
+        case 4:
+        {
+            height = 45 + (CGRectGetWidth(tableView.frame)*120/400)*2 + 16;
             break;
         }
         default:

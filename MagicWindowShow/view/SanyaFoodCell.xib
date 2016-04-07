@@ -57,22 +57,14 @@
                                 <rect key="frame" x="8" y="8" width="114" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="9jN-Nm-4mF"/>
-                                    <constraint firstAttribute="height" constant="114" id="cXD-z7-XKU"/>
+                                    <constraint firstAttribute="width" secondItem="0hN-mh-gfY" secondAttribute="height" multiplier="1:1" id="F97-Pk-U0A"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="鸡" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-6x-fa3">
                                 <rect key="frame" x="278" y="8" width="114" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="eRp-ky-dgZ"/>
-                                    <constraint firstAttribute="width" constant="114" id="lV1-R9-hH2"/>
-                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="粉" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-1J-B6r">
                                 <rect key="frame" x="143" y="8" width="114" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="0PH-wh-eKH"/>
-                                    <constraint firstAttribute="height" constant="114" id="fEI-oZ-rDv"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和乐蟹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBi-2T-yeB">
                                 <rect key="frame" x="40" y="130" width="51" height="21"/>
@@ -98,13 +90,17 @@
                             <constraint firstItem="rBi-2T-yeB" firstAttribute="centerX" secondItem="0hN-mh-gfY" secondAttribute="centerX" id="BJJ-PY-3G2"/>
                             <constraint firstItem="uBB-6x-fa3" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="Cim-j8-0FG"/>
                             <constraint firstItem="KX6-uZ-8IM" firstAttribute="top" secondItem="nkY-1J-B6r" secondAttribute="bottom" constant="8" id="FKy-iz-kyU"/>
+                            <constraint firstItem="nkY-1J-B6r" firstAttribute="height" secondItem="0hN-mh-gfY" secondAttribute="height" id="HIH-To-8kT"/>
                             <constraint firstItem="H1c-VJ-A4a" firstAttribute="top" secondItem="uBB-6x-fa3" secondAttribute="bottom" constant="8" id="HNo-Td-9Zi"/>
+                            <constraint firstItem="uBB-6x-fa3" firstAttribute="height" secondItem="0hN-mh-gfY" secondAttribute="height" id="Qk4-q2-Mfu"/>
+                            <constraint firstItem="nkY-1J-B6r" firstAttribute="width" secondItem="0hN-mh-gfY" secondAttribute="width" id="Smz-c7-fD3"/>
                             <constraint firstItem="H1c-VJ-A4a" firstAttribute="centerX" secondItem="uBB-6x-fa3" secondAttribute="centerX" id="X6I-MJ-IX2"/>
                             <constraint firstItem="0hN-mh-gfY" firstAttribute="leading" secondItem="nRt-xV-rea" secondAttribute="leading" constant="8" id="biK-fR-r0k"/>
                             <constraint firstItem="rBi-2T-yeB" firstAttribute="top" secondItem="0hN-mh-gfY" secondAttribute="bottom" constant="8" id="cXF-ek-2EL"/>
                             <constraint firstItem="nkY-1J-B6r" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="cua-L5-GCf"/>
                             <constraint firstAttribute="width" secondItem="nRt-xV-rea" secondAttribute="height" multiplier="400:180" id="gDi-9F-1ij"/>
                             <constraint firstItem="KX6-uZ-8IM" firstAttribute="centerX" secondItem="nkY-1J-B6r" secondAttribute="centerX" id="gL5-au-gL9"/>
+                            <constraint firstItem="uBB-6x-fa3" firstAttribute="width" secondItem="0hN-mh-gfY" secondAttribute="width" id="hvY-3s-uQA"/>
                             <constraint firstItem="nkY-1J-B6r" firstAttribute="centerX" secondItem="nRt-xV-rea" secondAttribute="centerX" id="jFM-Lx-L1R"/>
                             <constraint firstAttribute="trailing" secondItem="uBB-6x-fa3" secondAttribute="trailing" constant="8" id="rR0-vr-WdY"/>
                             <constraint firstItem="0hN-mh-gfY" firstAttribute="top" secondItem="nRt-xV-rea" secondAttribute="top" constant="8" id="zZq-aK-Mhf"/>
@@ -113,20 +109,19 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xc-P5-6ky" userLabel="MoreFood">
                         <rect key="frame" x="0.0" y="225" width="400" height="89"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tct-u4-eFa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PO1-Oi-r12">
                                 <rect key="frame" x="101" y="19" width="199" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="B1H-Nm-fN6"/>
-                                    <constraint firstAttribute="width" secondItem="tct-u4-eFa" secondAttribute="height" multiplier="473:124" id="NS4-Bh-d8l"/>
+                                    <constraint firstAttribute="width" constant="199" id="IUN-jQ-1IL"/>
+                                    <constraint firstAttribute="width" secondItem="PO1-Oi-r12" secondAttribute="height" multiplier="199:52" id="MBB-jA-X57"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="更多美食"/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tct-u4-eFa" firstAttribute="centerY" secondItem="4xc-P5-6ky" secondAttribute="centerY" id="YX7-rb-zh2"/>
+                            <constraint firstItem="PO1-Oi-r12" firstAttribute="centerX" secondItem="4xc-P5-6ky" secondAttribute="centerX" id="PlL-T1-EID"/>
+                            <constraint firstItem="PO1-Oi-r12" firstAttribute="centerY" secondItem="4xc-P5-6ky" secondAttribute="centerY" id="SaM-SX-NYO"/>
                             <constraint firstAttribute="width" secondItem="4xc-P5-6ky" secondAttribute="height" multiplier="20:3" id="cww-4h-9OI"/>
-                            <constraint firstItem="tct-u4-eFa" firstAttribute="centerX" secondItem="4xc-P5-6ky" secondAttribute="centerX" id="kJg-CL-nUC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -153,13 +148,13 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="moreFoodButton" destination="tct-u4-eFa" id="1bd-lC-3aO"/>
+                <outlet property="foodImageWidthConstraint" destination="9jN-Nm-4mF" id="PCJ-Z4-BxE"/>
+                <outlet property="moreFoodImageView" destination="PO1-Oi-r12" id="ycn-15-fOm"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="更多美食" width="473" height="124"/>
         <image name="粉" width="308" height="309"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>

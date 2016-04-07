@@ -127,23 +127,22 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzx-7d-ICk">
-                                <rect key="frame" x="306" y="10" width="86" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bVN-mL-X5f">
+                                <rect key="frame" x="306" y="9" width="86" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="zzx-7d-ICk" secondAttribute="height" multiplier="62:29" id="EKO-1e-bwI"/>
-                                    <constraint firstAttribute="height" constant="40" id="QHT-xj-ccn"/>
+                                    <constraint firstAttribute="height" constant="42" id="lVd-5L-Z73"/>
+                                    <constraint firstAttribute="width" secondItem="bVN-mL-X5f" secondAttribute="height" multiplier="43:21" id="xet-n7-YE7"/>
                                 </constraints>
-                                <state key="normal" image="预定按钮"/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="9Xu-zc-J6B"/>
                             <constraint firstAttribute="bottom" secondItem="jeJ-Dv-ho4" secondAttribute="bottom" constant="8" id="AWD-PP-qXb"/>
-                            <constraint firstAttribute="trailing" secondItem="zzx-7d-ICk" secondAttribute="trailing" constant="8" id="FBI-nQ-Vib"/>
+                            <constraint firstItem="bVN-mL-X5f" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="trailing" constant="8" id="FbD-Rk-Efl"/>
+                            <constraint firstAttribute="trailing" secondItem="bVN-mL-X5f" secondAttribute="trailing" constant="8" id="Khv-OY-I6e"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="top" secondItem="5um-L2-aDK" secondAttribute="top" constant="9" id="LaC-0v-N0H"/>
-                            <constraint firstItem="zzx-7d-ICk" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="Xm6-NB-Itp"/>
-                            <constraint firstItem="zzx-7d-ICk" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="trailing" constant="8" id="kF9-b2-5Qh"/>
+                            <constraint firstItem="bVN-mL-X5f" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="giD-bc-rgN"/>
                             <constraint firstAttribute="width" secondItem="5um-L2-aDK" secondAttribute="height" multiplier="20:3" id="nWh-QK-pal"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="leading" secondItem="bPq-Dn-Gk0" secondAttribute="trailing" constant="8" id="qPw-vF-JV7"/>
                             <constraint firstItem="bPq-Dn-Gk0" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="yTb-kv-PkQ"/>
@@ -173,7 +172,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="bookButton" destination="zzx-7d-ICk" id="HpH-9G-JPh"/>
+                <outlet property="bookImageView" destination="bVN-mL-X5f" id="W2T-rY-Uo8"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
         </tableViewCell>
@@ -183,6 +182,5 @@
         <image name="线条02" width="210" height="40"/>
         <image name="订酒店地图" width="1080" height="716"/>
         <image name="酒店icon" width="88" height="85"/>
-        <image name="预定按钮" width="186" height="87"/>
     </resources>
 </document>

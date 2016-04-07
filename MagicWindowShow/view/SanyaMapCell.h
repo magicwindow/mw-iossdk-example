@@ -10,7 +10,8 @@
 
 @interface SanyaMapCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UIButton *uberButton;
 @property (strong, nonatomic) IBOutlet UIView *uberView;
+@property (strong, nonatomic) IBOutlet UIImageView *texiIcon;
+@property (strong, nonatomic) IBOutlet UILabel *texiLabel;
 
 @end
