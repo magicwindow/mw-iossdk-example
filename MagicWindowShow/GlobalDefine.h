@@ -27,6 +27,10 @@
 #define Home_detail_uber        @"BKN6W4LC"//uber打车
 #define Home_detail_hotel       @"K3VYH2WM"//携程酒店
 #define Home_detail_plane       @"MU7TBW1E"//携程机票
+#define Home_detail_dianping2   @"3LDDMO2L"//大众点评2
+#define Home_detail_uber2       @"QXW47JV3"//uber打车2
+#define Home_detail_hotel2      @"Q9B9H48O"//携程酒店2
+#define Home_detail_plane2      @"AU0ET9UP"//携程机票2
 #define O2O_banner01            @"7ENR7767"//O2Obanner01
 #define O2O_banner02            @"Z0GT40VY"//O2Obanner02
 #define O2O_banner03            @"RA0M0SPI"//O2Obanner03
