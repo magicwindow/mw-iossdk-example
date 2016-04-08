@@ -31,6 +31,7 @@ typedef enum
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.allowsSelection = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {
