@@ -109,7 +109,7 @@
             return nil;
         }];
         
-        [MWApi configAdViewWithKey:Home_detail_plane withTargetView:cell.bookImageView2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+        [MWApi configAdViewWithKey:Home_detail_plane2 withTargetView:cell.bookImageView2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             [cell.bookImageView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"限时特惠"]];
             
         } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {

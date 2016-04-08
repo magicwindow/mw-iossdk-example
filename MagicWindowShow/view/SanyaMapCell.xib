@@ -82,72 +82,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IZ-tf-xTW" userLabel="uberView">
-                                <rect key="frame" x="243" y="5" width="150" height="50"/>
+                                <rect key="frame" x="233" y="5" width="160" height="50"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="打车" translatesAutoresizingMaskIntoConstraints="NO" id="tog-7M-udP">
-                                        <rect key="frame" x="20" y="7" width="38" height="36"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="三亚-打车" translatesAutoresizingMaskIntoConstraints="NO" id="tog-7M-udP">
+                                        <rect key="frame" x="30" y="7" width="130" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="7fp-Y5-q0v"/>
-                                            <constraint firstAttribute="height" constant="36" id="VBM-Ia-iD8"/>
-                                            <constraint firstAttribute="width" constant="38" id="eXy-3l-kQv"/>
-                                            <constraint firstAttribute="width" constant="38" id="l3H-4p-HPI"/>
+                                            <constraint firstAttribute="height" constant="36" id="D0Q-nE-GsV"/>
+                                            <constraint firstAttribute="width" constant="130" id="ZQV-7G-Ovd"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="VBM-Ia-iD8"/>
-                                                <exclude reference="l3H-4p-HPI"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打车前往" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9e-yM-97I">
-                                        <rect key="frame" x="72" y="15" width="70" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="M9i-Dh-tf0"/>
-                                            <constraint firstAttribute="width" constant="70" id="Xkx-kl-H5b"/>
-                                            <constraint firstAttribute="width" constant="70" id="YeK-Lv-45E"/>
-                                            <constraint firstAttribute="height" constant="21" id="xX3-XC-6xR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.16078431372549018" green="0.79607843137254897" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="M9i-Dh-tf0"/>
-                                                <exclude reference="Xkx-kl-H5b"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hil-3J-Afj" userLabel="分隔符">
-                                        <rect key="frame" x="2" y="5" width="2" height="40"/>
+                                        <rect key="frame" x="12" y="5" width="2" height="40"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="9du-6h-EoM"/>
-                                            <constraint firstAttribute="height" constant="40" id="Dv8-e6-MQU"/>
-                                            <constraint firstAttribute="width" constant="2" id="DwN-f8-N08"/>
-                                            <constraint firstAttribute="width" constant="2" id="Nm5-hC-MSL"/>
+                                            <constraint firstAttribute="height" constant="40" id="JZ9-H7-aIX"/>
+                                            <constraint firstAttribute="width" constant="2" id="WEb-w8-C8j"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="9du-6h-EoM"/>
-                                                <exclude reference="Nm5-hC-MSL"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="V9e-yM-97I" secondAttribute="trailing" constant="8" id="G9w-Ww-kJX"/>
                                     <constraint firstItem="tog-7M-udP" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="JUd-7h-pkg"/>
                                     <constraint firstAttribute="height" constant="50" id="Jo4-Oj-N7a"/>
-                                    <constraint firstItem="hil-3J-Afj" firstAttribute="leading" secondItem="7IZ-tf-xTW" secondAttribute="leading" constant="2" id="KbS-ka-rnh"/>
                                     <constraint firstItem="tog-7M-udP" firstAttribute="leading" secondItem="hil-3J-Afj" secondAttribute="trailing" constant="16" id="UhQ-08-7W4"/>
+                                    <constraint firstAttribute="trailing" secondItem="tog-7M-udP" secondAttribute="trailing" id="iZJ-zX-v7y"/>
                                     <constraint firstItem="hil-3J-Afj" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="jbk-Kk-oID"/>
-                                    <constraint firstItem="V9e-yM-97I" firstAttribute="centerY" secondItem="7IZ-tf-xTW" secondAttribute="centerY" id="sb8-e8-Tp1"/>
-                                    <constraint firstAttribute="width" constant="150" id="wbP-Ll-yMj"/>
+                                    <constraint firstAttribute="width" constant="160" id="wbP-Ll-yMj"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离你5km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-4I-5KS">
-                                <rect key="frame" x="84" y="19" width="144" height="21"/>
+                                <rect key="frame" x="84" y="19" width="134" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="P1i-OL-OON"/>
                                     <constraint firstAttribute="height" constant="21" id="wRk-Jd-Yna"/>
@@ -196,15 +160,14 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="texiIcon" destination="tog-7M-udP" id="25h-u5-qoD"/>
-                <outlet property="texiLabel" destination="V9e-yM-97I" id="Eav-TV-Prl"/>
                 <outlet property="uberView" destination="7IZ-tf-xTW" id="9a5-IK-QDZ"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="三亚-打车" width="273" height="74"/>
         <image name="地图1-打车" width="1080" height="619"/>
-        <image name="打车" width="76" height="74"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>
     </resources>
