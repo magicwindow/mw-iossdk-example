@@ -110,7 +110,7 @@
             btnView.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon0%li",(long)idx+1]];
             btnView.titleLabel.text = titles[idx];
             
-            if(obj == 0)
+            if(idx == 0)
             {
                 [MWApi configAdViewWithKey:@"Q3FQ1WV2" withTarget:btnView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                     
