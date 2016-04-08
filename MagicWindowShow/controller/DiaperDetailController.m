@@ -41,6 +41,7 @@
         NSString *identifier = @"GoodsShowCell";
         [tableView registerNib:[UINib nibWithNibName:@"GoodsShowCell" bundle:nil] forCellReuseIdentifier:identifier];
         GoodsShowCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [cell setupCellWithImageWidth:self.view.frame.size.width];
         return cell;
     }
     return nil;

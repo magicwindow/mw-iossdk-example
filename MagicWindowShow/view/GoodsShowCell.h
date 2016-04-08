@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GoodsShowCell : UITableViewCell
+@interface GoodsShowCell : UITableViewCell <UIScrollViewDelegate>
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) NSMutableArray *imageList;
+@property (assign, nonatomic) NSUInteger totalPage;
+@property (assign, nonatomic) NSUInteger currentPage;
 
+- (void)setupCellWithImageWidth:(CGFloat)width;
 @end

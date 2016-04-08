@@ -151,6 +151,7 @@
                     <constraint firstItem="Y50-Oj-g4Q" firstAttribute="top" secondItem="bjE-uv-jma" secondAttribute="bottom" id="4F4-F7-kbP"/>
                     <constraint firstItem="bjE-uv-jma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BYu-vC-uIE"/>
                     <constraint firstItem="kge-TG-vvu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="352" id="OLq-T0-HPB"/>
+                    <constraint firstItem="Y50-Oj-g4Q" firstAttribute="top" secondItem="kge-TG-vvu" secondAttribute="bottom" constant="3" id="VZe-hL-8eE"/>
                     <constraint firstItem="Y50-Oj-g4Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xj5-a1-vkP"/>
                     <constraint firstAttribute="trailing" secondItem="Y50-Oj-g4Q" secondAttribute="trailing" id="YN0-zX-eFq"/>
                     <constraint firstItem="Y50-Oj-g4Q" firstAttribute="top" secondItem="kge-TG-vvu" secondAttribute="bottom" constant="1" id="YQu-Vl-JX7"/>
@@ -161,9 +162,14 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="YQu-Vl-JX7"/>
+                        <exclude reference="OLq-T0-HPB"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="pageControl" destination="kge-TG-vvu" id="Upa-11-z5g"/>
+                <outlet property="scrollView" destination="bjE-uv-jma" id="fXB-ur-eUL"/>
+            </connections>
             <point key="canvasLocation" x="365" y="385"/>
         </tableViewCell>
     </objects>
