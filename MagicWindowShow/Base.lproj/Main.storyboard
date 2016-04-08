@@ -3785,10 +3785,10 @@
             </objects>
             <point key="canvasLocation" x="1069.5" y="1910"/>
         </scene>
-        <!--View Controller-->
+        <!--Diaper Detail Controller-->
         <scene sceneID="nCV-Je-xmE">
             <objects>
-                <viewController storyboardIdentifier="dianShangDetailVC2" id="Cdf-Wh-DFU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dianShangDetailVC2" id="Cdf-Wh-DFU" customClass="DiaperDetailController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MV9-Nj-jIV"/>
                         <viewControllerLayoutGuide type="bottom" id="MBz-Hm-seu"/>
@@ -3800,15 +3800,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="glG-Df-gBV">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xhz-ZD-D0W">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xhz-ZD-D0W" id="pLr-ht-0PF">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="102"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztr-ut-Vwl">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -3970,6 +3961,9 @@
                         </variation>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="glG-Df-gBV" id="Lxu-ZC-3sy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rU2-bK-KYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
