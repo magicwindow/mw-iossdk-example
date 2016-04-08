@@ -15,6 +15,8 @@
 #import "CommonService.h"
 #import "DianShangViewController.h"
 #import "DianShangDetailViewController.h"
+#import <JASidePanels/JASidePanelController.h>
+#import "HelpViewController.h"
 
 @interface AppDelegate ()
 {
@@ -114,7 +116,7 @@
     }];
     
     [MWApi registerMLinkHandlerWithKey:@"dianshangDetail" handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
-        [self openDianshangDetail];
+        [self openDianshangDetailWithUrl:url];
     }];
 }
 
@@ -172,14 +174,16 @@
     [rootVC setCenterPanel:[rootVC.storyboard instantiateViewControllerWithIdentifier:VCidentifier]];
 }
 
-- (void)openDianshangDetail
+- (void)openDianshangDetailWithUrl:(NSURL *)url
 {
     ViewController *rootVC = (ViewController *)self.window.rootViewController;
-    [rootVC showLeftPanelAnimated:YES];
-    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
-    [rootVC setCenterPanel: nav];
-    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
-    
+    // 判断是引导页还是sideVC
+    if ([rootVC isKindOfClass:[JASidePanelController class]]) {
+        [rootVC showLeftPanelAnimated:YES];
+        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    }
 }
 
 - (void)removeView
