@@ -899,6 +899,7 @@
                     <navigationItem key="navigationItem" title="电商" id="0VK-rr-PxD"/>
                     <connections>
                         <outlet property="_tableView" destination="f0c-Kb-Y0C" id="BWl-xU-l2q"/>
+                        <segue destination="Cdf-Wh-DFU" kind="show" id="uQf-nL-iAO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCN-ay-jCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3785,7 +3786,7 @@
             </objects>
             <point key="canvasLocation" x="1069.5" y="1910"/>
         </scene>
-        <!--Diaper Detail Controller-->
+        <!--商品详情-->
         <scene sceneID="nCV-Je-xmE">
             <objects>
                 <viewController storyboardIdentifier="dianShangDetailVC2" id="Cdf-Wh-DFU" customClass="DiaperDetailController" sceneMemberID="viewController">
@@ -3970,8 +3971,7 @@
                                                             <exclude reference="Y5w-sg-5Mb"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="117" width="400" height="10"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="Y5w-sg-5Mb"/>
                                                         </mask>
@@ -4105,9 +4105,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="long.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yjR-I3-oHU">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="400" height="102"/>
-                                                    </variation>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -4301,14 +4298,16 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationItem key="navigationItem" title="商品详情" id="8Ek-Eq-Ksh">
+                        <barButtonItem key="rightBarButtonItem" image="share66" style="plain" id="tSr-gF-6i4"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="glG-Df-gBV" id="Lxu-ZC-3sy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rU2-bK-KYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="1917"/>
+            <point key="canvasLocation" x="1776" y="2008"/>
         </scene>
         <!--Login View Controller2-->
         <scene sceneID="MHh-w3-Ha4">
@@ -5177,6 +5176,7 @@
         <image name="sanya_01" width="640" height="300"/>
         <image name="sanya_02" width="39" height="39"/>
         <image name="sanya_btn" width="550" height="60"/>
+        <image name="share66" width="22" height="22"/>
         <image name="分享" width="60" height="57"/>
         <image name="收藏" width="71" height="60"/>
         <image name="电商_加入购物车" width="482" height="115"/>
