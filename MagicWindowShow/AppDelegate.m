@@ -13,6 +13,8 @@
 #import <JASidePanels/UIViewController+JASidePanel.h>
 #import "LeftViewController.h"
 #import "CommonService.h"
+#import "DianShangViewController.h"
+#import "DianShangDetailViewController.h"
 
 @interface AppDelegate ()
 {
@@ -110,6 +112,10 @@
             [self openCampaignViewWithKey:str];
         }
     }];
+    
+    [MWApi registerMLinkHandlerWithKey:@"dianshangDetail" handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+        [self openDianshangDetail];
+    }];
 }
 
 //接收到打开魔窗位的请求，活动相关活动信息并打开活动
@@ -164,6 +170,16 @@
     }
     [rootVC showLeftPanelAnimated:YES];
     [rootVC setCenterPanel:[rootVC.storyboard instantiateViewControllerWithIdentifier:VCidentifier]];
+}
+
+- (void)openDianshangDetail
+{
+    ViewController *rootVC = (ViewController *)self.window.rootViewController;
+    [rootVC showLeftPanelAnimated:YES];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+    [rootVC setCenterPanel: nav];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    
 }
 
 - (void)removeView

@@ -10,5 +10,6 @@
 
 @interface DiaperDetailController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)shareButtonClicked:(id)sender;
 
 @end

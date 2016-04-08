@@ -8,6 +8,17 @@
 
 #import "DiaperDetailController.h"
 #import "GoodsShowCell.h"
+#import <libWeChatSDK/WXApi.h>
+
+typedef enum
+{
+    ShareTypeWXSession = 0,         //微信好友
+    ShareTypeWXTimeline = 1,        //微信朋友圈
+    //    ShareTypeSinaWeibo = 2,         //新浪微博
+    //    ShareTypeQQ = 3,                //qq好友
+    //    ShareTypeQQQZone = 4,           //qzone结合版
+    
+}MWShareType;
 
 @interface DiaperDetailController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -98,4 +109,71 @@
 }
 */
 
+- (IBAction)shareButtonClicked:(id)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"分享该页面到：" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *wechatFriends = [UIAlertAction actionWithTitle:@"微信好友" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self sendWeChatWithScene:ShareTypeWXSession Title:@"HUGGIES好奇银装纸尿裤促销中" Content:@"美国品牌，妈妈们的第一选择！" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"share-wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
+    }];
+    UIAlertAction *wechatMoments = [UIAlertAction actionWithTitle:@"朋友圈" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self sendWeChatWithScene:ShareTypeWXTimeline Title:@"HUGGIES好奇银装纸尿裤促销中" Content:@"美国品牌，妈妈们的第一选择！" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"share-wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alert addAction:wechatFriends];
+    [alert addAction:wechatMoments];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma mark Wechat
+- (void)sendWeChatWithScene:(MWShareType)scene Title:(NSString *)title Content:(NSString *)content ThumbImageData:(NSData *)thumbImageData Url:(NSString *)url
+{
+    [self sendLinkContentToWeChatWithWithScene:(MWShareType)scene Title:title Content:content ThumbImageData:thumbImageData Url:url];
+}
+
+
+- (void)sendLinkContentToWeChatWithWithScene:(MWShareType)scene Title:(NSString *)title
+                                     Content:(NSString *)content
+                              ThumbImageData:(NSData *)thumbImageData
+                                         Url:(NSString *)url
+{
+    WXMediaMessage *message = [[WXMediaMessage alloc] init];
+    message.title = title;
+    message.description = content;
+    message.thumbData = thumbImageData;
+    
+    WXWebpageObject *webObj = [[WXWebpageObject alloc] init];
+    webObj.webpageUrl = url;
+    
+    message.mediaObject = webObj;
+    [self sendMediaMessageToWXWithWithScene:(MWShareType)scene Message:message];
+}
+
+- (void)sendMediaMessageToWXWithWithScene:(MWShareType)scene Message:(WXMediaMessage *)message
+{
+    int wxScene = -1;
+    switch (scene) {
+        case ShareTypeWXSession:
+        {
+            wxScene = WXSceneSession;
+            break;
+        }
+        case ShareTypeWXTimeline:
+        {
+            wxScene = WXSceneTimeline;
+            break;
+        }
+            
+        default:
+            break;
+    }
+    
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.bText = NO;
+    req.message = message;
+    req.scene = wxScene;
+    [WXApi sendReq:req];
+}
 @end

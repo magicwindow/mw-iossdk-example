@@ -4299,7 +4299,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="商品详情" id="8Ek-Eq-Ksh">
-                        <barButtonItem key="rightBarButtonItem" image="share66" style="plain" id="tSr-gF-6i4"/>
+                        <barButtonItem key="rightBarButtonItem" image="share66" style="plain" id="tSr-gF-6i4">
+                            <connections>
+                                <action selector="shareButtonClicked:" destination="Cdf-Wh-DFU" id="i6n-z9-hWs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="glG-Df-gBV" id="Lxu-ZC-3sy"/>
