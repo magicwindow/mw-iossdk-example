@@ -19,6 +19,7 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.tableView.allowsSelection = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +34,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -43,8 +44,15 @@
         GoodsShowCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         [cell setupCellWithImageWidth:self.view.frame.size.width];
         return cell;
+    } else if (indexPath.row == 1) {
+        NSString *identifier = @"OtherInfoCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        return cell;
+    } else {
+        NSString *identifier = @"LongPictureCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        return cell;
     }
-    return nil;
 }
 
 #pragma mark - UITableViewDelegate
@@ -60,12 +68,12 @@
         }
         case 1:
         {
-            height = CGRectGetWidth(tableView.frame)*207/400 + 45 + 60 + 10;
+            height = 128;
             break;
         }
-        case 3:
+        case 2:
         {
-            height = 45 + 207 + 60 + 10;
+            height = CGRectGetWidth(tableView.frame)*10213/640;
             break;
         }
         case 4:
