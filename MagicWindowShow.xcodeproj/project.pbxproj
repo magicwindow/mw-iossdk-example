@@ -108,6 +108,7 @@
 		CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */; };
 		CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */; };
 		CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */; };
+		CDEAB9BA1CBE3CB100AFA1FE /* SocialShareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B91CBE3CB100AFA1FE /* SocialShareHelper.m */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -303,6 +304,8 @@
 		CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2OShowCell.xib; sourceTree = "<group>"; };
 		CDEAB9B41CBE136600AFA1FE /* O2ODetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ODetailController.h; sourceTree = "<group>"; };
 		CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ODetailController.m; sourceTree = "<group>"; };
+		CDEAB9B81CBE3CB100AFA1FE /* SocialShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialShareHelper.h; sourceTree = "<group>"; };
+		CDEAB9B91CBE3CB100AFA1FE /* SocialShareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialShareHelper.m; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -623,6 +626,7 @@
 		37B404091BA2C63000393EA0 /* MagicWindowShow */ = {
 			isa = PBXGroup;
 			children = (
+				CDEAB9B71CBE3C9500AFA1FE /* Helper */,
 				378DE23C1C8D1F0C0053F169 /* controller */,
 				378DE2631C8D1F0C0053F169 /* Domain */,
 				378DE2681C8D1F0C0053F169 /* view */,
@@ -679,6 +683,16 @@
 			);
 			name = Pods;
 			sourceTree = "<group>";
+		};
+		CDEAB9B71CBE3C9500AFA1FE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAB9B81CBE3CB100AFA1FE /* SocialShareHelper.h */,
+				CDEAB9B91CBE3CB100AFA1FE /* SocialShareHelper.m */,
+			);
+			name = Helper;
+			path = MagicWindowShow/Helper;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -1073,6 +1087,7 @@
 				378DE2941C8D1F0C0053F169 /* MeViewController.m in Sources */,
 				378DE2921C8D1F0C0053F169 /* LeftViewController.m in Sources */,
 				CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */,
+				CDEAB9BA1CBE3CB100AFA1FE /* SocialShareHelper.m in Sources */,
 				378DE2AB1C8D1F0C0053F169 /* FullIamge2Cell.m in Sources */,
 				378DE2961C8D1F0C0053F169 /* O2ODetailViewController.m in Sources */,
 				378DE2901C8D1F0C0053F169 /* HelpViewController.m in Sources */,

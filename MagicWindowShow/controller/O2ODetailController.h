@@ -10,5 +10,7 @@
 
 @interface O2ODetailController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)backButtonClicked:(id)sender;
+- (IBAction)shareButtonClicked:(id)sender;
 
 @end

@@ -805,7 +805,6 @@
                     <navigationItem key="navigationItem" title="O2O" id="Lc2-D8-OnP"/>
                     <connections>
                         <outlet property="_tableView" destination="VBh-jd-IH6" id="LhX-fs-Mqh"/>
-                        <segue destination="eka-xp-VT2" kind="show" id="lRp-QM-3Q7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPT-Ya-vWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -830,7 +829,7 @@
             </objects>
             <point key="canvasLocation" x="1547" y="574"/>
         </scene>
-        <!--Detail Controller-->
+        <!--O2O详情-->
         <scene sceneID="LiK-rv-nVl">
             <objects>
                 <viewController storyboardIdentifier="O2OVC2" id="eka-xp-VT2" customClass="O2ODetailController" sceneMemberID="viewController">
@@ -846,6 +845,78 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-9z-EI6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LPY-Yr-m9F"/>
+                                    <constraint firstAttribute="width" constant="400" id="WxC-kh-mxM">
+                                        <variation key="widthClass=compact" constant="44"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="O2O_back"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LPY-Yr-m9F"/>
+                                        <exclude reference="WxC-kh-mxM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LPY-Yr-m9F"/>
+                                        <include reference="WxC-kh-mxM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="eka-xp-VT2" eventType="touchUpInside" id="n7A-P5-zwh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="199-gx-Zp5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JVU-nS-xXH"/>
+                                    <constraint firstAttribute="width" constant="400" id="f3n-vW-a0x">
+                                        <variation key="widthClass=compact" constant="44"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="O2O_share"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JVU-nS-xXH"/>
+                                        <exclude reference="f3n-vW-a0x"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JVU-nS-xXH"/>
+                                        <include reference="f3n-vW-a0x"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareButtonClicked:" destination="eka-xp-VT2" eventType="touchUpInside" id="sJf-Jg-96f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-Ae-JGk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FBa-tk-HkL"/>
+                                    <constraint firstAttribute="width" constant="400" id="h4l-gC-aL5">
+                                        <variation key="widthClass=compact" constant="44"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="O2O_like1"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FBa-tk-HkL"/>
+                                        <exclude reference="h4l-gC-aL5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FBa-tk-HkL"/>
+                                        <include reference="h4l-gC-aL5"/>
+                                    </mask>
+                                </variation>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yb-01-89T">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
@@ -1269,54 +1340,89 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eX4-Ae-JGk" firstAttribute="top" secondItem="a2F-ed-00g" secondAttribute="bottom" constant="8" id="1R8-he-dXh"/>
                             <constraint firstItem="FEf-YD-Wcx" firstAttribute="leading" secondItem="nWZ-9U-cpP" secondAttribute="leading" id="2Du-oe-om1"/>
                             <constraint firstAttribute="trailing" secondItem="5yb-01-89T" secondAttribute="trailing" id="4xX-Ou-m3M"/>
+                            <constraint firstItem="2Wv-9z-EI6" firstAttribute="leading" secondItem="nWZ-9U-cpP" secondAttribute="leading" id="51I-5o-q0X">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="5yb-01-89T" firstAttribute="leading" secondItem="nWZ-9U-cpP" secondAttribute="leading" id="E8J-30-sXE"/>
+                            <constraint firstItem="199-gx-Zp5" firstAttribute="leading" secondItem="eX4-Ae-JGk" secondAttribute="trailing" constant="126" id="OcM-El-xq7">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="kyC-6a-1jw" firstAttribute="top" secondItem="5yb-01-89T" secondAttribute="bottom" constant="278" id="VUg-sW-wdj">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="FEf-YD-Wcx" firstAttribute="top" secondItem="a2F-ed-00g" secondAttribute="bottom" id="laJ-ct-qsX"/>
+                            <constraint firstItem="199-gx-Zp5" firstAttribute="top" secondItem="a2F-ed-00g" secondAttribute="bottom" constant="8" id="eRq-PZ-lEL"/>
+                            <constraint firstAttribute="trailing" secondItem="199-gx-Zp5" secondAttribute="trailing" constant="178" id="jHS-GX-C7x">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="FEf-YD-Wcx" firstAttribute="top" secondItem="a2F-ed-00g" secondAttribute="bottom" id="laJ-ct-qsX">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="2Wv-9z-EI6" firstAttribute="top" secondItem="a2F-ed-00g" secondAttribute="bottom" constant="258" id="rbe-uh-eqJ">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="kyC-6a-1jw" firstAttribute="top" secondItem="FEf-YD-Wcx" secondAttribute="bottom" id="y0c-lo-MCW"/>
                             <constraint firstAttribute="trailing" secondItem="FEf-YD-Wcx" secondAttribute="trailing" id="zAC-Bj-gCE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FEf-YD-Wcx"/>
+                                <exclude reference="2Wv-9z-EI6"/>
+                                <exclude reference="199-gx-Zp5"/>
+                                <exclude reference="eX4-Ae-JGk"/>
                                 <exclude reference="5yb-01-89T"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="VUg-sW-wdj"/>
-                                <exclude reference="y0c-lo-MCW"/>
-                                <exclude reference="4xX-Ou-m3M"/>
-                                <exclude reference="E8J-30-sXE"/>
                                 <exclude reference="2Du-oe-om1"/>
                                 <exclude reference="laJ-ct-qsX"/>
                                 <exclude reference="zAC-Bj-gCE"/>
+                                <exclude reference="51I-5o-q0X"/>
+                                <exclude reference="rbe-uh-eqJ"/>
+                                <exclude reference="1R8-he-dXh"/>
+                                <exclude reference="OcM-El-xq7"/>
+                                <exclude reference="eRq-PZ-lEL"/>
+                                <exclude reference="jHS-GX-C7x"/>
+                                <exclude reference="4xX-Ou-m3M"/>
+                                <exclude reference="E8J-30-sXE"/>
+                                <exclude reference="VUg-sW-wdj"/>
+                                <exclude reference="y0c-lo-MCW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FEf-YD-Wcx"/>
+                                <include reference="2Wv-9z-EI6"/>
+                                <include reference="199-gx-Zp5"/>
+                                <include reference="eX4-Ae-JGk"/>
                                 <include reference="5yb-01-89T"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="VUg-sW-wdj"/>
-                                <include reference="y0c-lo-MCW"/>
-                                <include reference="4xX-Ou-m3M"/>
-                                <include reference="E8J-30-sXE"/>
                                 <include reference="2Du-oe-om1"/>
                                 <include reference="laJ-ct-qsX"/>
                                 <include reference="zAC-Bj-gCE"/>
+                                <include reference="51I-5o-q0X"/>
+                                <include reference="rbe-uh-eqJ"/>
+                                <include reference="1R8-he-dXh"/>
+                                <include reference="OcM-El-xq7"/>
+                                <include reference="eRq-PZ-lEL"/>
+                                <include reference="jHS-GX-C7x"/>
+                                <include reference="4xX-Ou-m3M"/>
+                                <include reference="E8J-30-sXE"/>
+                                <include reference="VUg-sW-wdj"/>
+                                <include reference="y0c-lo-MCW"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="O2O详情" id="Hkf-a3-bjR"/>
                     <connections>
                         <outlet property="tableView" destination="FEf-YD-Wcx" id="884-gI-cga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1L-1h-TsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2161.5" y="574"/>
+            <point key="canvasLocation" x="2152.5" y="574"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ErN-Ys-l5c">
@@ -5648,8 +5754,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="O2O_back" width="99" height="102"/>
         <image name="O2O_contact" width="49" height="55"/>
+        <image name="O2O_like1" width="92" height="92"/>
         <image name="O2O_like2" width="62" height="53"/>
+        <image name="O2O_share" width="40" height="40"/>
         <image name="Uber" width="200" height="200"/>
         <image name="banner" width="1080" height="609"/>
         <image name="icon-1" width="26" height="26"/>
