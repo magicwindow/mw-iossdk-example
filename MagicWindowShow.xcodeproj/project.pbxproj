@@ -105,6 +105,9 @@
 		CD22FD851CB7844200D83A19 /* GoodsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD831CB7844100D83A19 /* GoodsShowCell.m */; };
 		CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */; };
 		CD22FD891CB78C2200D83A19 /* DiaperDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */; };
+		CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */; };
+		CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */; };
+		CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -295,6 +298,11 @@
 		CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsShowCell.xib; sourceTree = "<group>"; };
 		CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaperDetailController.h; sourceTree = "<group>"; };
 		CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaperDetailController.m; sourceTree = "<group>"; };
+		CDEAB9AF1CBDFBB000AFA1FE /* O2OShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2OShowCell.h; sourceTree = "<group>"; };
+		CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2OShowCell.m; sourceTree = "<group>"; };
+		CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2OShowCell.xib; sourceTree = "<group>"; };
+		CDEAB9B41CBE136600AFA1FE /* O2ODetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ODetailController.h; sourceTree = "<group>"; };
+		CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ODetailController.m; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -446,6 +454,8 @@
 				CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */,
 				CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */,
 				CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */,
+				CDEAB9B41CBE136600AFA1FE /* O2ODetailController.h */,
+				CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */,
 			);
 			name = controller;
 			path = MagicWindowShow/controller;
@@ -517,6 +527,9 @@
 				CD22FD821CB7844100D83A19 /* GoodsShowCell.h */,
 				CD22FD831CB7844100D83A19 /* GoodsShowCell.m */,
 				CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */,
+				CDEAB9AF1CBDFBB000AFA1FE /* O2OShowCell.h */,
+				CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */,
+				CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */,
 			);
 			name = view;
 			path = MagicWindowShow/view;
@@ -885,6 +898,7 @@
 				378DE2B21C8D1F0C0053F169 /* ImageTableCell.xib in Resources */,
 				378DE2A71C8D1F0C0053F169 /* BtnViewCell.xib in Resources */,
 				378DE2AA1C8D1F0C0053F169 /* DianshangHelpView.xib in Resources */,
+				CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */,
 				378DE2B01C8D1F0C0053F169 /* HomeHelpView.xib in Resources */,
 				378DE2AC1C8D1F0C0053F169 /* FullIamge2Cell.xib in Resources */,
 			);
@@ -1058,12 +1072,14 @@
 				378DE29B1C8D1F0C0053F169 /* ShoppinglistViewController.m in Sources */,
 				378DE2941C8D1F0C0053F169 /* MeViewController.m in Sources */,
 				378DE2921C8D1F0C0053F169 /* LeftViewController.m in Sources */,
+				CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */,
 				378DE2AB1C8D1F0C0053F169 /* FullIamge2Cell.m in Sources */,
 				378DE2961C8D1F0C0053F169 /* O2ODetailViewController.m in Sources */,
 				378DE2901C8D1F0C0053F169 /* HelpViewController.m in Sources */,
 				CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */,
 				378DE2A21C8D1F0C0053F169 /* BannerScrollCell.m in Sources */,
 				378DE2AD1C8D1F0C0053F169 /* FullImageCell.m in Sources */,
+				CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */,
 				378DE2A81C8D1F0C0053F169 /* ChineseToPinyin.m in Sources */,
 				378DE2B51C8D1F0C0053F169 /* O2OTableCell.m in Sources */,
 				378DE29C1C8D1F0C0053F169 /* TourismDetailViewController.m in Sources */,

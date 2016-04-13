@@ -257,7 +257,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"];
+    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
