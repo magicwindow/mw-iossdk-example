@@ -102,6 +102,9 @@
 		CD22FD7C1CB63D4600D83A19 /* SanyaHotelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD7A1CB63D4600D83A19 /* SanyaHotelCell.xib */; };
 		CD22FD801CB64BFF00D83A19 /* SanyaPlaneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD7E1CB64BFF00D83A19 /* SanyaPlaneCell.m */; };
 		CD22FD811CB64BFF00D83A19 /* SanyaPlaneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD7F1CB64BFF00D83A19 /* SanyaPlaneCell.xib */; };
+		CD22FD851CB7844200D83A19 /* GoodsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD831CB7844100D83A19 /* GoodsShowCell.m */; };
+		CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */; };
+		CD22FD891CB78C2200D83A19 /* DiaperDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */; };
 		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
@@ -287,6 +290,11 @@
 		CD22FD7D1CB64BFF00D83A19 /* SanyaPlaneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaPlaneCell.h; sourceTree = "<group>"; };
 		CD22FD7E1CB64BFF00D83A19 /* SanyaPlaneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaPlaneCell.m; sourceTree = "<group>"; };
 		CD22FD7F1CB64BFF00D83A19 /* SanyaPlaneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaPlaneCell.xib; sourceTree = "<group>"; };
+		CD22FD821CB7844100D83A19 /* GoodsShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsShowCell.h; sourceTree = "<group>"; };
+		CD22FD831CB7844100D83A19 /* GoodsShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsShowCell.m; sourceTree = "<group>"; };
+		CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsShowCell.xib; sourceTree = "<group>"; };
+		CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaperDetailController.h; sourceTree = "<group>"; };
+		CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaperDetailController.m; sourceTree = "<group>"; };
 		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -436,6 +444,8 @@
 				378DE2621C8D1F0C0053F169 /* WebViewController.m */,
 				CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */,
 				CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */,
+				CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */,
+				CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */,
 			);
 			name = controller;
 			path = MagicWindowShow/controller;
@@ -504,6 +514,9 @@
 				CD22FD7D1CB64BFF00D83A19 /* SanyaPlaneCell.h */,
 				CD22FD7E1CB64BFF00D83A19 /* SanyaPlaneCell.m */,
 				CD22FD7F1CB64BFF00D83A19 /* SanyaPlaneCell.xib */,
+				CD22FD821CB7844100D83A19 /* GoodsShowCell.h */,
+				CD22FD831CB7844100D83A19 /* GoodsShowCell.m */,
+				CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */,
 			);
 			name = view;
 			path = MagicWindowShow/view;
@@ -857,6 +870,7 @@
 				378DE23B1C880DEA0053F169 /* travelList.json in Resources */,
 				37B4041B1BA2C63000393EA0 /* LaunchScreen.xib in Resources */,
 				378DE2B61C8D1F0C0053F169 /* O2OTableCell.xib in Resources */,
+				CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */,
 				CD22FD811CB64BFF00D83A19 /* SanyaPlaneCell.xib in Resources */,
 				378DE2371C880DEA0053F169 /* businessList.json in Resources */,
 				378DE2B41C8D1F0C0053F169 /* NewsCell.xib in Resources */,
@@ -1037,6 +1051,7 @@
 				378DE2931C8D1F0C0053F169 /* LoginViewController.m in Sources */,
 				CD22FD7B1CB63D4600D83A19 /* SanyaHotelCell.m in Sources */,
 				378DE2B11C8D1F0C0053F169 /* ImageTableCell.m in Sources */,
+				CD22FD891CB78C2200D83A19 /* DiaperDetailController.m in Sources */,
 				378DE2991C8D1F0C0053F169 /* PaymentViewController.m in Sources */,
 				378DE2B81C8D1F0C0053F169 /* TwoImageCell.m in Sources */,
 				378DE2A61C8D1F0C0053F169 /* BtnViewCell.m in Sources */,
@@ -1060,6 +1075,7 @@
 				378DE2981C8D1F0C0053F169 /* OrderDetailsViewController.m in Sources */,
 				378DE2951C8D1F0C0053F169 /* NewsViewController.m in Sources */,
 				CD22FD761CB636C900D83A19 /* SanyaFoodCell.m in Sources */,
+				CD22FD851CB7844200D83A19 /* GoodsShowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

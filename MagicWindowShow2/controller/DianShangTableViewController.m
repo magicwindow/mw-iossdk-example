@@ -15,6 +15,7 @@
 #import "BtnViewCell.h"
 #import "CommonService.h"
 #import <MagicWindowSDK/MWApi.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define BtnViewCellHeight                   114
 #define SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
@@ -109,6 +110,18 @@
             btnView.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon0%li",(long)idx+1]];
             btnView.titleLabel.text = titles[idx];
             
+            if(idx == 0)
+            {
+                [MWApi configAdViewWithKey:@"Q3FQ1WV2" withTarget:btnView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+                    
+                    [btnView.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                    btnView.titleLabel.text = campaignConfig.title;
+                    
+                } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+                    btnView.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon0%li",(long)idx+1]];
+                    btnView.titleLabel.text = titles[idx];
+                }];
+            }
         }];
         
         return cell;
