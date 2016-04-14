@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommunityShowCell" rowHeight="601" id="KGk-i7-Jjw" customClass="CommunityShowCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="601"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小而美的综合体，iPhone SE 深度体验" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-QI-jEv">
+                        <rect key="frame" x="45" y="52" width="310" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="mQU-BO-8m5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机 • TailYou • 2016-04-07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-Us-NGt">
+                        <rect key="frame" x="121" y="115" width="159" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sat-i6-Acx">
+                        <rect key="frame" x="12" y="138" width="376" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="0a7-zn-g0I"/>
+                        </constraints>
+                        <string key="text">几天前，Apple 过了它的第 40 个生日。想想 Apple 给我带来了多少好玩有趣的产品和服务，无趣地想象了一番没有 Apple 的世界，或许会有不同，我们会失去 iPod、MacBook、iTunes 甚至是上个月发布的「史上最平价的 iPhone」- iPhone SE。而到今天，我把玩 iPhone SE 已经有几天时间了，也该是时候跟大家分享这几天我的使用感受了。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="community_phone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHb-XB-wsg">
+                        <rect key="frame" x="12" y="306" width="376" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cHb-XB-wsg" secondAttribute="height" multiplier="188:125" id="iAY-Bz-355"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGF-c9-1A3">
+                        <rect key="frame" x="0.0" y="590" width="400" height="10"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.92549019607843142" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="xeP-6O-NyV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gJ7-QI-jEv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="52" id="9m2-R7-Rqv"/>
+                    <constraint firstAttribute="trailing" secondItem="Sat-i6-Acx" secondAttribute="trailing" constant="12" id="HJg-ap-BpO"/>
+                    <constraint firstAttribute="bottom" secondItem="bGF-c9-1A3" secondAttribute="bottom" id="Ivq-bn-lWM"/>
+                    <constraint firstAttribute="trailing" secondItem="cHb-XB-wsg" secondAttribute="trailing" constant="12" id="Jlf-ZK-AyM"/>
+                    <constraint firstItem="Sat-i6-Acx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="PYW-I5-xkG"/>
+                    <constraint firstItem="cHb-XB-wsg" firstAttribute="top" secondItem="Sat-i6-Acx" secondAttribute="bottom" constant="8" id="QJ2-4Q-roD"/>
+                    <constraint firstItem="bGF-c9-1A3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RYO-CS-5DF"/>
+                    <constraint firstItem="Sat-i6-Acx" firstAttribute="top" secondItem="6kk-Us-NGt" secondAttribute="bottom" constant="8" id="TR9-bd-nqC"/>
+                    <constraint firstItem="6kk-Us-NGt" firstAttribute="top" secondItem="gJ7-QI-jEv" secondAttribute="bottom" constant="8" id="cWI-4U-WnH"/>
+                    <constraint firstItem="gJ7-QI-jEv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="lKz-HR-jRl"/>
+                    <constraint firstItem="cHb-XB-wsg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="lMU-Yv-Hc9"/>
+                    <constraint firstItem="6kk-Us-NGt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qnr-eo-cg5"/>
+                    <constraint firstAttribute="trailing" secondItem="bGF-c9-1A3" secondAttribute="trailing" id="xqa-ix-BMM"/>
+                    <constraint firstAttribute="trailing" secondItem="gJ7-QI-jEv" secondAttribute="trailing" constant="45" id="yjK-kt-yi0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="articleBodyLabel" destination="Sat-i6-Acx" id="p8U-w0-ih9"/>
+            </connections>
+            <point key="canvasLocation" x="532" y="421.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="community_phone.jpg" width="1080" height="1039"/>
+    </resources>
+</document>
