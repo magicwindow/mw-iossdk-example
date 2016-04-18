@@ -1,0 +1,246 @@
+
+/* Class = "UINavigationItem"; title = "电商"; ObjectID = "0VK-rr-PxD"; */
+"0VK-rr-PxD.title" = "电商";
+
+/* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "1cM-Uz-kA0"; */
+"1cM-Uz-kA0.text" = "¥ 14.90";
+
+/* Class = "UILabel"; text = "本商品由入驻商家发货"; ObjectID = "1or-2w-q0k"; */
+"1or-2w-q0k.text" = "本商品由入驻商家发货";
+
+/* Class = "UINavigationItem"; title = "订单支付成功"; ObjectID = "3kr-lG-CPR"; */
+"3kr-lG-CPR.title" = "订单支付成功";
+
+/* Class = "UILabel"; text = "4859871498131"; ObjectID = "47Q-cL-cyT"; */
+"47Q-cL-cyT.text" = "4859871498131";
+
+/* Class = "UILabel"; text = "提    示:"; ObjectID = "4d2-90-jrV"; */
+"4d2-90-jrV.text" = "提    示:";
+
+/* Class = "UILabel"; text = "898"; ObjectID = "6l9-n2-fCl"; */
+"6l9-n2-fCl.text" = "898";
+
+/* Class = "UILabel"; text = "立即购买"; ObjectID = "7Xo-l1-szK"; */
+"7Xo-l1-szK.text" = "立即购买";
+
+/* Class = "UILabel"; text = "139****2340"; ObjectID = "83T-tb-Ucg"; */
+"83T-tb-Ucg.text" = "139****2340";
+
+/* Class = "UINavigationItem"; title = "商品详情"; ObjectID = "8Ek-Eq-Ksh"; */
+"8Ek-Eq-Ksh.title" = "商品详情";
+
+/* Class = "UIBarButtonItem"; title = "城市"; ObjectID = "96M-bX-SG7"; */
+"96M-bX-SG7.title" = "城市";
+
+/* Class = "UILabel"; text = "微信支付"; ObjectID = "9dC-Ht-Orq"; */
+"9dC-Ht-Orq.text" = "微信支付";
+
+/* Class = "UILabel"; text = "重构交互 连接商业"; ObjectID = "9lv-kR-FzC"; */
+"9lv-kR-FzC.text" = "重构交互 连接商业";
+
+/* Class = "UINavigationItem"; title = "个人中心"; ObjectID = "AoY-Ch-kv8"; */
+"AoY-Ch-kv8.title" = "个人中心";
+
+/* Class = "UIViewController"; title = "订单支付成功"; ObjectID = "BR0-RR-0yV"; */
+"BR0-RR-0yV.title" = "订单支付成功";
+
+/* Class = "UINavigationItem"; title = "购物车"; ObjectID = "CZ9-Kt-3k9"; */
+"CZ9-Kt-3k9.title" = "购物车";
+
+/* Class = "UILabel"; text = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量"; ObjectID = "DTQ-te-MQJ"; */
+"DTQ-te-MQJ.text" = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量";
+
+/* Class = "UILabel"; text = "SANYA"; ObjectID = "EZD-Ha-mtL"; */
+"EZD-Ha-mtL.text" = "SANYA";
+
+/* Class = "UILabel"; text = "萌宝用品 仿生设计 食品级硅胶 模拟母乳真实感"; ObjectID = "G4c-MS-qdd"; */
+"G4c-MS-qdd.text" = "萌宝用品 仿生设计 食品级硅胶 模拟母乳真实感";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gvc-vb-FV3"; */
+"Gvc-vb-FV3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "至  上海  免运费"; ObjectID = "IND-3q-oAL"; */
+"IND-3q-oAL.text" = "至  上海  免运费";
+
+/* Class = "UILabel"; text = "关    税:"; ObjectID = "IPL-AW-9OZ"; */
+"IPL-AW-9OZ.text" = "关    税:";
+
+/* Class = "UILabel"; text = "合计：¥ 14.90"; ObjectID = "J9w-y2-kG3"; */
+"J9w-y2-kG3.text" = "合计：¥ 14.90";
+
+/* Class = "UILabel"; text = "婴儿奶嘴 母乳实感... x1 颜色：自控流量 奶嘴"; ObjectID = "LHl-W3-nG2"; */
+"LHl-W3-nG2.text" = "婴儿奶嘴 母乳实感... x1 颜色：自控流量 奶嘴";
+
+/* Class = "UINavigationItem"; title = "O2O"; ObjectID = "Lc2-D8-OnP"; */
+"Lc2-D8-OnP.title" = "O2O";
+
+/* Class = "UINavigationItem"; title = "旅游"; ObjectID = "LuZ-K9-XM2"; */
+"LuZ-K9-XM2.title" = "旅游";
+
+/* Class = "UILabel"; text = "配送费:"; ObjectID = "MS6-Qh-4NL"; */
+"MS6-Qh-4NL.text" = "配送费:";
+
+/* Class = "UILabel"; text = "付款"; ObjectID = "MiO-xQ-7l8"; */
+"MiO-xQ-7l8.text" = "付款";
+
+/* Class = "UILabel"; text = "支付方式"; ObjectID = "NyH-cB-kj4"; */
+"NyH-cB-kj4.text" = "支付方式";
+
+/* Class = "UILabel"; text = "订单金额"; ObjectID = "OFa-Nq-bdj"; */
+"OFa-Nq-bdj.text" = "订单金额";
+
+/* Class = "UILabel"; text = "颜色：白色"; ObjectID = "PZB-A1-b12"; */
+"PZB-A1-b12.text" = "颜色：白色";
+
+/* Class = "UIViewController"; title = "购物车"; ObjectID = "RCQ-0q-tbi"; */
+"RCQ-0q-tbi.title" = "购物车";
+
+/* Class = "UIViewController"; title = "填写订单"; ObjectID = "T0G-1o-Zyg"; */
+"T0G-1o-Zyg.title" = "填写订单";
+
+/* Class = "UILabel"; text = "三亚"; ObjectID = "UZd-8U-dZs"; */
+"UZd-8U-dZs.text" = "三亚";
+
+/* Class = "UIButton"; normalTitle = "回到首页"; ObjectID = "WpD-qp-tmP"; */
+"WpD-qp-tmP.normalTitle" = "回到首页";
+
+/* Class = "UINavigationItem"; title = "填写订单"; ObjectID = "X73-28-CXk"; */
+"X73-28-CXk.title" = "填写订单";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XjP-sA-bD3"; */
+"XjP-sA-bD3.text" = "Label";
+
+/* Class = "UILabel"; text = "2015.9.13   14:25"; ObjectID = "Y7F-OG-jox"; */
+"Y7F-OG-jox.text" = "2015.9.13   14:25";
+
+/* Class = "UILabel"; text = "本商品不支持使用优惠券"; ObjectID = "a1R-jD-8Qd"; */
+"a1R-jD-8Qd.text" = "本商品不支持使用优惠券";
+
+/* Class = "UILabel"; text = "合计：¥ 14.90"; ObjectID = "asx-wq-Pw6"; */
+"asx-wq-Pw6.text" = "合计：¥ 14.90";
+
+/* Class = "UILabel"; text = "版本号 1.2"; ObjectID = "bOS-sm-1ve"; */
+"bOS-sm-1ve.text" = "版本号 1.2";
+
+/* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "bkh-Nr-aSL"; */
+"bkh-Nr-aSL.text" = "¥ 14.90";
+
+/* Class = "UINavigationItem"; title = "图库"; ObjectID = "c9G-Nq-5iA"; */
+"c9G-Nq-5iA.title" = "图库";
+
+/* Class = "UILabel"; text = "国内行货， 免征关税"; ObjectID = "cf6-H7-Fqc"; */
+"cf6-H7-Fqc.text" = "国内行货， 免征关税";
+
+/* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "djN-Fw-M04"; */
+"djN-Fw-M04.text" = "¥ 14.90";
+
+/* Class = "UILabel"; text = "赵言"; ObjectID = "eTs-F5-uh3"; */
+"eTs-F5-uh3.text" = "赵言";
+
+/* Class = "UINavigationItem"; title = "收银台"; ObjectID = "ekt-GN-JRd"; */
+"ekt-GN-JRd.title" = "收银台";
+
+/* Class = "UITextField"; placeholder = "密码（可任意填写）"; ObjectID = "fKl-tN-l6o"; */
+"fKl-tN-l6o.placeholder" = "密码（可任意填写）";
+
+/* Class = "UILabel"; text = "赵言"; ObjectID = "fMJ-Ht-4yN"; */
+"fMJ-Ht-4yN.text" = "赵言";
+
+/* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "gLx-iD-H3P"; */
+"gLx-iD-H3P.text" = "¥ 14.90";
+
+/* Class = "UILabel"; text = "支付宝快捷支付服务"; ObjectID = "gd5-1R-kpB"; */
+"gd5-1R-kpB.text" = "支付宝快捷支付服务";
+
+/* Class = "UILabel"; text = "14.90元"; ObjectID = "gnf-UZ-eMt"; */
+"gnf-UZ-eMt.text" = "14.90元";
+
+/* Class = "UILabel"; text = "上海闸北区江场三路"; ObjectID = "hCh-Rr-VFN"; */
+"hCh-Rr-VFN.text" = "上海闸北区江场三路";
+
+/* Class = "UILabel"; text = "139****2340"; ObjectID = "hzZ-I2-Bo4"; */
+"hzZ-I2-Bo4.text" = "139****2340";
+
+/* Class = "UILabel"; text = "交易方式："; ObjectID = "i9Z-uM-dSV"; */
+"i9Z-uM-dSV.text" = "交易方式：";
+
+/* Class = "UIViewController"; title = "商品详情"; ObjectID = "jon-6N-Gyw"; */
+"jon-6N-Gyw.title" = "商品详情";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "kKq-Hu-3hd"; */
+"kKq-Hu-3hd.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "商品金额"; ObjectID = "kM3-Wf-WmW"; */
+"kM3-Wf-WmW.text" = "商品金额";
+
+/* Class = "UILabel"; text = "去付款"; ObjectID = "kb4-60-euF"; */
+"kb4-60-euF.text" = "去付款";
+
+/* Class = "UIViewController"; title = "收银台"; ObjectID = "l3q-62-pXz"; */
+"l3q-62-pXz.title" = "收银台";
+
+/* Class = "UISearchBar"; placeholder = "输入城市名或拼音"; ObjectID = "nQY-Q6-TLm"; */
+"nQY-Q6-TLm.placeholder" = "输入城市名或拼音";
+
+/* Class = "UILabel"; text = "上海闸北区江场三路"; ObjectID = "nde-Jr-Yqb"; */
+"nde-Jr-Yqb.text" = "上海闸北区江场三路";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "neY-Yb-cdQ"; */
+"neY-Yb-cdQ.text" = "Profile";
+
+/* Class = "UINavigationItem"; title = "设置"; ObjectID = "o4e-mh-lXT"; */
+"o4e-mh-lXT.title" = "设置";
+
+/* Class = "UILabel"; text = "订单编号："; ObjectID = "q8H-xR-VM9"; */
+"q8H-xR-VM9.text" = "订单编号：";
+
+/* Class = "UILabel"; text = "订单支付成功"; ObjectID = "rf5-rg-lye"; */
+"rf5-rg-lye.text" = "订单支付成功";
+
+/* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "rjk-ZC-7VA"; */
+"rjk-ZC-7VA.text" = "¥ 14.90";
+
+/* Class = "UILabel"; text = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量"; ObjectID = "sV6-fw-iYu"; */
+"sV6-fw-iYu.text" = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量";
+
+/* Class = "UILabel"; text = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量 B80150"; ObjectID = "sfk-eV-vdi"; */
+"sfk-eV-vdi.text" = "婴儿奶嘴 母乳实感宽口径奶嘴－自控流量 B80150";
+
+/* Class = "UILabel"; text = "微信安全支付"; ObjectID = "sox-xh-eAA"; */
+"sox-xh-eAA.text" = "微信安全支付";
+
+/* Class = "UISegmentedControl"; tWJ-bN-y2P.segmentTitles[0] = "互联网"; ObjectID = "tWJ-bN-y2P"; */
+"tWJ-bN-y2P.segmentTitles[0]" = "互联网";
+
+/* Class = "UISegmentedControl"; tWJ-bN-y2P.segmentTitles[1] = "体育"; ObjectID = "tWJ-bN-y2P"; */
+"tWJ-bN-y2P.segmentTitles[1]" = "体育";
+
+/* Class = "UISegmentedControl"; tWJ-bN-y2P.segmentTitles[2] = "娱乐"; ObjectID = "tWJ-bN-y2P"; */
+"tWJ-bN-y2P.segmentTitles[2]" = "娱乐";
+
+/* Class = "UILabel"; text = "下单时间："; ObjectID = "trs-VZ-wdw"; */
+"trs-VZ-wdw.text" = "下单时间：";
+
+/* Class = "UILabel"; text = "三亚特色美食"; ObjectID = "w3Q-iO-9pk"; */
+"w3Q-iO-9pk.text" = "三亚特色美食";
+
+/* Class = "UILabel"; text = "微信支付"; ObjectID = "wfc-0c-Gzg"; */
+"wfc-0c-Gzg.text" = "微信支付";
+
+/* Class = "UILabel"; text = "三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。"; ObjectID = "yVE-Sg-Snp"; */
+"yVE-Sg-Snp.text" = "三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。";
+
+/* Class = "UITextField"; placeholder = "用户名（可任意填写）"; ObjectID = "ydz-Tl-43B"; */
+"ydz-Tl-43B.placeholder" = "用户名（可任意填写）";
+
+/* Class = "UINavigationItem"; title = "资讯"; ObjectID = "yfM-SN-MZ9"; */
+"yfM-SN-MZ9.title" = "资讯";
+
+/* Class = "UILabel"; text = "确认"; ObjectID = "ynz-Re-0EC"; */
+"ynz-Re-0EC.text" = "确认";
+
+/* Class = "UILabel"; text = "魔sir"; ObjectID = "zGJ-VZ-hOV"; */
+"zGJ-VZ-hOV.text" = "魔sir";
+
+/* Class = "UILabel"; text = "支付宝支付"; ObjectID = "zI3-xH-zso"; */
+"zI3-xH-zso.text" = "支付宝支付";

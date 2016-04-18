@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "用户名（可任意填写）"; ObjectID = "0Y0-NN-p78"; */
+"0Y0-NN-p78.placeholder" = "用户名（可任意填写）";
+
+/* Class = "UILabel"; text = "¥289.00"; ObjectID = "1wO-gQ-eF1"; */
+"1wO-gQ-eF1.text" = "¥289.00";
+
+/* Class = "UILabel"; text = "¥659.00"; ObjectID = "3fc-z8-Rr1"; */
+"3fc-z8-Rr1.text" = "¥659.00";
+
+/* Class = "UITextField"; placeholder = "密码（可任意填写）"; ObjectID = "4LN-Rs-9e7"; */
+"4LN-Rs-9e7.placeholder" = "密码（可任意填写）";
+
+/* Class = "UITableViewController"; title = "电商"; ObjectID = "7Px-uL-3C6"; */
+"7Px-uL-3C6.title" = "电商";
+
+/* Class = "UILabel"; text = "53度贵州茅台新飞天500ml"; ObjectID = "9ck-ld-5wT"; */
+"9ck-ld-5wT.text" = "53度贵州茅台新飞天500ml";
+
+/* Class = "UILabel"; text = "52度洋河蓝色经典天之蓝500ml"; ObjectID = "Cck-M9-in1"; */
+"Cck-M9-in1.text" = "52度洋河蓝色经典天之蓝500ml";
+
+/* Class = "UILabel"; text = "¥868.00"; ObjectID = "FXE-0z-8OX"; */
+"FXE-0z-8OX.text" = "¥868.00";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "GNR-hE-LtA"; */
+"GNR-hE-LtA.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "52度五粮液500ml"; ObjectID = "Llc-FB-k9a"; */
+"Llc-FB-k9a.text" = "52度五粮液500ml";
+
+/* Class = "UILabel"; text = "¥125.00"; ObjectID = "Uqf-jx-Yff"; */
+"Uqf-jx-Yff.text" = "¥125.00";
+
+/* Class = "UILabel"; text = "下面显示的酒名为动态参数"; ObjectID = "jao-P3-12Z"; */
+"jao-P3-12Z.text" = "下面显示的酒名为动态参数";
+
+/* Class = "UINavigationItem"; title = "电商"; ObjectID = "ltQ-Bc-Jhg"; */
+"ltQ-Bc-Jhg.title" = "电商";
+
+/* Class = "UILabel"; text = "52度洋河蓝色经典海之蓝500ml"; ObjectID = "mAE-L9-6vR"; */
+"mAE-L9-6vR.text" = "52度洋河蓝色经典海之蓝500ml";
+
+/* Class = "UIBarButtonItem"; title = "注销"; ObjectID = "wr9-Sm-Q1G"; */
+"wr9-Sm-Q1G.title" = "注销";

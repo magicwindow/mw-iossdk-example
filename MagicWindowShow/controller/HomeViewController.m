@@ -16,7 +16,7 @@
 #import "GlobalDefine.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "WebViewController.h"
-#import "TourismDetailViewController.h"
+#import "SanyaViewController.h"
 #import "CommonService.h"
 #import "HomeHelpView.h"
 #import "CityPickerViewController.h"
@@ -291,7 +291,7 @@
     }
     if (indexPath.row == 1)
     {
-        TourismDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"sanyaVC"];
+        SanyaViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"sanyaVC"];
         [self.navigationController pushViewController:detailVC animated:YES];
     }
     else

@@ -41,7 +41,7 @@
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -85,6 +85,11 @@
                 cell.title.text = @"资讯";
                 imgName = @"news";
                 break;
+            }
+            case 6:
+            {
+                cell.title.text = @"联系我们";
+                imgName = @"contact";
             }
                 
             default:
@@ -141,6 +146,11 @@
         case 5:
         {
             [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"newsNav"]];
+            break;
+        }
+        case 6:
+        {
+            [self.sidePanelController setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"ContactNav"]];
             break;
         }
             
