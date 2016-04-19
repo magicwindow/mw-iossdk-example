@@ -10,4 +10,7 @@
 
 @interface HelpViewController : UIViewController
 
+@property (nonatomic, strong) NSString *mLinkKey;
+@property (nonatomic, strong) NSDictionary *params;
+
 @end

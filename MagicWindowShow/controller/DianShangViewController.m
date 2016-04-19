@@ -39,11 +39,15 @@
     // Do any additional setup after loading the view.
     
     CommonService *service = [CommonService new];
-    if ([service isDianshangFirstLauch])
+    if (self.navigationController.view.tag != 1007 && [service isDianshangFirstLauch])
     {
         DianshangHelpView *helpView = (DianshangHelpView *)[[NSBundle mainBundle] loadNibNamed:@"DianshangHelpView" owner:self options:nil][0];
         helpView.frame = [[UIScreen mainScreen] bounds];
         [self.navigationController.view addSubview:helpView];
+    }
+    else if (self.navigationController.view.tag == 1007)
+    {
+        self.navigationController.view.tag = 0;
     }
     
     [[ResourceService sharedInstance] getDianShangResource:^(DianShangDomain *domain) {
