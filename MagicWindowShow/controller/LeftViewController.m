@@ -58,13 +58,13 @@
         switch (indexPath.row) {
             case 1:
             {
-                cell.title.text = @"旅游（mLink演示）";
+                cell.title.text = @"旅游";
                 imgName = @"lvxing";
                 break;
             }
             case 2:
             {
-                cell.title.text = @"电商（活动演示）";
+                cell.title.text = @"电商";
                 imgName = @"dianshang";
                 break;
             }
@@ -76,7 +76,7 @@
             }
             case 4:
             {
-                cell.title.text = @"图库";
+                cell.title.text = @"电影";
                 imgName = @"tuku";
                 break;
             }
