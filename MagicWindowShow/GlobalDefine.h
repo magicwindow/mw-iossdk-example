@@ -102,6 +102,9 @@
 #pragma mark mLink key
 #define mLink_campaignKey       @"campaignKey"
 #define mLink_dianshangDetail   @"dianshangDetail"
+#define mLink_O2Odetail         @"O2Odetail"
+#define mLink_NewsDetail        @"NewsDetail"
+#define mLink_VideoDetail       @"VideoDetail"
 
 
 #endif /* GlobalDefine_h */

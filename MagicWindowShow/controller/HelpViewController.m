@@ -85,6 +85,33 @@
             [view removeFromSuperview];
         }];
     }
+    else if ([self.mLinkKey isEqualToString:mLink_O2Odetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"] animated:YES];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_NewsDetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"newsNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"CommunityViewController"] animated:YES];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_VideoDetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    }
 }
 
 #pragma mark UIScrollViewDelegate
