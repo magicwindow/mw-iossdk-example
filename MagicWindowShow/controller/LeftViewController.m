@@ -77,7 +77,7 @@
             case 4:
             {
                 cell.title.text = @"电影";
-                imgName = @"tuku";
+                imgName = @"movie";
                 break;
             }
             case 5:
