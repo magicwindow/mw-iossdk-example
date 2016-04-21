@@ -236,9 +236,9 @@
     }
     
     [rootVC showLeftPanelAnimated:YES];
-    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"tukuNav"];
     [rootVC setCenterPanel: nav];
-    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"MovieDetailVC"] animated:YES];
 }
 
 - (void)removeView

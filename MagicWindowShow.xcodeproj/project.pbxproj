@@ -105,6 +105,7 @@
 		CD22FD851CB7844200D83A19 /* GoodsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD831CB7844100D83A19 /* GoodsShowCell.m */; };
 		CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */; };
 		CD22FD891CB78C2200D83A19 /* DiaperDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */; };
+		CDE2EA2C1CC8702A008DEECB /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */; };
 		CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */; };
 		CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */; };
 		CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */; };
@@ -306,6 +307,8 @@
 		CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsShowCell.xib; sourceTree = "<group>"; };
 		CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaperDetailController.h; sourceTree = "<group>"; };
 		CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaperDetailController.m; sourceTree = "<group>"; };
+		CDE2EA2A1CC8702A008DEECB /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		CDEAB9AF1CBDFBB000AFA1FE /* O2OShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2OShowCell.h; sourceTree = "<group>"; };
 		CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2OShowCell.m; sourceTree = "<group>"; };
 		CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2OShowCell.xib; sourceTree = "<group>"; };
@@ -479,6 +482,8 @@
 				CDEAB9B51CBE136600AFA1FE /* O2ODetailController.m */,
 				CDEAB9E11CBF739100AFA1FE /* CommunityViewController.h */,
 				CDEAB9E21CBF739100AFA1FE /* CommunityViewController.m */,
+				CDE2EA2A1CC8702A008DEECB /* MovieViewController.h */,
+				CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */,
 			);
 			name = controller;
 			path = MagicWindowShow/controller;
@@ -1097,6 +1102,7 @@
 				378DE2B31C8D1F0C0053F169 /* NewsCell.m in Sources */,
 				378DE28E1C8D1F0C0053F169 /* DianShangDetailViewController.m in Sources */,
 				378DE29D1C8D1F0C0053F169 /* TukuViewController.m in Sources */,
+				CDE2EA2C1CC8702A008DEECB /* MovieViewController.m in Sources */,
 				378DE2A91C8D1F0C0053F169 /* DianshangHelpView.m in Sources */,
 				378DE2911C8D1F0C0053F169 /* HomeViewController.m in Sources */,
 				CDEAB9E71CBF76D300AFA1FE /* CommunityShowCell.m in Sources */,

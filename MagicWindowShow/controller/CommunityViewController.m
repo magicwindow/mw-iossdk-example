@@ -101,10 +101,10 @@
 - (IBAction)shareButtonClicked:(id)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"分享该页面到：" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *wechatFriends = [UIAlertAction actionWithTitle:@"微信好友" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.socialShareHelper sendWeChatWithScene:ShareTypeWXSession Title:@"HUGGIES好奇银装纸尿裤促销中" Content:@"美国品牌，妈妈们的第一选择！" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"share-wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
+        [self.socialShareHelper sendWeChatWithScene:ShareTypeWXSession Title:@"【魔窗Demo】在微信中一键唤起App中对应帖子页" Content:@"若已安装过Demo，点击评论下方“查看所有评论”，一键打开App中的帖子查看详情" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"community_share_wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
     }];
     UIAlertAction *wechatMoments = [UIAlertAction actionWithTitle:@"朋友圈" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self.socialShareHelper sendWeChatWithScene:ShareTypeWXTimeline Title:@"HUGGIES好奇银装纸尿裤促销中" Content:@"美国品牌，妈妈们的第一选择！" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"share-wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
+        [self.socialShareHelper sendWeChatWithScene:ShareTypeWXTimeline Title:@"【魔窗Demo】在微信中一键唤起App中对应帖子页" Content:@"若已安装过Demo，点击评论下方“查看所有评论”，一键打开App中的帖子查看详情" ThumbImageData:UIImagePNGRepresentation([UIImage imageNamed:@"community_share_wechat"]) Url:@"http://documentation.magicwindow.cn/demo/49/index.html"];
     }];
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         

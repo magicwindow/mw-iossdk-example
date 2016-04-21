@@ -12,6 +12,7 @@
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
 #import "ResourceService.h"
+#import "MovieViewController.h"
 
 @interface TukuViewController ()
 {
@@ -142,7 +143,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [self performSegueWithIdentifier:@"showMovieSegue" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {
