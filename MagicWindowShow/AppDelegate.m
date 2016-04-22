@@ -207,7 +207,7 @@
         if ([viewController isKindOfClass:[HelpViewController class]])
         {
             HelpViewController *helpVC = (HelpViewController *)viewController;
-            helpVC.mLinkKey = mLink_dianshangDetail;
+            helpVC.mLinkKey = mLink_NewsDetail;
         }
         return;
     }
@@ -230,7 +230,7 @@
         if ([viewController isKindOfClass:[HelpViewController class]])
         {
             HelpViewController *helpVC = (HelpViewController *)viewController;
-            helpVC.mLinkKey = mLink_dianshangDetail;
+            helpVC.mLinkKey = mLink_VideoDetail;
         }
         return;
     }
