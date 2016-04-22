@@ -107,10 +107,10 @@
     {
         self.mLinkKey = nil;
         
-        UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+        UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"tukuNav"];
         nav.view.tag = 1007;
         [rootVC setCenterPanel: nav];
-        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"MovieDetailVC"] animated:YES];
     }
 }
 
