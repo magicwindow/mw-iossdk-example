@@ -15,12 +15,20 @@
 #import "SanyaHotelCell.h"
 #import "SanyaPlaneCell.h"
 #import <SDWebImage/UIButton+WebCache.h>
+#import "ResourceService.h"
 
 @interface SanyaBannerCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *banner;
+
+@end
+
+@implementation SanyaBannerCell
 
 
 @end
+
 @interface SanyaViewController ()
+@property (strong, nonatomic) TravelDetailDomain *travelDomain;
 
 @end
 
@@ -28,6 +36,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[ResourceService sharedInstance] getTravelDetailResource:^(TravelDetailDomain *domain) {
+        
+        _travelDomain = domain;
+        [self.tableView reloadData];
+    }];
     
     self.tableView.allowsSelection = NO;
 }
@@ -52,6 +66,7 @@
         NSString *identifier = @"SanyaMapCell";
         [tableView registerNib:[UINib nibWithNibName:@"SanyaMapCell" bundle:nil] forCellReuseIdentifier:@"SanyaMapCell"];
         SanyaMapCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [cell.mapImgView sd_setImageWithURL:[NSURL URLWithString:_travelDomain.mapImgUrl] placeholderImage:nil];
         if ([MWApi isActiveOfmwKey:Home_detail_uber2]) {
             [MWApi configAdViewWithKey:Home_detail_uber2 withTargetView:cell.texiIcon withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 [cell.texiIcon sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"打车"]];
@@ -78,6 +93,10 @@
             return nil;
         }];
         
+        [cell.food1ImageView sd_setImageWithURL:[NSURL URLWithString:_travelDomain.foodList[0]] placeholderImage:nil];
+        [cell.food2ImageView sd_setImageWithURL:[NSURL URLWithString:_travelDomain.foodList[1]] placeholderImage:nil];
+        [cell.food3ImageView sd_setImageWithURL:[NSURL URLWithString:_travelDomain.foodList[2]] placeholderImage:nil];
+        
         return cell;
     } else if (indexPath.row == 3) {
         NSString *identifier = @"SanyaHotelCell";
@@ -91,6 +110,8 @@
         } tap:nil mLinkHandler:^NSDictionary * _Nullable(NSString * _Nonnull key, UIView * _Nonnull view) {
             return nil;
         }];
+        
+        [cell.mapImgview sd_setImageWithURL:[NSURL URLWithString:_travelDomain.stayImgUrl] placeholderImage:nil];
         
         return cell;
     } else if (indexPath.row == 4) {
@@ -118,10 +139,15 @@
             return nil;
         }];
         
+        [cell.img1 sd_setImageWithURL:[NSURL URLWithString:_travelDomain.travelList[0]] placeholderImage:nil];
+        [cell.img2 sd_setImageWithURL:[NSURL URLWithString:_travelDomain.travelList[1]] placeholderImage:nil];
+        
         return cell;
     }else {
-        NSString *identifier = @"SanyaBannerCell";
+        
+        NSString *identifier = @"sanyaBannerCell";
         SanyaBannerCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [cell.banner sd_setImageWithURL:[NSURL URLWithString:_travelDomain.bannerImgUrl] placeholderImage:nil];
         return cell;
     }
 }

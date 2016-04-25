@@ -26,7 +26,7 @@
     IBOutlet UITableView *_tableView;
 }
 
-@property (nonatomic, strong) O2ODomain *o2oResource;
+@property (nonatomic, strong) O2OListDomain *o2oResource;
 
 @end
 
@@ -36,7 +36,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[ResourceService sharedInstance] getO2OResource:^(O2ODomain *domain) {
+    [[ResourceService sharedInstance] getO2OResource:^(O2OListDomain *domain) {
         
         _o2oResource = domain;
         [_tableView reloadData];

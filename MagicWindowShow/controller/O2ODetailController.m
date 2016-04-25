@@ -9,9 +9,12 @@
 #import "O2ODetailController.h"
 #import "O2OShowCell.h"
 #import "SocialShareHelper.h"
+#import "UIImageView+WebCache.h"
+#import "ResourceService.h"
 
 @interface O2ODetailController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) SocialShareHelper *socialShareHelper;
+@property (strong, nonatomic) O2ODetailDomain *o2oDetailResource;
 @end
 
 @implementation O2ODetailController
@@ -24,6 +27,12 @@
     self.tableView.delegate = self;
     self.tableView.allowsSelection = NO;
     self.socialShareHelper = [[SocialShareHelper alloc] init];
+    
+    [[ResourceService sharedInstance] getO2ODetailResource:^(O2ODetailDomain *domain) {
+        _o2oDetailResource = domain;
+        [self.tableView reloadData];
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +58,7 @@
     NSString *identifier = @"O2OShowCell";
     [tableView registerNib:[UINib nibWithNibName:@"O2OShowCell" bundle:nil] forCellReuseIdentifier:identifier];
     O2OShowCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    [cell.imgView sd_setImageWithURL:[NSURL URLWithString:_o2oDetailResource.imgUrl] placeholderImage:nil];
     return cell;
 }
 

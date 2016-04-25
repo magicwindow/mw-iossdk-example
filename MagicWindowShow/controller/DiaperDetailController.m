@@ -9,9 +9,22 @@
 #import "DiaperDetailController.h"
 #import "GoodsShowCell.h"
 #import "SocialShareHelper.h"
+#import "UIImageView+WebCache.h"
+#import "ResourceService.h"
+
+@interface LongPictureCell : UITableViewCell
+
+@property (nonatomic, strong) IBOutlet UIImageView *imgView;
+
+@end
+
+@implementation LongPictureCell
+
+@end
 
 @interface DiaperDetailController ()<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) SocialShareHelper *socialShareHelper;
+@property (strong, nonatomic) DianShangDetailDomain *dianshangDetailResource;
 @end
 
 @implementation DiaperDetailController
@@ -23,6 +36,11 @@
     self.tableView.allowsSelection = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.socialShareHelper = [[SocialShareHelper alloc] init];
+    
+    [[ResourceService sharedInstance] getDianShangDetailResource:^(DianShangDetailDomain *domain) {
+        _dianshangDetailResource = domain;
+        [_tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,6 +63,10 @@
         [tableView registerNib:[UINib nibWithNibName:@"GoodsShowCell" bundle:nil] forCellReuseIdentifier:identifier];
         GoodsShowCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         [cell setupCellWithImageWidth:self.view.frame.size.width];
+        [cell.imageList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            UIImageView *imgview = (UIImageView *)obj;
+            [imgview sd_setImageWithURL:[NSURL URLWithString:_dianshangDetailResource.headList[idx]] placeholderImage:nil];
+        }];
         return cell;
     } else if (indexPath.row == 1) {
         NSString *identifier = @"OtherInfoCell";
@@ -52,7 +74,8 @@
         return cell;
     } else {
         NSString *identifier = @"LongPictureCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        LongPictureCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        [cell.imgView sd_setImageWithURL:[NSURL URLWithString:_dianshangDetailResource.contentImgUrl] placeholderImage:nil];
         return cell;
     }
 }

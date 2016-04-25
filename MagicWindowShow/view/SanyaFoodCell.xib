@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -53,17 +53,17 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-xV-rea" userLabel="Food">
                         <rect key="frame" x="0.0" y="45" width="400" height="180"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="蟹" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-mh-gfY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-mh-gfY">
                                 <rect key="frame" x="8" y="8" width="114" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="9jN-Nm-4mF"/>
                                     <constraint firstAttribute="width" secondItem="0hN-mh-gfY" secondAttribute="height" multiplier="1:1" id="F97-Pk-U0A"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="鸡" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-6x-fa3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-6x-fa3">
                                 <rect key="frame" x="278" y="8" width="114" height="114"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="粉" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-1J-B6r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-1J-B6r">
                                 <rect key="frame" x="143" y="8" width="114" height="114"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和乐蟹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBi-2T-yeB">
@@ -148,6 +148,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="food1ImageView" destination="0hN-mh-gfY" id="8Js-qC-l3e"/>
+                <outlet property="food2ImageView" destination="nkY-1J-B6r" id="Ama-ZX-azD"/>
+                <outlet property="food3ImageView" destination="uBB-6x-fa3" id="DCa-Ps-dGX"/>
                 <outlet property="foodImageWidthConstraint" destination="9jN-Nm-4mF" id="PCJ-Z4-BxE"/>
                 <outlet property="moreFoodImageView" destination="PO1-Oi-r12" id="ycn-15-fOm"/>
             </connections>
@@ -155,10 +158,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="粉" width="308" height="309"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>
-        <image name="蟹" width="305" height="309"/>
-        <image name="鸡" width="308" height="309"/>
     </resources>
 </document>

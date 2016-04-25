@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rWs-eT-ceJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rWs-eT-ceJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1779,7 +1779,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SanyaBannerCell" rowHeight="326" id="3Hq-9Z-e6I" customClass="SanyaBannerCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="sanyaBannerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="sanyaBannerCell" rowHeight="326" id="3Hq-9Z-e6I" customClass="SanyaBannerCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="326"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hq-9Z-e6I" id="5KI-FF-6c5">
@@ -1789,7 +1789,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rv6-Je-oGK">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-7t-5uM">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-7t-5uM">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpa-Bk-vX5">
@@ -2137,6 +2137,9 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="banner" destination="DRK-7t-5uM" id="qx1-k1-4dn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -5002,13 +5005,13 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LongPictureCell" id="N5U-tt-h5t">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LongPictureCell" id="N5U-tt-h5t" customClass="LongPictureCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N5U-tt-h5t" id="G3Q-Ix-Qgo">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="long.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yjR-I3-oHU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yjR-I3-oHU">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <variation key="widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="103"/>
@@ -5044,6 +5047,9 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="yjR-I3-oHU" id="CV1-U8-4df"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -5696,10 +5702,10 @@
             </objects>
             <point key="canvasLocation" x="325.5" y="2580"/>
         </scene>
-        <!--图库-->
+        <!--电影-->
         <scene sceneID="etN-ap-ker">
             <objects>
-                <viewController storyboardIdentifier="fiveVC" id="4pT-u1-3Eq" customClass="TukuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fiveVC" title="电影" id="4pT-u1-3Eq" customClass="TukuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5LP-sS-MVb"/>
                         <viewControllerLayoutGuide type="bottom" id="3b7-gX-ylc"/>
@@ -5747,7 +5753,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="图库" id="c9G-Nq-5iA"/>
+                    <navigationItem key="navigationItem" title="电影" id="c9G-Nq-5iA"/>
                     <connections>
                         <outlet property="_tableView" destination="URL-V9-bUI" id="5Ye-VC-XxB"/>
                         <segue destination="wrd-ZR-PuZ" kind="show" identifier="showMovieSegue" id="chy-ec-doz"/>
@@ -6091,31 +6097,31 @@
                                 <exclude reference="2CO-mG-8sC"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="GXl-HD-949"/>
+                                <exclude reference="Oc1-LS-q5D"/>
+                                <exclude reference="P8H-O4-t59"/>
+                                <exclude reference="q9x-xo-Fhv"/>
+                                <exclude reference="CLh-Jb-dXC"/>
+                                <exclude reference="iWJ-BI-4HR"/>
+                                <exclude reference="FWB-P6-xg4"/>
+                                <exclude reference="kdM-NL-vqt"/>
+                                <exclude reference="6OI-c3-UMe"/>
+                                <exclude reference="PvP-lo-Due"/>
                                 <exclude reference="HPQ-zY-G3r"/>
                                 <exclude reference="t7d-3B-Dkx"/>
                                 <exclude reference="zgO-Ua-F9D"/>
-                                <exclude reference="KvB-kj-vqv"/>
-                                <exclude reference="jfC-Zy-lAA"/>
                                 <exclude reference="I8W-tp-sSd"/>
                                 <exclude reference="afH-5P-NPZ"/>
                                 <exclude reference="ayC-yU-PEe"/>
-                                <exclude reference="FWB-P6-xg4"/>
-                                <exclude reference="kdM-NL-vqt"/>
-                                <exclude reference="CLh-Jb-dXC"/>
-                                <exclude reference="iWJ-BI-4HR"/>
+                                <exclude reference="KvB-kj-vqv"/>
+                                <exclude reference="jfC-Zy-lAA"/>
+                                <exclude reference="TWU-42-Mxf"/>
                                 <exclude reference="Arg-xV-oeo"/>
                                 <exclude reference="MFs-xT-OK7"/>
                                 <exclude reference="qnv-Q2-jLw"/>
                                 <exclude reference="rFW-hd-PFW"/>
                                 <exclude reference="MS9-f3-HRs"/>
                                 <exclude reference="rhF-9L-lth"/>
-                                <exclude reference="TWU-42-Mxf"/>
-                                <exclude reference="6OI-c3-UMe"/>
-                                <exclude reference="PvP-lo-Due"/>
-                                <exclude reference="GXl-HD-949"/>
-                                <exclude reference="Oc1-LS-q5D"/>
-                                <exclude reference="P8H-O4-t59"/>
-                                <exclude reference="q9x-xo-Fhv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -6135,31 +6141,31 @@
                                 <include reference="2CO-mG-8sC"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="GXl-HD-949"/>
+                                <include reference="Oc1-LS-q5D"/>
+                                <include reference="P8H-O4-t59"/>
+                                <include reference="q9x-xo-Fhv"/>
+                                <include reference="CLh-Jb-dXC"/>
+                                <include reference="iWJ-BI-4HR"/>
+                                <include reference="FWB-P6-xg4"/>
+                                <include reference="kdM-NL-vqt"/>
+                                <include reference="6OI-c3-UMe"/>
+                                <include reference="PvP-lo-Due"/>
                                 <include reference="HPQ-zY-G3r"/>
                                 <include reference="t7d-3B-Dkx"/>
                                 <include reference="zgO-Ua-F9D"/>
-                                <include reference="KvB-kj-vqv"/>
-                                <include reference="jfC-Zy-lAA"/>
                                 <include reference="I8W-tp-sSd"/>
                                 <exclude reference="afH-5P-NPZ"/>
                                 <include reference="ayC-yU-PEe"/>
-                                <include reference="FWB-P6-xg4"/>
-                                <include reference="kdM-NL-vqt"/>
-                                <include reference="CLh-Jb-dXC"/>
-                                <include reference="iWJ-BI-4HR"/>
+                                <include reference="KvB-kj-vqv"/>
+                                <include reference="jfC-Zy-lAA"/>
+                                <include reference="TWU-42-Mxf"/>
                                 <include reference="Arg-xV-oeo"/>
                                 <exclude reference="MFs-xT-OK7"/>
                                 <include reference="qnv-Q2-jLw"/>
                                 <exclude reference="rFW-hd-PFW"/>
                                 <include reference="MS9-f3-HRs"/>
                                 <include reference="rhF-9L-lth"/>
-                                <include reference="TWU-42-Mxf"/>
-                                <include reference="6OI-c3-UMe"/>
-                                <include reference="PvP-lo-Due"/>
-                                <include reference="GXl-HD-949"/>
-                                <include reference="Oc1-LS-q5D"/>
-                                <include reference="P8H-O4-t59"/>
-                                <include reference="q9x-xo-Fhv"/>
                             </mask>
                         </variation>
                     </view>
@@ -6463,7 +6469,6 @@
         <image name="O2O_like2" width="62" height="53"/>
         <image name="O2O_share" width="40" height="40"/>
         <image name="Uber" width="200" height="200"/>
-        <image name="banner" width="1080" height="609"/>
         <image name="community_back" width="29" height="47"/>
         <image name="community_comment" width="159" height="76"/>
         <image name="community_font" width="62" height="41"/>
@@ -6477,7 +6482,6 @@
         <image name="login_logo" width="209" height="30"/>
         <image name="login_password_normal" width="24" height="32"/>
         <image name="login_username_icon" width="24" height="32"/>
-        <image name="long.jpg" width="701" height="701"/>
         <image name="lvxing" width="42" height="42"/>
         <image name="me_top" width="750" height="300"/>
         <image name="menu_icon_logo" width="112" height="15"/>

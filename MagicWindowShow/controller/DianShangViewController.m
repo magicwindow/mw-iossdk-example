@@ -85,42 +85,42 @@
 {
     __block NSString *mwkey;
     switch (indexPath.row) {
-        case 2:
+        case 3:
         {
             mwkey = DianShang_01;
             break;
         }
-        case 3:
+        case 4:
         {
             mwkey = DianShang_02;
             break;
         }
-        case 4:
+        case 5:
         {
             mwkey = DianShang_03;
             break;
         }
-        case 5:
+        case 6:
         {
             mwkey = DianShang_04;
             break;
         }
-        case 6:
+        case 7:
         {
             mwkey = DianShang_05;
             break;
         }
-        case 7:
+        case 8:
         {
             mwkey = DianShang_06;
             break;
         }
-        case 8:
+        case 9:
         {
             mwkey = DianShang_07;
             break;
         }
-        case 9:
+        case 10:
         {
             mwkey = DianShang_08;
             break;

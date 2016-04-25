@@ -19,9 +19,15 @@
 
 - (void)getDianShangResource:(void (^)(DianShangDomain *domain))resource;
 
-- (void)getO2OResource:(void (^)(O2ODomain *domain))resource;
+- (void)getDianShangDetailResource:(void (^)(DianShangDetailDomain *domain))resource;
+
+- (void)getO2OResource:(void (^)(O2OListDomain *domain))resource;
+
+- (void)getO2ODetailResource:(void (^)(O2ODetailDomain *domain))resource;
 
 - (void)getTukuResource:(void (^)(TukuDomain *domain))resource;
+
+- (void)getTravelDetailResource:(void (^)(TravelDetailDomain *domain))resource;
 
 @end
 

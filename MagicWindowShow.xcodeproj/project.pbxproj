@@ -83,6 +83,9 @@
 		379A0D061C7EAB97007A3A8F /* MagicWindowShow2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D051C7EAB97007A3A8F /* MagicWindowShow2UITests.m */; };
 		379A0D311C7ED260007A3A8F /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379A0D301C7ED260007A3A8F /* GoodsDetailViewController.m */; };
 		379A0D361C7FF5B6007A3A8F /* CityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 379A0D351C7FF5B6007A3A8F /* CityList.plist */; };
+		379F232B1CCDB7DD0074929D /* o2oDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F23281CCDB7DD0074929D /* o2oDetail.json */; };
+		379F232C1CCDB7DD0074929D /* shopDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F23291CCDB7DD0074929D /* shopDetail.json */; };
+		379F232D1CCDB7DD0074929D /* travelDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F232A1CCDB7DD0074929D /* travelDetail.json */; };
 		37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B21C771C7471FB00C85C5C /* libSDWebImage.a */; };
 		37B4040D1BA2C63000393EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040C1BA2C63000393EA0 /* main.m */; };
 		37B404101BA2C63000393EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040F1BA2C63000393EA0 /* AppDelegate.m */; };
@@ -267,6 +270,13 @@
 		379A0D2F1C7ED260007A3A8F /* GoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
 		379A0D301C7ED260007A3A8F /* GoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
 		379A0D351C7FF5B6007A3A8F /* CityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CityList.plist; path = MagicWindowShow/CityList.plist; sourceTree = SOURCE_ROOT; };
+		379DBE621CCA369A008C4AB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		379DBE631CCA369A008C4AB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		379DBE641CCA369A008C4AB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main2.strings"; sourceTree = "<group>"; };
+		379DBE651CCA369A008C4AB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		379F23281CCDB7DD0074929D /* o2oDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = o2oDetail.json; sourceTree = "<group>"; };
+		379F23291CCDB7DD0074929D /* shopDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopDetail.json; sourceTree = "<group>"; };
+		379F232A1CCDB7DD0074929D /* travelDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = travelDetail.json; sourceTree = "<group>"; };
 		37B21C771C7471FB00C85C5C /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		37B404071BA2C63000393EA0 /* MagicWindowShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicWindowShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B4040B1BA2C63000393EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -428,6 +438,9 @@
 				378DE2341C880DEA0053F169 /* o2oList.json */,
 				378DE2351C880DEA0053F169 /* picList.json */,
 				378DE2361C880DEA0053F169 /* travelList.json */,
+				379F23281CCDB7DD0074929D /* o2oDetail.json */,
+				379F23291CCDB7DD0074929D /* shopDetail.json */,
+				379F232A1CCDB7DD0074929D /* travelDetail.json */,
 			);
 			name = json;
 			path = MagicWindowShow/json;
@@ -926,9 +939,11 @@
 				378DE23A1C880DEA0053F169 /* picList.json in Resources */,
 				37B404161BA2C63000393EA0 /* Main.storyboard in Resources */,
 				378DE2B91C8D1F0C0053F169 /* TwoImageCell.xib in Resources */,
+				379F232C1CCDB7DD0074929D /* shopDetail.json in Resources */,
 				CD22FD7C1CB63D4600D83A19 /* SanyaHotelCell.xib in Resources */,
 				CD22FD771CB636C900D83A19 /* SanyaFoodCell.xib in Resources */,
 				378DE2A51C8D1F0C0053F169 /* BtnView.xib in Resources */,
+				379F232B1CCDB7DD0074929D /* o2oDetail.json in Resources */,
 				CDEAB9ED1CBF8D8600AFA1FE /* CommunityAuthorCell.xib in Resources */,
 				378DE23B1C880DEA0053F169 /* travelList.json in Resources */,
 				37B4041B1BA2C63000393EA0 /* LaunchScreen.xib in Resources */,
@@ -952,6 +967,7 @@
 				CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */,
 				378DE2B01C8D1F0C0053F169 /* HomeHelpView.xib in Resources */,
 				378DE2AC1C8D1F0C0053F169 /* FullIamge2Cell.xib in Resources */,
+				379F232D1CCDB7DD0074929D /* travelDetail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1185,6 +1201,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				379A0CEA1C7EAB97007A3A8F /* Base */,
+				379DBE641CCA369A008C4AB5 /* zh-Hans */,
 			);
 			name = Main2.storyboard;
 			sourceTree = "<group>";
@@ -1193,6 +1210,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				379A0CEF1C7EAB97007A3A8F /* Base */,
+				379DBE651CCA369A008C4AB5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1201,6 +1219,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37B404151BA2C63000393EA0 /* Base */,
+				379DBE621CCA369A008C4AB5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1209,6 +1228,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37B4041A1BA2C63000393EA0 /* Base */,
+				379DBE631CCA369A008C4AB5 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

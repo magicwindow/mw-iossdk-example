@@ -32,15 +32,38 @@
 
 @end
 
-@interface O2ODomain : NSObject
+@interface DianShangDetailDomain : NSObject
 
-@property (nonatomic, strong) NSArray *contentList;
 @property (nonatomic, strong) NSArray *headList;
+@property (nonatomic, strong) NSString *contentImgUrl;
+
+@end
+
+@interface O2OListDomain : NSObject
+
+@property (nonatomic, strong) NSArray *headList;
+@property (nonatomic, strong) NSArray *contentList;
+
+@end
+
+@interface O2ODetailDomain : NSObject
+
+@property (nonatomic, strong) NSString *imgUrl;
 
 @end
 
 @interface TukuDomain : NSObject
 
 @property (nonatomic, strong) NSArray *contentList;
+
+@end
+
+@interface TravelDetailDomain : NSObject
+
+@property (nonatomic, strong) NSString *bannerImgUrl;
+@property (nonatomic, strong) NSString *mapImgUrl;
+@property (nonatomic, strong) NSString *stayImgUrl;
+@property (nonatomic, strong) NSArray *foodList;
+@property (nonatomic, strong) NSArray *travelList;
 
 @end

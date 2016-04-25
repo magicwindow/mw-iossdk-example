@@ -10,5 +10,6 @@
 
 @interface O2OShowCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *oldPriceLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *imgView;
 
 @end

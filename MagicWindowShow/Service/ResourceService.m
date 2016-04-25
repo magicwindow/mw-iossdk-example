@@ -14,8 +14,11 @@
     TourismDomain *_tourismDomain;
     NewsDomain *_newsDomain;
     DianShangDomain *_dianshangDomain;
-    O2ODomain *_o2oDomain;
+    O2OListDomain *_o2oDomain;
     TukuDomain *_tukuDomain;
+    O2ODetailDomain *_o2oDetailDomain;
+    DianShangDetailDomain *_dianShangDetailDomain;
+    TravelDetailDomain *_travelDetailDomain;
 }
 
 @end
@@ -98,7 +101,29 @@
     }];
 }
 
-- (void)getO2OResource:(void (^)(O2ODomain *domain))resource
+- (void)getDianShangDetailResource:(void (^)(DianShangDetailDomain *))resource
+{
+    if (_dianShangDetailDomain != nil)
+    {
+        resource(_dianShangDetailDomain);
+        return;
+    }
+    
+    OpenService *service = [[OpenService alloc] init];
+    [service GET:@"http://121.40.195.177/list/shopDetail.json" localPath:@"shopDetail" success:^(NSDictionary *responseObject) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            DianShangDetailDomain *domain = [service parseDianShangDetailResource:responseObject];
+            _dianShangDetailDomain = domain;
+            resource(domain);
+        });
+        
+    } failure:^(NSError *connectionError) {
+        //
+    }];
+}
+
+- (void)getO2OResource:(void (^)(O2OListDomain *domain))resource
 {
     if (_o2oDomain != nil)
     {
@@ -110,8 +135,30 @@
     [service GET:@"http://121.40.195.177/list/o2oList.json" localPath:@"o2oList" success:^(NSDictionary *responseObject) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            O2ODomain *domain = [service parseO2OResource:responseObject];
+            O2OListDomain *domain = [service parseO2OResource:responseObject];
             _o2oDomain = domain;
+            resource(domain);
+        });
+        
+    } failure:^(NSError *connectionError) {
+        //
+    }];
+}
+
+- (void)getO2ODetailResource:(void (^)(O2ODetailDomain *))resource
+{
+    if (_o2oDetailDomain != nil)
+    {
+        resource(_o2oDetailDomain);
+        return;
+    }
+    
+    OpenService *service = [[OpenService alloc] init];
+    [service GET:@"http://121.40.195.177/list/o2oDetail.json" localPath:@"o2oDetail" success:^(NSDictionary *responseObject) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            O2ODetailDomain *domain = [service parseO2ODetailResource:responseObject];
+            _o2oDetailDomain = domain;
             resource(domain);
         });
         
@@ -134,6 +181,28 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             TukuDomain *domain = [service parseTukuResource:responseObject];
             _tukuDomain = domain;
+            resource(domain);
+        });
+        
+    } failure:^(NSError *connectionError) {
+        //
+    }];
+}
+
+- (void)getTravelDetailResource:(void (^)(TravelDetailDomain *))resource
+{
+    if (_travelDetailDomain != nil)
+    {
+        resource(_travelDetailDomain);
+        return;
+    }
+    
+    OpenService *service = [[OpenService alloc] init];
+    [service GET:@"http://121.40.195.177/list/travelDetail.json" localPath:@"travelDetail" success:^(NSDictionary *responseObject) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            TravelDetailDomain *domain = [service parseTravelDetailResource:responseObject];
+            _travelDetailDomain = domain;
             resource(domain);
         });
         

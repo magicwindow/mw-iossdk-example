@@ -59,6 +59,9 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gvc-vb-FV3"; */
 "Gvc-vb-FV3.normalTitle" = "Button";
 
+/* Class = "UINavigationItem"; title = "O2O详情"; ObjectID = "Hkf-a3-bjR"; */
+"Hkf-a3-bjR.title" = "O2O详情";
+
 /* Class = "UILabel"; text = "至  上海  免运费"; ObjectID = "IND-3q-oAL"; */
 "IND-3q-oAL.text" = "至  上海  免运费";
 
@@ -76,6 +79,9 @@
 
 /* Class = "UINavigationItem"; title = "旅游"; ObjectID = "LuZ-K9-XM2"; */
 "LuZ-K9-XM2.title" = "旅游";
+
+/* Class = "UINavigationItem"; title = "联系我们"; ObjectID = "M5X-Z6-4Ai"; */
+"M5X-Z6-4Ai.title" = "联系我们";
 
 /* Class = "UILabel"; text = "配送费:"; ObjectID = "MS6-Qh-4NL"; */
 "MS6-Qh-4NL.text" = "配送费:";
@@ -107,6 +113,9 @@
 /* Class = "UINavigationItem"; title = "填写订单"; ObjectID = "X73-28-CXk"; */
 "X73-28-CXk.title" = "填写订单";
 
+/* Class = "UILabel"; text = "收藏"; ObjectID = "XHe-C0-Da6"; */
+"XHe-C0-Da6.text" = "收藏";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "XjP-sA-bD3"; */
 "XjP-sA-bD3.text" = "Label";
 
@@ -119,14 +128,14 @@
 /* Class = "UILabel"; text = "合计：¥ 14.90"; ObjectID = "asx-wq-Pw6"; */
 "asx-wq-Pw6.text" = "合计：¥ 14.90";
 
-/* Class = "UILabel"; text = "版本号 1.2"; ObjectID = "bOS-sm-1ve"; */
-"bOS-sm-1ve.text" = "版本号 1.2";
+/* Class = "UILabel"; text = "版本号 1.3"; ObjectID = "bOS-sm-1ve"; */
+"bOS-sm-1ve.text" = "版本号 1.3";
 
 /* Class = "UILabel"; text = "¥ 14.90"; ObjectID = "bkh-Nr-aSL"; */
 "bkh-Nr-aSL.text" = "¥ 14.90";
 
-/* Class = "UINavigationItem"; title = "图库"; ObjectID = "c9G-Nq-5iA"; */
-"c9G-Nq-5iA.title" = "图库";
+/* Class = "UINavigationItem"; title = "电影"; ObjectID = "c9G-Nq-5iA"; */
+"c9G-Nq-5iA.title" = "电影";
 
 /* Class = "UILabel"; text = "国内行货， 免征关税"; ObjectID = "cf6-H7-Fqc"; */
 "cf6-H7-Fqc.text" = "国内行货， 免征关税";
@@ -194,6 +203,9 @@
 /* Class = "UILabel"; text = "订单编号："; ObjectID = "q8H-xR-VM9"; */
 "q8H-xR-VM9.text" = "订单编号：";
 
+/* Class = "UILabel"; text = "联系我们"; ObjectID = "rHH-BI-Yjj"; */
+"rHH-BI-Yjj.text" = "联系我们";
+
 /* Class = "UILabel"; text = "订单支付成功"; ObjectID = "rf5-rg-lye"; */
 "rf5-rg-lye.text" = "订单支付成功";
 
@@ -221,11 +233,17 @@
 /* Class = "UILabel"; text = "下单时间："; ObjectID = "trs-VZ-wdw"; */
 "trs-VZ-wdw.text" = "下单时间：";
 
+/* Class = "UIButton"; normalTitle = "立即体验"; ObjectID = "vdh-cA-VxV"; */
+"vdh-cA-VxV.normalTitle" = "立即体验";
+
 /* Class = "UILabel"; text = "三亚特色美食"; ObjectID = "w3Q-iO-9pk"; */
 "w3Q-iO-9pk.text" = "三亚特色美食";
 
 /* Class = "UILabel"; text = "微信支付"; ObjectID = "wfc-0c-Gzg"; */
 "wfc-0c-Gzg.text" = "微信支付";
+
+/* Class = "UILabel"; text = "联系TA"; ObjectID = "y1J-1W-P3B"; */
+"y1J-1W-P3B.text" = "联系TA";
 
 /* Class = "UILabel"; text = "三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。"; ObjectID = "yVE-Sg-Snp"; */
 "yVE-Sg-Snp.text" = "三亚（Sanya）位于海南岛的最南端，是中国最南部的热带滨海旅游城市，是中国空气质量最好的城市、全国最长寿地区（平均寿命80岁）。三亚市别称鹿城，又被称为“东方夏威夷”，位居中国四大一线旅游城市三威杭厦”之首，拥有全岛最美丽的海滨风光。";

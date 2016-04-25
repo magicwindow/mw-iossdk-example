@@ -24,12 +24,27 @@
 
 @end
 
-@implementation O2ODomain
+@implementation DianShangDetailDomain
+
+
+@end
+
+@implementation O2OListDomain
+
+
+@end
+
+@implementation O2ODetailDomain
 
 
 @end
 
 @implementation TukuDomain
+
+
+@end
+
+@implementation TravelDetailDomain
 
 
 @end

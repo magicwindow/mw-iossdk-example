@@ -19,8 +19,14 @@
 
 - (DianShangDomain *)parseDianShangResource:(NSDictionary *)responseObject;
 
-- (O2ODomain *)parseO2OResource:(NSDictionary *)responseObject;
+- (DianShangDetailDomain *)parseDianShangDetailResource:(NSDictionary *)responseObject;
+
+- (O2OListDomain *)parseO2OResource:(NSDictionary *)responseObject;
+
+- (O2ODetailDomain *)parseO2ODetailResource:(NSDictionary *)responseObject;
 
 - (TukuDomain *)parseTukuResource:(NSDictionary *)responseObject;
+
+- (TravelDetailDomain *)parseTravelDetailResource:(NSDictionary *)responseObject;
 
 @end

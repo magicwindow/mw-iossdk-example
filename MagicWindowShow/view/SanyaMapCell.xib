@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -53,7 +53,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHP-lc-SxL" userLabel="Map">
                         <rect key="frame" x="0.0" y="45" width="400" height="207"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地图1-打车" translatesAutoresizingMaskIntoConstraints="NO" id="ZOe-Vw-7nj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZOe-Vw-7nj">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="207"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZOe-Vw-7nj" secondAttribute="height" multiplier="400:207" id="OrC-qZ-hxv"/>
@@ -159,6 +159,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="mapImgView" destination="ZOe-Vw-7nj" id="rx9-LH-lqM"/>
                 <outlet property="texiIcon" destination="tog-7M-udP" id="25h-u5-qoD"/>
                 <outlet property="uberView" destination="7IZ-tf-xTW" id="9a5-IK-QDZ"/>
             </connections>
@@ -167,7 +168,6 @@
     </objects>
     <resources>
         <image name="三亚-打车" width="273" height="74"/>
-        <image name="地图1-打车" width="1080" height="619"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>
     </resources>
