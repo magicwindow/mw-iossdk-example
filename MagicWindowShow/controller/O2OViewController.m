@@ -26,7 +26,7 @@
     IBOutlet UITableView *_tableView;
 }
 
-@property (nonatomic, strong) O2ODomain *o2oResource;
+@property (nonatomic, strong) O2OListDomain *o2oResource;
 
 @end
 
@@ -36,7 +36,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[ResourceService sharedInstance] getO2OResource:^(O2ODomain *domain) {
+    [[ResourceService sharedInstance] getO2OResource:^(O2OListDomain *domain) {
         
         _o2oResource = domain;
         [_tableView reloadData];
@@ -257,7 +257,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"];
+    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

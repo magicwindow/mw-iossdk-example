@@ -85,46 +85,59 @@
         
         NSLog(@"url = %@",url);
     }];
-    //注册mlink key 为viewKey的handler事件
-    [MWApi registerMLinkHandlerWithKey:@"viewKey" handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
-        
-        if (params == nil)
-        {
-            return ;
-        }
-        
-        NSString *viewName = params[@"view"];
-        if (viewName == nil || viewName.length == 0)
-        {
-            return;
-        }
-        //接收到相应请求，打开相应的页面
-        [self openNativeViewWithName:viewName];
-
-    }];
     
-    //注册mlink key 为campaignKey的handler事件
-    [MWApi registerMLinkHandlerWithKey:@"campaignKey" handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+    //注册mlink key 为魔窗位的handler事件
+    [MWApi registerMLinkHandlerWithKey:mLink_campaignKey handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
         
         //魔窗位活动跳转
         if (params != nil && params[@"key"] != nil)
         {
             NSString *str = params[@"key"];
             //接收到打开魔窗位的请求，活动相关活动信息并打开活动
-            [self openCampaignViewWithKey:str];
+            [self openCampaignViewWithKey:str params:params];
         }
     }];
     
-    [MWApi registerMLinkHandlerWithKey:@"dianshangDetail" handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
-        [self openDianshangDetailWithUrl:url];
+    //注册mlink key 为电商详情页的handler事件
+    [MWApi registerMLinkHandlerWithKey:mLink_dianshangDetail handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+        [self openDianshangDetail];
+    }];
+    
+    //注册mlink key 为O2O详情页的handler事件
+    [MWApi registerMLinkHandlerWithKey:mLink_O2Odetail handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+        [self openO2ODetail];
+    }];
+    
+    //注册mlink key 为资讯详情页的handler事件
+    [MWApi registerMLinkHandlerWithKey:mLink_NewsDetail handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+        [self openNewsDetail];
+    }];
+    
+    //注册mlink key 为电影详情页的handler事件
+    [MWApi registerMLinkHandlerWithKey:mLink_VideoDetail handler:^(NSURL * _Nonnull url, NSDictionary * _Nullable params) {
+        [self openVideoDetail];
     }];
 }
 
 //接收到打开魔窗位的请求，活动相关活动信息并打开活动
-- (void)openCampaignViewWithKey:(NSString *)key
+- (void)openCampaignViewWithKey:(NSString *)key params:(NSDictionary *)params
 {
-    _view = [[UIView alloc] init];
     ViewController *rootVC = (ViewController *)self.window.rootViewController;
+    // 判断是引导页还是sideVC
+    if ([rootVC isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)rootVC;
+        UIViewController *viewController = navController.topViewController;
+        if ([viewController isKindOfClass:[HelpViewController class]])
+        {
+            HelpViewController *helpVC = (HelpViewController *)viewController;
+            helpVC.mLinkKey = mLink_campaignKey;
+            helpVC.params = params;
+        }
+        return;
+    }
+    
+    _view = [[UIView alloc] init];
     [rootVC.view addSubview:_view];
     
     [MWApi configAdViewWithKey:key withTarget:_view success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
@@ -136,54 +149,96 @@
     }];
 }
 
-- (void)openNativeViewWithName:(NSString *)viewName
-{
-    ViewController *rootVC = (ViewController *)self.window.rootViewController;
-
-    NSString *VCidentifier;
-    if ([viewName isEqualToString:@"lvyou"])
-    {
-        VCidentifier = @"tourismNav";
-    }
-    else if ([viewName isEqualToString:@"O2O"])
-    {
-        VCidentifier = @"o2oNav";
-    }
-    else if ([viewName isEqualToString:@"dianshang"])
-    {
-        VCidentifier = @"dianShangNav";
-    }
-    else if ([viewName isEqualToString:@"zixun"])
-    {
-        VCidentifier = @"newsNav";
-    }
-    else if ([viewName isEqualToString:@"tuku"])
-    {
-        VCidentifier = @"tukuNav";
-    }
-    else if ([viewName isEqualToString:@"user"])
-    {
-        VCidentifier = @"MeNav";
-    }
-    
-    if (VCidentifier == nil)
-    {
-        return;
-    }
-    [rootVC showLeftPanelAnimated:YES];
-    [rootVC setCenterPanel:[rootVC.storyboard instantiateViewControllerWithIdentifier:VCidentifier]];
-}
-
-- (void)openDianshangDetailWithUrl:(NSURL *)url
+//接收到打开电商详情页的请求，打开电商详情页
+- (void)openDianshangDetail
 {
     ViewController *rootVC = (ViewController *)self.window.rootViewController;
     // 判断是引导页还是sideVC
-    if ([rootVC isKindOfClass:[JASidePanelController class]]) {
-        [rootVC showLeftPanelAnimated:YES];
-        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
-        [rootVC setCenterPanel: nav];
-        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    if ([rootVC isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)rootVC;
+        UIViewController *viewController = navController.topViewController;
+        if ([viewController isKindOfClass:[HelpViewController class]])
+        {
+            HelpViewController *helpVC = (HelpViewController *)viewController;
+            helpVC.mLinkKey = mLink_dianshangDetail;
+        }
+        return;
     }
+    
+    [rootVC showLeftPanelAnimated:YES];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+    [rootVC setCenterPanel: nav];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+}
+
+//接收到打开O2O详情页的请求，打开O2O详情页
+- (void)openO2ODetail
+{
+    ViewController *rootVC = (ViewController *)self.window.rootViewController;
+    // 判断是引导页还是sideVC
+    if ([rootVC isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)rootVC;
+        UIViewController *viewController = navController.topViewController;
+        if ([viewController isKindOfClass:[HelpViewController class]])
+        {
+            HelpViewController *helpVC = (HelpViewController *)viewController;
+            helpVC.mLinkKey = mLink_O2Odetail;
+        }
+        return;
+    }
+    
+    [rootVC showLeftPanelAnimated:YES];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"];
+    [rootVC setCenterPanel: nav];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"] animated:YES];
+}
+
+//接收到打开资讯详情页的请求，打开资讯详情页
+- (void)openNewsDetail
+{
+    ViewController *rootVC = (ViewController *)self.window.rootViewController;
+    // 判断是引导页还是sideVC
+    if ([rootVC isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)rootVC;
+        UIViewController *viewController = navController.topViewController;
+        if ([viewController isKindOfClass:[HelpViewController class]])
+        {
+            HelpViewController *helpVC = (HelpViewController *)viewController;
+            helpVC.mLinkKey = mLink_NewsDetail;
+        }
+        return;
+    }
+    
+    [rootVC showLeftPanelAnimated:YES];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"newsNav"];
+    [rootVC setCenterPanel: nav];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"CommunityViewController"] animated:YES];
+}
+
+//接收到打开电影详情页的请求，打开电影详情页
+- (void)openVideoDetail
+{
+    ViewController *rootVC = (ViewController *)self.window.rootViewController;
+    // 判断是引导页还是sideVC
+    if ([rootVC isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)rootVC;
+        UIViewController *viewController = navController.topViewController;
+        if ([viewController isKindOfClass:[HelpViewController class]])
+        {
+            HelpViewController *helpVC = (HelpViewController *)viewController;
+            helpVC.mLinkKey = mLink_VideoDetail;
+        }
+        return;
+    }
+    
+    [rootVC showLeftPanelAnimated:YES];
+    UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"tukuNav"];
+    [rootVC setCenterPanel: nav];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"MovieDetailVC"] animated:YES];
 }
 
 - (void)removeView

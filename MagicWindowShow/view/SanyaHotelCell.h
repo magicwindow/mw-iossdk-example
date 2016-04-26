@@ -10,6 +10,6 @@
 
 @interface SanyaHotelCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *bookImageView;
-
+@property (strong, nonatomic) IBOutlet UIImageView *mapImgview;
 
 @end

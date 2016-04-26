@@ -13,6 +13,7 @@
 #import "UIImageView+WebCache.h"
 #import "WebViewController.h"
 #import "ResourceService.h"
+#import "CommunityViewController.h"
 
 @interface NewsViewController ()
 {
@@ -193,6 +194,13 @@
         cell.desc.text = domain.desc;
     }
     
+    if (_currentIndex == 0 && indexPath.row == 0) {
+        cell.titleLabel.text = @"小而美的综合体，iPhone SE 深度体验";
+        cell.desc.text = @"几天前，Apple 过了它的第 40 个生日。想想 Apple 给我带来了多少好玩有趣的产品和服务，无趣地想象了一番没有 Apple 的世界，或许会有不同，我们会失去 iPod、MacBook、iTunes 甚至是上个月发布的「史上最平价的 iPhone」- iPhone SE。而到今天，我把玩 iPhone SE 已经有几天时间了，也该是时候跟大家分享这几天我的使用感受了。";
+        [cell.imgView sd_cancelCurrentImageLoad];
+        cell.imgView.image = [UIImage imageNamed:@"community_phone.jpg"];
+    }
+    
     return cell;
     
 }
@@ -200,23 +208,31 @@
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *list;
-    switch (_currentIndex) {
-        case 0:
-            list = _newsResource.internetList;
-            break;
-        case 1:
-            list = _newsResource.sportList;
-            break;
-            
-        default:
-            list = _newsResource.entertainmentList;
-            break;
+    if (_currentIndex == 0 && indexPath.row == 0)
+    {
+        CommunityViewController *communityVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CommunityViewController"];
+        [self.navigationController pushViewController:communityVC animated:YES];
     }
-    WebViewController *webVC = [self.storyboard instantiateViewControllerWithIdentifier:@"webView"];
-    BaseDomain *domain = list[indexPath.row];
-    webVC.url = domain.url;
-    [self.navigationController pushViewController:webVC animated:YES];
+    else
+    {
+        NSArray *list;
+        switch (_currentIndex) {
+            case 0:
+                list = _newsResource.internetList;
+                break;
+            case 1:
+                list = _newsResource.sportList;
+                break;
+                
+            default:
+                list = _newsResource.entertainmentList;
+                break;
+        }
+        WebViewController *webVC = [self.storyboard instantiateViewControllerWithIdentifier:@"webView"];
+        BaseDomain *domain = list[indexPath.row];
+        webVC.url = domain.url;
+        [self.navigationController pushViewController:webVC animated:YES];
+    }
 }
 
 /*

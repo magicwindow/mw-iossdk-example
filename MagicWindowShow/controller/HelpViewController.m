@@ -8,6 +8,9 @@
 
 #import "HelpViewController.h"
 #import "ResourceService.h"
+#import "ViewController.h"
+#import "GlobalDefine.h"
+#import <MagicWindowSDK/MWApi.h>
 
 @interface HelpViewController ()<UIScrollViewDelegate>
 
@@ -54,7 +57,61 @@
 - (void)btnPressed
 {
     UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    [self.navigationController pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"SideVC"] animated:YES];
+    ViewController  *rootVC = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SideVC"];
+    [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+    
+    if ([self.mLinkKey isEqualToString:mLink_dianshangDetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_campaignKey])
+    {
+        self.mLinkKey = nil;
+        NSString *key = self.params[@"key"];
+        
+        UIView *view = [[UIView alloc] init];
+        [rootVC.view addSubview:view];
+        
+        [MWApi configAdViewWithKey:key withTarget:view success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
+            //成功获取到相关活动，并打开该活动
+            [MWApi autoOpenWebViewWithKey:key withTargetView:view];
+        } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
+            //没有获取到相关活动，不做任何处理
+            [view removeFromSuperview];
+        }];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_O2Odetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"] animated:YES];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_NewsDetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"newsNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"CommunityViewController"] animated:YES];
+    }
+    else if ([self.mLinkKey isEqualToString:mLink_VideoDetail])
+    {
+        self.mLinkKey = nil;
+        
+        UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"tukuNav"];
+        nav.view.tag = 1007;
+        [rootVC setCenterPanel: nav];
+        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"MovieDetailVC"] animated:YES];
+    }
 }
 
 #pragma mark UIScrollViewDelegate

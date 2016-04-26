@@ -11,6 +11,8 @@
 @interface SanyaPlaneCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *bookImageView1;
 @property (strong, nonatomic) IBOutlet UIImageView *bookImageView2;
+@property (strong, nonatomic) IBOutlet UIImageView *img1;
+@property (strong, nonatomic) IBOutlet UIImageView *img2;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageViewWidthConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *itemHeightConstraint;

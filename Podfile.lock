@@ -1,7 +1,7 @@
 PODS:
   - JASidePanels (1.3.2)
   - libWeChatSDK (1.6)
-  - MagicWindowSDK (3.66.16022401):
+  - MagicWindowSDK (3.70.160420):
     - libWeChatSDK
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
@@ -15,7 +15,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   JASidePanels: c8f5b130e18d51ee3de988d1c1fad2f88e0b0d21
   libWeChatSDK: 248280c10e6edd275e0efab54ac7ad42a62b6a57
-  MagicWindowSDK: 8d369394b2d21748e56c6bf659dd9718cee1497c
+  MagicWindowSDK: b4cfe0e9bbbe175e0ddeebb6f279bf00961abc23
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0

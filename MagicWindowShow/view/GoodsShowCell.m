@@ -31,13 +31,15 @@
     self.scrollView.delegate = self;
     
     _scrollView.contentSize = CGSizeMake(width * 4, width);
+    _imageList = nil;
+    _imageList = [NSMutableArray new];
     for (int i = 0;i < 4 ; i++)
     {
         UIImageView *imageView = [[UIImageView alloc] init];
         imageView.frame = CGRectMake(width * i, 0, width, width);
         imageView.tag = i;
-        [imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"diaper0%i.jpg", i + 1]]];
         [_scrollView addSubview:imageView];
+        [_imageList addObject:imageView];
     }
 }
 

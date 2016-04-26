@@ -99,5 +99,12 @@
 #define event_shoppingList      @"C8MKRWOM"
 #define even_pay                @"4G9HDD06"
 
+#pragma mark mLink key
+#define mLink_campaignKey       @"campaignKey"
+#define mLink_dianshangDetail   @"dianshangDetail"
+#define mLink_O2Odetail         @"O2Odetail"
+#define mLink_NewsDetail        @"NewsDetail"
+#define mLink_VideoDetail       @"VideoDetail"
+
 
 #endif /* GlobalDefine_h */

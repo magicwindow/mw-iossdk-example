@@ -91,11 +91,26 @@
     return dianshangDomain;
 }
 
-- (O2ODomain *)parseO2OResource:(NSDictionary *)responseObject
+- (DianShangDetailDomain *)parseDianShangDetailResource:(NSDictionary *)responseObject;
 {
-    O2ODomain *o2oDomain = [[O2ODomain alloc] init];
+    DianShangDetailDomain *dianshangDomain = [[DianShangDetailDomain alloc] init];
+    dianshangDomain.headList = responseObject[SERVICE_HEAD_LIST];
+    dianshangDomain.contentImgUrl = responseObject[@"content"];
+    return dianshangDomain;
+}
+
+- (O2OListDomain *)parseO2OResource:(NSDictionary *)responseObject
+{
+    O2OListDomain *o2oDomain = [[O2OListDomain alloc] init];
     o2oDomain.headList = responseObject[SERVICE_HEAD_LIST];
     o2oDomain.contentList = responseObject[SERVICE_CONTENT_LIST];
+    return o2oDomain;
+}
+
+- (O2ODetailDomain *)parseO2ODetailResource:(NSDictionary *)responseObject
+{
+    O2ODetailDomain *o2oDomain = [[O2ODetailDomain alloc] init];
+    o2oDomain.imgUrl = responseObject[@"detail"];
     return o2oDomain;
 }
 
@@ -106,5 +121,15 @@
     return tukuDomain;
 }
 
+- (TravelDetailDomain *)parseTravelDetailResource:(NSDictionary *)responseObject
+{
+    TravelDetailDomain *travelDetailDomain = [[TravelDetailDomain alloc] init];
+    travelDetailDomain.bannerImgUrl = responseObject[@"banner"];
+    travelDetailDomain.mapImgUrl = responseObject[@"map"];
+    travelDetailDomain.stayImgUrl = responseObject[@"stay"];
+    travelDetailDomain.foodList = responseObject[@"food"];
+    travelDetailDomain.travelList = responseObject[@"travel"];
+    return travelDetailDomain;
+}
 
 @end
