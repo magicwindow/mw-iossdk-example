@@ -47,7 +47,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="148"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mosir_03" translatesAutoresizingMaskIntoConstraints="NO" id="NWz-OF-kE4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NWz-OF-kE4">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="9VN-zk-wMA"/>
@@ -87,7 +87,7 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重构交互 连接商业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lv-kR-FzC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="做最好的工具，连接最好的人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9lv-kR-FzC">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="5yH-uJ-Oad"/>
@@ -119,6 +119,7 @@
                                                 <constraint firstItem="zGJ-VZ-hOV" firstAttribute="leading" secondItem="NWz-OF-kE4" secondAttribute="trailing" constant="8" id="Lqg-ZZ-FW5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="9lv-kR-FzC" secondAttribute="trailing" constant="34" id="ZZw-uj-Duu">
                                                     <variation key="widthClass=compact" constant="107"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="70"/>
                                                 </constraint>
                                                 <constraint firstItem="NWz-OF-kE4" firstAttribute="leading" secondItem="mxY-gS-MbI" secondAttribute="leadingMargin" constant="6" id="eQx-8m-tjl"/>
                                                 <constraint firstItem="9lv-kR-FzC" firstAttribute="leading" secondItem="NWz-OF-kE4" secondAttribute="trailing" constant="8" id="eSB-ed-JPq"/>
@@ -3904,6 +3905,7 @@
         <image name="login_logo" width="209" height="30"/>
         <image name="login_password_normal" width="24" height="32"/>
         <image name="login_username_icon" width="24" height="32"/>
+        <image name="logo" width="238" height="243"/>
         <image name="lvxing" width="42" height="42"/>
         <image name="me_top" width="750" height="300"/>
         <image name="menu_icon_logo" width="112" height="15"/>
