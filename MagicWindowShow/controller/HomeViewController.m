@@ -147,7 +147,7 @@
                     
                     [MWApi configAdViewWithKey:[self.mwkeyDic objectForKey:mwkey] withTargetView:imgView withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                         //成功活动到活动信息，加载活动页面
-                        [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                        [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
                         
                     } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                         //获取活动信息失败
@@ -162,7 +162,7 @@
             else
             {
                 NSString *imgUrlStr = _tourismResource.headList[banner01? idx-1:idx];
-                [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrlStr] placeholderImage:nil];
+                [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrlStr] placeholderImage:[UIImage imageNamed:@"570-250"]];
             }
             
             
@@ -228,7 +228,7 @@
             [MWApi configAdViewWithKey:[self.mwkeyDic objectForKey:mwkey] withTargetView:cell withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 
                 //成功获取该魔窗位上的活动信息，展示相关活动信息
-                [cell.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
                 cell.titleLabel.text = campaignConfig.title;
                 cell.desc.text = campaignConfig.desc;
                 
@@ -259,7 +259,7 @@
         else
         {
             BaseDomain *resource = _tourismResource.contentList[indexPath.row-1];
-            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:resource.imgUrl] placeholderImage:nil];
+            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:resource.imgUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
             cell.titleLabel.text = resource.title;
             cell.desc.text = resource.desc;
         }

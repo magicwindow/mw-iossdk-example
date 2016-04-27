@@ -93,7 +93,7 @@
     {
         [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:leftMwKey] withTarget:cell.leftImg success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             //
-            [cell.leftImg sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+            [cell.leftImg sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
             cell.leftTitle.text = campaignConfig.title;
             cell.leftDesc.text = campaignConfig.desc;
             
@@ -105,7 +105,7 @@
     else
     {
         BaseDomain *domain = _tukuReaource.contentList[leftIndex-1];
-        [cell.leftImg sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:nil];
+        [cell.leftImg sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
         cell.leftTitle.text = domain.title;
         cell.leftDesc.text = domain.desc;
     }
@@ -114,7 +114,7 @@
     {
         [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:rightMwKey] withTarget:cell.rightImg success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             //
-            [cell.rightImg sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+            [cell.rightImg sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
             cell.rightTitle.text = campaignConfig.title;
             cell.rightDesc.text = campaignConfig.desc;
             
@@ -126,7 +126,7 @@
     else
     {
         BaseDomain *domain = _tukuReaource.contentList[rightIndex-1];
-        [cell.rightImg sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:nil];
+        [cell.rightImg sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
         cell.rightTitle.text = domain.title;
         cell.rightDesc.text = domain.desc;
     }
