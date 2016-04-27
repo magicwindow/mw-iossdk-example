@@ -67,7 +67,7 @@
         UINavigationController *nav = [mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangNav"];
         nav.view.tag = 1007;
         [rootVC setCenterPanel: nav];
-        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+        [nav pushViewController:[mainStoryBoard instantiateViewControllerWithIdentifier:@"dianShangDetailVC"] animated:YES];
     }
     else if ([self.mLinkKey isEqualToString:mLink_campaignKey])
     {
