@@ -563,28 +563,10 @@
             </objects>
             <point key="canvasLocation" x="1062" y="574"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="Mcf-0J-oCO">
-            <objects>
-                <tableViewController storyboardIdentifier="O2OVC" id="Ves-jz-f9N" customClass="O2ODetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="ynl-T9-H9K">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="Ves-jz-f9N" id="O6z-HI-GSf"/>
-                            <outlet property="delegate" destination="Ves-jz-f9N" id="lNc-W3-VAR"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zZ7-Zw-M1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1547" y="574"/>
-        </scene>
         <!--O2O详情-->
         <scene sceneID="LiK-rv-nVl">
             <objects>
-                <viewController storyboardIdentifier="O2OVC2" id="eka-xp-VT2" customClass="O2ODetailController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="O2OVC" id="eka-xp-VT2" customClass="O2ODetailController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a2F-ed-00g"/>
                         <viewControllerLayoutGuide type="bottom" id="kyC-6a-1jw"/>
@@ -1174,7 +1156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1L-1h-TsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2152.5" y="574"/>
+            <point key="canvasLocation" x="1759.5" y="574"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ErN-Ys-l5c">

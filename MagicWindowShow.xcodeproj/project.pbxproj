@@ -28,7 +28,6 @@
 		378DE2931C8D1F0C0053F169 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE24A1C8D1F0C0053F169 /* LoginViewController.m */; };
 		378DE2941C8D1F0C0053F169 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE24C1C8D1F0C0053F169 /* MeViewController.m */; };
 		378DE2951C8D1F0C0053F169 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE24E1C8D1F0C0053F169 /* NewsViewController.m */; };
-		378DE2961C8D1F0C0053F169 /* O2ODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2501C8D1F0C0053F169 /* O2ODetailViewController.m */; };
 		378DE2971C8D1F0C0053F169 /* O2OViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2521C8D1F0C0053F169 /* O2OViewController.m */; };
 		378DE2981C8D1F0C0053F169 /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2541C8D1F0C0053F169 /* OrderDetailsViewController.m */; };
 		378DE2991C8D1F0C0053F169 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2561C8D1F0C0053F169 /* PaymentViewController.m */; };
@@ -58,8 +57,6 @@
 		378DE2B21C8D1F0C0053F169 /* ImageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DE2821C8D1F0C0053F169 /* ImageTableCell.xib */; };
 		378DE2B31C8D1F0C0053F169 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2841C8D1F0C0053F169 /* NewsCell.m */; };
 		378DE2B41C8D1F0C0053F169 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DE2851C8D1F0C0053F169 /* NewsCell.xib */; };
-		378DE2B51C8D1F0C0053F169 /* O2OTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2871C8D1F0C0053F169 /* O2OTableCell.m */; };
-		378DE2B61C8D1F0C0053F169 /* O2OTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DE2881C8D1F0C0053F169 /* O2OTableCell.xib */; };
 		378DE2B71C8D1F0C0053F169 /* TourismCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DE2891C8D1F0C0053F169 /* TourismCell.xib */; };
 		378DE2B81C8D1F0C0053F169 /* TwoImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE28B1C8D1F0C0053F169 /* TwoImageCell.m */; };
 		378DE2B91C8D1F0C0053F169 /* TwoImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DE28C1C8D1F0C0053F169 /* TwoImageCell.xib */; };
@@ -192,8 +189,6 @@
 		378DE24C1C8D1F0C0053F169 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		378DE24D1C8D1F0C0053F169 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		378DE24E1C8D1F0C0053F169 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		378DE24F1C8D1F0C0053F169 /* O2ODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ODetailViewController.h; sourceTree = "<group>"; };
-		378DE2501C8D1F0C0053F169 /* O2ODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ODetailViewController.m; sourceTree = "<group>"; };
 		378DE2511C8D1F0C0053F169 /* O2OViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2OViewController.h; sourceTree = "<group>"; };
 		378DE2521C8D1F0C0053F169 /* O2OViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2OViewController.m; sourceTree = "<group>"; };
 		378DE2531C8D1F0C0053F169 /* OrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsViewController.h; sourceTree = "<group>"; };
@@ -243,9 +238,6 @@
 		378DE2831C8D1F0C0053F169 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		378DE2841C8D1F0C0053F169 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		378DE2851C8D1F0C0053F169 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
-		378DE2861C8D1F0C0053F169 /* O2OTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2OTableCell.h; sourceTree = "<group>"; };
-		378DE2871C8D1F0C0053F169 /* O2OTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2OTableCell.m; sourceTree = "<group>"; };
-		378DE2881C8D1F0C0053F169 /* O2OTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2OTableCell.xib; sourceTree = "<group>"; };
 		378DE2891C8D1F0C0053F169 /* TourismCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourismCell.xib; sourceTree = "<group>"; };
 		378DE28A1C8D1F0C0053F169 /* TwoImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoImageCell.h; sourceTree = "<group>"; };
 		378DE28B1C8D1F0C0053F169 /* TwoImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoImageCell.m; sourceTree = "<group>"; };
@@ -474,8 +466,6 @@
 				378DE24C1C8D1F0C0053F169 /* MeViewController.m */,
 				378DE24D1C8D1F0C0053F169 /* NewsViewController.h */,
 				378DE24E1C8D1F0C0053F169 /* NewsViewController.m */,
-				378DE24F1C8D1F0C0053F169 /* O2ODetailViewController.h */,
-				378DE2501C8D1F0C0053F169 /* O2ODetailViewController.m */,
 				378DE2511C8D1F0C0053F169 /* O2OViewController.h */,
 				378DE2521C8D1F0C0053F169 /* O2OViewController.m */,
 				378DE25D1C8D1F0C0053F169 /* TukuViewController.h */,
@@ -541,9 +531,6 @@
 				378DE2831C8D1F0C0053F169 /* NewsCell.h */,
 				378DE2841C8D1F0C0053F169 /* NewsCell.m */,
 				378DE2851C8D1F0C0053F169 /* NewsCell.xib */,
-				378DE2861C8D1F0C0053F169 /* O2OTableCell.h */,
-				378DE2871C8D1F0C0053F169 /* O2OTableCell.m */,
-				378DE2881C8D1F0C0053F169 /* O2OTableCell.xib */,
 				378DE2891C8D1F0C0053F169 /* TourismCell.xib */,
 				378DE28A1C8D1F0C0053F169 /* TwoImageCell.h */,
 				378DE28B1C8D1F0C0053F169 /* TwoImageCell.m */,
@@ -942,7 +929,6 @@
 				CDEAB9ED1CBF8D8600AFA1FE /* CommunityAuthorCell.xib in Resources */,
 				378DE23B1C880DEA0053F169 /* travelList.json in Resources */,
 				37B4041B1BA2C63000393EA0 /* LaunchScreen.xib in Resources */,
-				378DE2B61C8D1F0C0053F169 /* O2OTableCell.xib in Resources */,
 				CDEAB9F21CBF94EA00AFA1FE /* CommunityCommentCell.xib in Resources */,
 				CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */,
 				CD22FD811CB64BFF00D83A19 /* SanyaPlaneCell.xib in Resources */,
@@ -1140,7 +1126,6 @@
 				CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */,
 				CDEAB9BA1CBE3CB100AFA1FE /* SocialShareHelper.m in Sources */,
 				378DE2AB1C8D1F0C0053F169 /* FullIamge2Cell.m in Sources */,
-				378DE2961C8D1F0C0053F169 /* O2ODetailViewController.m in Sources */,
 				CDEAB9E31CBF739100AFA1FE /* CommunityViewController.m in Sources */,
 				378DE2901C8D1F0C0053F169 /* HelpViewController.m in Sources */,
 				CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */,
@@ -1148,7 +1133,6 @@
 				378DE2AD1C8D1F0C0053F169 /* FullImageCell.m in Sources */,
 				CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */,
 				378DE2A81C8D1F0C0053F169 /* ChineseToPinyin.m in Sources */,
-				378DE2B51C8D1F0C0053F169 /* O2OTableCell.m in Sources */,
 				378DE29A1C8D1F0C0053F169 /* PaySuccessViewController.m in Sources */,
 				378DE2971C8D1F0C0053F169 /* O2OViewController.m in Sources */,
 				378DE29F1C8D1F0C0053F169 /* WebViewController.m in Sources */,

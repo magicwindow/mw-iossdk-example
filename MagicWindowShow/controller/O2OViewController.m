@@ -13,7 +13,7 @@
 #import <MagicWindowSDK/MWApi.h>
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
-#import "O2ODetailViewController.h"
+#import "O2ODetailController.h"
 #import "BtnViewCell.h"
 #import "ResourceService.h"
 
@@ -257,7 +257,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"];
+    O2ODetailController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
