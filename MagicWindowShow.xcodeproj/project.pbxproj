@@ -34,7 +34,6 @@
 		378DE2991C8D1F0C0053F169 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2561C8D1F0C0053F169 /* PaymentViewController.m */; };
 		378DE29A1C8D1F0C0053F169 /* PaySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2581C8D1F0C0053F169 /* PaySuccessViewController.m */; };
 		378DE29B1C8D1F0C0053F169 /* ShoppinglistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE25A1C8D1F0C0053F169 /* ShoppinglistViewController.m */; };
-		378DE29C1C8D1F0C0053F169 /* TourismDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE25C1C8D1F0C0053F169 /* TourismDetailViewController.m */; };
 		378DE29D1C8D1F0C0053F169 /* TukuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE25E1C8D1F0C0053F169 /* TukuViewController.m */; };
 		378DE29E1C8D1F0C0053F169 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2601C8D1F0C0053F169 /* ViewController.m */; };
 		378DE29F1C8D1F0C0053F169 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DE2621C8D1F0C0053F169 /* WebViewController.m */; };
@@ -205,8 +204,6 @@
 		378DE2581C8D1F0C0053F169 /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySuccessViewController.m; sourceTree = "<group>"; };
 		378DE2591C8D1F0C0053F169 /* ShoppinglistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppinglistViewController.h; sourceTree = "<group>"; };
 		378DE25A1C8D1F0C0053F169 /* ShoppinglistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppinglistViewController.m; sourceTree = "<group>"; };
-		378DE25B1C8D1F0C0053F169 /* TourismDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourismDetailViewController.h; sourceTree = "<group>"; };
-		378DE25C1C8D1F0C0053F169 /* TourismDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourismDetailViewController.m; sourceTree = "<group>"; };
 		378DE25D1C8D1F0C0053F169 /* TukuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TukuViewController.h; sourceTree = "<group>"; };
 		378DE25E1C8D1F0C0053F169 /* TukuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TukuViewController.m; sourceTree = "<group>"; };
 		378DE25F1C8D1F0C0053F169 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -457,8 +454,6 @@
 				378DE24A1C8D1F0C0053F169 /* LoginViewController.m */,
 				378DE2451C8D1F0C0053F169 /* HomeViewController.h */,
 				378DE2461C8D1F0C0053F169 /* HomeViewController.m */,
-				378DE25B1C8D1F0C0053F169 /* TourismDetailViewController.h */,
-				378DE25C1C8D1F0C0053F169 /* TourismDetailViewController.m */,
 				378DE23D1C8D1F0C0053F169 /* CityPickerViewController.h */,
 				378DE23E1C8D1F0C0053F169 /* CityPickerViewController.m */,
 				378DE23F1C8D1F0C0053F169 /* DianShangDetailViewController.h */,
@@ -1154,7 +1149,6 @@
 				CDEAB9B61CBE136600AFA1FE /* O2ODetailController.m in Sources */,
 				378DE2A81C8D1F0C0053F169 /* ChineseToPinyin.m in Sources */,
 				378DE2B51C8D1F0C0053F169 /* O2OTableCell.m in Sources */,
-				378DE29C1C8D1F0C0053F169 /* TourismDetailViewController.m in Sources */,
 				378DE29A1C8D1F0C0053F169 /* PaySuccessViewController.m in Sources */,
 				378DE2971C8D1F0C0053F169 /* O2OViewController.m in Sources */,
 				378DE29F1C8D1F0C0053F169 /* WebViewController.m in Sources */,

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rWs-eT-ceJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rWs-eT-ceJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -431,256 +431,6 @@
             </objects>
             <point key="canvasLocation" x="1062" y="-98"/>
         </scene>
-        <!--Tourism Detail View Controller-->
-        <scene sceneID="MEl-8t-LeT">
-            <objects>
-                <tableViewController storyboardIdentifier="tourismDVC" id="CfF-7b-EN2" customClass="TourismDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="244" sectionHeaderHeight="28" sectionFooterHeight="28" id="BJz-Pa-c3H">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="detailBannerCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailBannerCell" rowHeight="244" id="XVk-VK-bf7" customClass="DetailBannerCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="244"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVk-VK-bf7" id="nms-an-Dn1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="244"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanya_01" translatesAutoresizingMaskIntoConstraints="NO" id="2hI-8v-r0E">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="2hI-8v-r0E" secondAttribute="height" multiplier="400:187" id="c8M-rk-uSt"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="c8M-rk-uSt"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="c8M-rk-uSt"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanya_02" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ge-nfL">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="20" id="5pn-0c-ZMZ"/>
-                                                <constraint firstAttribute="width" secondItem="kbM-ge-nfL" secondAttribute="height" multiplier="1:1" id="PEf-Gf-dKh"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="5pn-0c-ZMZ"/>
-                                                    <exclude reference="PEf-Gf-dKh"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="5pn-0c-ZMZ"/>
-                                                    <include reference="PEf-Gf-dKh"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三亚特色美食" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-iO-9pk">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="A5H-Nx-H4I"/>
-                                                <constraint firstAttribute="width" constant="125" id="nLX-kY-nwT"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="A5H-Nx-H4I"/>
-                                                    <exclude reference="nLX-kY-nwT"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="A5H-Nx-H4I"/>
-                                                    <include reference="nLX-kY-nwT"/>
-                                                </mask>
-                                            </variation>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-yu-Keg">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="10" id="wsx-2e-IeD"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="wsx-2e-IeD"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="wsx-2e-IeD"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Uber" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-o2-n6K">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="PuJ-b4-8Jp"/>
-                                                <constraint firstAttribute="height" constant="50" id="h2H-vP-XfP"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="PuJ-b4-8Jp"/>
-                                                    <exclude reference="h2H-vP-XfP"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="PuJ-b4-8Jp"/>
-                                                    <include reference="h2H-vP-XfP"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="kbM-ge-nfL" firstAttribute="leading" secondItem="nms-an-Dn1" secondAttribute="leadingMargin" constant="7" id="2mL-y8-zsj"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="2hI-8v-r0E" secondAttribute="trailing" constant="-8" id="3sM-Tw-gCP"/>
-                                        <constraint firstItem="kbM-ge-nfL" firstAttribute="top" secondItem="2qu-yu-Keg" secondAttribute="bottom" constant="15" id="Ctz-ci-S35"/>
-                                        <constraint firstItem="w3Q-iO-9pk" firstAttribute="top" secondItem="2qu-yu-Keg" secondAttribute="bottom" constant="15" id="Dmh-CX-Yl0"/>
-                                        <constraint firstItem="2hI-8v-r0E" firstAttribute="top" secondItem="nms-an-Dn1" secondAttribute="topMargin" constant="-8" id="G5Q-U9-qx4"/>
-                                        <constraint firstItem="2qu-yu-Keg" firstAttribute="top" secondItem="2hI-8v-r0E" secondAttribute="bottom" id="GAS-4w-Tp0"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="2qu-yu-Keg" secondAttribute="trailing" constant="-8" id="UE2-si-rAX"/>
-                                        <constraint firstItem="gF8-o2-n6K" firstAttribute="top" secondItem="nms-an-Dn1" secondAttribute="topMargin" constant="61" id="XB9-90-dBq"/>
-                                        <constraint firstItem="2qu-yu-Keg" firstAttribute="leading" secondItem="nms-an-Dn1" secondAttribute="leadingMargin" constant="-8" id="baT-pZ-nM1"/>
-                                        <constraint firstItem="w3Q-iO-9pk" firstAttribute="leading" secondItem="kbM-ge-nfL" secondAttribute="trailing" constant="15" id="dRz-Om-NM0"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="gF8-o2-n6K" secondAttribute="trailing" constant="8" id="rEP-PY-jJ7"/>
-                                        <constraint firstItem="2hI-8v-r0E" firstAttribute="leading" secondItem="nms-an-Dn1" secondAttribute="leadingMargin" constant="-8" id="zmo-i5-L37"/>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="2hI-8v-r0E"/>
-                                            <exclude reference="kbM-ge-nfL"/>
-                                            <exclude reference="w3Q-iO-9pk"/>
-                                            <exclude reference="2qu-yu-Keg"/>
-                                            <exclude reference="gF8-o2-n6K"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <exclude reference="Dmh-CX-Yl0"/>
-                                            <exclude reference="dRz-Om-NM0"/>
-                                            <exclude reference="3sM-Tw-gCP"/>
-                                            <exclude reference="G5Q-U9-qx4"/>
-                                            <exclude reference="zmo-i5-L37"/>
-                                            <exclude reference="GAS-4w-Tp0"/>
-                                            <exclude reference="UE2-si-rAX"/>
-                                            <exclude reference="baT-pZ-nM1"/>
-                                            <exclude reference="XB9-90-dBq"/>
-                                            <exclude reference="rEP-PY-jJ7"/>
-                                            <exclude reference="2mL-y8-zsj"/>
-                                            <exclude reference="Ctz-ci-S35"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="2hI-8v-r0E"/>
-                                            <include reference="kbM-ge-nfL"/>
-                                            <include reference="w3Q-iO-9pk"/>
-                                            <include reference="2qu-yu-Keg"/>
-                                            <include reference="gF8-o2-n6K"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <include reference="Dmh-CX-Yl0"/>
-                                            <include reference="dRz-Om-NM0"/>
-                                            <include reference="3sM-Tw-gCP"/>
-                                            <include reference="G5Q-U9-qx4"/>
-                                            <include reference="zmo-i5-L37"/>
-                                            <include reference="GAS-4w-Tp0"/>
-                                            <include reference="UE2-si-rAX"/>
-                                            <include reference="baT-pZ-nM1"/>
-                                            <include reference="XB9-90-dBq"/>
-                                            <include reference="rEP-PY-jJ7"/>
-                                            <include reference="2mL-y8-zsj"/>
-                                            <include reference="Ctz-ci-S35"/>
-                                        </mask>
-                                    </variation>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="uberView" destination="gF8-o2-n6K" id="Cvy-IN-w3R"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DetailBtnCell" rowHeight="97" id="gdp-1o-e9c" customClass="DetailBtnCell">
-                                <rect key="frame" x="0.0" y="272" width="600" height="97"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gdp-1o-e9c" id="EMT-fL-Sh4">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="97"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanya_btn" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-Dn-aUx">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="33" id="QAv-el-cSu"/>
-                                                <constraint firstAttribute="width" constant="300" id="UV6-KT-GyC"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="QAv-el-cSu"/>
-                                                    <exclude reference="UV6-KT-GyC"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="QAv-el-cSu"/>
-                                                    <include reference="UV6-KT-GyC"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="DJ0-Dn-aUx" firstAttribute="centerX" secondItem="EMT-fL-Sh4" secondAttribute="centerX" id="OtP-Tb-y97"/>
-                                        <constraint firstItem="DJ0-Dn-aUx" firstAttribute="centerY" secondItem="EMT-fL-Sh4" secondAttribute="centerY" id="qCi-M1-mUW">
-                                            <variation key="widthClass=compact" constant="0.0"/>
-                                        </constraint>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="DJ0-Dn-aUx"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <exclude reference="OtP-Tb-y97"/>
-                                            <exclude reference="qCi-M1-mUW"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="DJ0-Dn-aUx"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <include reference="OtP-Tb-y97"/>
-                                            <include reference="qCi-M1-mUW"/>
-                                        </mask>
-                                    </variation>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="btnView" destination="DJ0-Dn-aUx" id="2vo-bU-KpQ"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BtnCell" rowHeight="50" id="Txo-js-QPc">
-                                <rect key="frame" x="0.0" y="369" width="600" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Txo-js-QPc" id="ALV-Bx-Y6P">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="CfF-7b-EN2" id="wSK-1m-L7H"/>
-                            <outlet property="delegate" destination="CfF-7b-EN2" id="GjM-if-vDO"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tJY-0D-ksp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2643" y="208"/>
-        </scene>
         <!--Web View Controller-->
         <scene sceneID="qaY-gV-vrC">
             <objects>
@@ -735,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEc-TK-SYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3319.5" y="214"/>
+            <point key="canvasLocation" x="3181.5" y="-98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A7K-e5-fTN">
@@ -2150,7 +1900,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrA-R6-dBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4072.5" y="214"/>
+            <point key="canvasLocation" x="2461.5" y="-98"/>
         </scene>
         <!--购物车-->
         <scene sceneID="rxV-6d-FbI">
@@ -5664,7 +5414,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2643" y="-466"/>
+            <point key="canvasLocation" x="1759.5" y="-98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Qg-Cl-zSg">
@@ -6468,7 +6218,6 @@
         <image name="O2O_like1" width="92" height="92"/>
         <image name="O2O_like2" width="62" height="53"/>
         <image name="O2O_share" width="40" height="40"/>
-        <image name="Uber" width="200" height="200"/>
         <image name="community_back" width="29" height="47"/>
         <image name="community_comment" width="159" height="76"/>
         <image name="community_font" width="62" height="41"/>
@@ -6499,9 +6248,6 @@
         <image name="pay_unselected" width="30" height="29"/>
         <image name="pay_user" width="25" height="25"/>
         <image name="pay_wechat" width="60" height="60"/>
-        <image name="sanya_01" width="640" height="300"/>
-        <image name="sanya_02" width="39" height="39"/>
-        <image name="sanya_btn" width="550" height="60"/>
         <image name="share66" width="22" height="22"/>
         <image name="分享" width="60" height="57"/>
         <image name="收藏" width="71" height="60"/>
