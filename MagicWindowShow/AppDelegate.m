@@ -30,6 +30,7 @@
     // Override point for customization after application launch.
     
     CommonService *service = [CommonService new];
+
     UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     if ([service isFirstLauch])
     {
@@ -39,6 +40,8 @@
     {
         self.window.rootViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SideVC"];
     }
+    
+    [service checkUpdate];
 
     //注册魔窗
     [MWApi registerApp:APP_KEY];
