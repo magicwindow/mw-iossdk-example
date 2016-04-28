@@ -61,37 +61,37 @@
             case 1:
             {
                 cell.title.text = @"旅游";
-                imgName = @"lvxing";
+                imgName = @"sidebar_travel";
                 break;
             }
             case 2:
             {
                 cell.title.text = @"电商";
-                imgName = @"dianshang";
+                imgName = @"sidebar_shopping";
                 break;
             }
             case 3:
             {
                 cell.title.text = @"O2O";
-                imgName = @"O2O";
+                imgName = @"sidebar_o2o";
                 break;
             }
             case 4:
             {
                 cell.title.text = @"电影";
-                imgName = @"movie";
+                imgName = @"sidebar_movie";
                 break;
             }
             case 5:
             {
                 cell.title.text = @"资讯";
-                imgName = @"news";
+                imgName = @"sidebar_news";
                 break;
             }
             case 6:
             {
                 cell.title.text = @"联系我们";
-                imgName = @"contact";
+                imgName = @"sidebar_contact";
             }
                 
             default:
