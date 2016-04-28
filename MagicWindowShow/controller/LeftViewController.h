@@ -21,5 +21,6 @@
 @end
 
 @interface LeftViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *versionLabel;
 
 @end
