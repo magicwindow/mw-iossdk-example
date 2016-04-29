@@ -190,7 +190,7 @@
         {
             [MWApi configAdViewWithKey:O2O_middle_02 withTargetView:cell.imgView2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
+                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -202,13 +202,13 @@
         }
         else
         {
-            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[1]] placeholderImage:[UIImage imageNamed:@"570-250"]];
+            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[1]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
         if ([MWApi isActiveOfmwKey:O2O_middle_03])
         {
             [MWApi configAdViewWithKey:O2O_middle_03 withTargetView:cell.imgView3 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
+                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -220,7 +220,7 @@
         }
         else
         {
-            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[2]] placeholderImage:[UIImage imageNamed:@"570-250"]];
+            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[2]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
         
         return cell;
