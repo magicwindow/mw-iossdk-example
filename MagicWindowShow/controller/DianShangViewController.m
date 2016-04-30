@@ -162,7 +162,7 @@
             {
                 [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:imgView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                     //
-                    [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                    [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"570-250"]];
                 } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                     //
                     NSLog(@"key:%@,error:%@",[_mwkeyDic objectForKey:mwkey],errorMessage);
@@ -170,7 +170,7 @@
             }
             else
             {
-                [imgView sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.headList[idx]] placeholderImage:nil];
+                [imgView sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.headList[idx]] placeholderImage:[UIImage imageNamed:@"570-250"]];
             }
         }];
         return cell;
@@ -232,7 +232,7 @@
             {
                 [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:btnView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                     //
-                    [btnView.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                    [btnView.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
                     btnView.titleLabel.text = campaignConfig.title;
                 } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                     //
@@ -259,7 +259,7 @@
         {
             [MWApi configAdViewWithKey:DianShang_middle_01 withTarget:cell.imgView1 success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"298-448"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -268,13 +268,13 @@
         }
         else
         {
-            [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[0]] placeholderImage:nil];
+            [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[0]] placeholderImage:[UIImage imageNamed:@"298-448"]];
         }
         if ([MWApi isActiveOfmwKey:DianShang_middle_02])
         {
             [MWApi configAdViewWithKey:DianShang_middle_02 withTarget:cell.imgView2 success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -283,13 +283,13 @@
         }
         else
         {
-            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[1]] placeholderImage:nil];
+            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[1]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
         if ([MWApi isActiveOfmwKey:DianShang_middle_03])
         {
             [MWApi configAdViewWithKey:DianShang_middle_03 withTarget:cell.imgView3 success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -298,7 +298,7 @@
         }
         else
         {
-            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[2]] placeholderImage:nil];
+            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_dianShangResource.middleList[2]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
 
         return cell;
@@ -325,7 +325,7 @@
         else
         {
             BaseDomain *resource = _dianShangResource.contentList[indexPath.row-3];
-            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:resource.imgUrl] placeholderImage:nil];
+            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:resource.imgUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
             cell.titleLabel.text = resource.title;
         }
         
@@ -365,7 +365,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC"] animated:YES];
 }
 
 

@@ -15,5 +15,6 @@
 - (BOOL)isDianshangFirstLauch;
 - (void)saveUserName:(nullable NSString *)userName;
 - (BOOL)hasLogin;
+- (void)checkUpdate;
 
 @end

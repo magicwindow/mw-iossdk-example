@@ -14,7 +14,6 @@
 #import "LeftViewController.h"
 #import "CommonService.h"
 #import "DianShangViewController.h"
-#import "DianShangDetailViewController.h"
 #import <JASidePanels/JASidePanelController.h>
 #import "HelpViewController.h"
 
@@ -31,6 +30,7 @@
     // Override point for customization after application launch.
     
     CommonService *service = [CommonService new];
+
     UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     if ([service isFirstLauch])
     {
@@ -40,6 +40,8 @@
     {
         self.window.rootViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SideVC"];
     }
+    
+    [service checkUpdate];
 
     //注册魔窗
     [MWApi registerApp:APP_KEY];
@@ -169,7 +171,7 @@
     [rootVC showLeftPanelAnimated:YES];
     UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangNav"];
     [rootVC setCenterPanel: nav];
-    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC2"] animated:YES];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"dianShangDetailVC"] animated:YES];
 }
 
 //接收到打开O2O详情页的请求，打开O2O详情页
@@ -192,7 +194,7 @@
     [rootVC showLeftPanelAnimated:YES];
     UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"];
     [rootVC setCenterPanel: nav];
-    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"] animated:YES];
+    [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"] animated:YES];
 }
 
 //接收到打开资讯详情页的请求，打开资讯详情页

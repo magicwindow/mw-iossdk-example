@@ -177,7 +177,7 @@
     {
         [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:cell success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
             //
-            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+            [cell.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
             cell.titleLabel.text = campaignConfig.title;
             cell.desc.text = campaignConfig.desc;
             
@@ -189,7 +189,7 @@
     else
     {
         BaseDomain *domain = list[indexPath.row];
-        [cell.imgView sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:nil];
+        [cell.imgView sd_setImageWithURL:[NSURL URLWithString:domain.imgUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
         cell.titleLabel.text = domain.title;
         cell.desc.text = domain.desc;
     }

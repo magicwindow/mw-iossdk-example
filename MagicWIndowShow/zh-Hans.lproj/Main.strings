@@ -35,8 +35,8 @@
 /* Class = "UILabel"; text = "微信支付"; ObjectID = "9dC-Ht-Orq"; */
 "9dC-Ht-Orq.text" = "微信支付";
 
-/* Class = "UILabel"; text = "重构交互 连接商业"; ObjectID = "9lv-kR-FzC"; */
-"9lv-kR-FzC.text" = "重构交互 连接商业";
+/* Class = "UILabel"; text = "做最好的工具，连接最好的人"; ObjectID = "9lv-kR-FzC"; */
+"9lv-kR-FzC.text" = "做最好的工具，连接最好的人";
 
 /* Class = "UINavigationItem"; title = "个人中心"; ObjectID = "AoY-Ch-kv8"; */
 "AoY-Ch-kv8.title" = "个人中心";

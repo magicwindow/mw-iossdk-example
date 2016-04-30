@@ -13,7 +13,7 @@
 #import <MagicWindowSDK/MWApi.h>
 #import "GlobalDefine.h"
 #import "UIImageView+WebCache.h"
-#import "O2ODetailViewController.h"
+#import "O2ODetailController.h"
 #import "BtnViewCell.h"
 #import "ResourceService.h"
 
@@ -99,7 +99,7 @@
             {
                 [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:imgView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                     //
-                    [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                    [imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                     //
                     NSLog(@"key:%@,error:%@",[_mwkeyDic objectForKey:mwkey],errorMessage);
@@ -107,7 +107,7 @@
             }
             else
             {
-                [imgView sd_setImageWithURL:[NSURL URLWithString:_o2oResource.headList[idx]] placeholderImage:nil];
+                [imgView sd_setImageWithURL:[NSURL URLWithString:_o2oResource.headList[idx]] placeholderImage:[UIImage imageNamed:@"414-221"]];
             }
         }];
         return cell;
@@ -149,7 +149,7 @@
             {
                 [MWApi configAdViewWithKey:[_mwkeyDic objectForKey:mwkey] withTarget:btnView success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                     //
-                    [btnView.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                    [btnView.imgView sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"300-300"]];
                 } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                     //
                     NSLog(@"key:%@,error:%@",[_mwkeyDic objectForKey:mwkey],errorMessage);
@@ -175,7 +175,7 @@
         {
             [MWApi configAdViewWithKey:O2O_middle_01 withTarget:cell.imgView1 success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"298-448"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -184,13 +184,13 @@
         }
         else
         {
-            [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[0]] placeholderImage:nil];
+            [cell.imgView1 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[0]] placeholderImage:[UIImage imageNamed:@"298-448"]];
         }
         if ([MWApi isActiveOfmwKey:O2O_middle_02])
         {
             [MWApi configAdViewWithKey:O2O_middle_02 withTargetView:cell.imgView2 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -202,13 +202,13 @@
         }
         else
         {
-            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[1]] placeholderImage:nil];
+            [cell.imgView2 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[1]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
         if ([MWApi isActiveOfmwKey:O2O_middle_03])
         {
             [MWApi configAdViewWithKey:O2O_middle_03 withTargetView:cell.imgView3 withTargetViewController:self success:^(NSString * _Nonnull key, UIView * _Nonnull view, MWCampaignConfig * _Nonnull campaignConfig) {
                 //
-                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:nil];
+                [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:campaignConfig.imageUrl] placeholderImage:[UIImage imageNamed:@"414-221"]];
                 
             } failure:^(NSString * _Nonnull key, UIView * _Nonnull view, NSString * _Nullable errorMessage) {
                 //
@@ -220,7 +220,7 @@
         }
         else
         {
-            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[2]] placeholderImage:nil];
+            [cell.imgView3 sd_setImageWithURL:[NSURL URLWithString:_o2oResource.contentList[2]] placeholderImage:[UIImage imageNamed:@"414-221"]];
         }
         
         return cell;
@@ -257,7 +257,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    O2ODetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"];
+    O2ODetailController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
