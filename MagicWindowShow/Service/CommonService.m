@@ -115,17 +115,17 @@
             return;
         } else {
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-            NSLog(@"%@", json);
             NSDictionary *result = [json objectForKey:@"result"];
             if (result) {
                 BOOL shouldUpgrade = [[result objectForKey:@"upgrade"] boolValue];
                 BOOL isForceUpgrade = [[result objectForKey:@"forceUpgrade"] boolValue];
                 NSString *newVersionUrl = [result objectForKey:@"newVersionUrl"];
+                NSString *desc = [result objectForKey:@"desc"];
                 if (!shouldUpgrade) {
                     return;
                 } else {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [self handleUpgrade:isForceUpgrade withUrl:newVersionUrl];
+                        [self handleUpgrade:isForceUpgrade withUrl:newVersionUrl withDesc:desc];
                     });
                 }
             }
@@ -134,8 +134,10 @@
     [dataTask resume];
 }
 
-- (void)handleUpgrade:(BOOL)isForceUpgrade withUrl:(NSString *)url {
+- (void)handleUpgrade:(BOOL)isForceUpgrade withUrl:(NSString *)url withDesc:(NSString *)desc {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"检测到新版本" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    NSAttributedString *message = [[NSAttributedString alloc] initWithData:[desc dataUsingEncoding:NSUTF8StringEncoding] options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: @(NSUTF8StringEncoding)}documentAttributes:nil error:nil];
+    [alert setValue:message forKey:@"attributedMessage"];
     UIAlertAction *update = [UIAlertAction actionWithTitle:@"立即更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }];
