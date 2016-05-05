@@ -121,11 +121,15 @@
                 BOOL shouldUpgrade = [[result objectForKey:@"upgrade"] boolValue];
                 BOOL isForceUpgrade = [[result objectForKey:@"forceUpgrade"] boolValue];
                 NSString *newVersionUrl = [result objectForKey:@"newVersionUrl"];
+                NSString * desc = [result objectForKey:@"desc"];
+                desc = [desc stringByReplacingOccurrencesOfString:@"<span>" withString:@""];
+                desc = [desc stringByReplacingOccurrencesOfString:@"</span>" withString:@""];
+                desc = [desc stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
                 if (!shouldUpgrade) {
                     return;
                 } else {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [self handleUpgrade:isForceUpgrade withUrl:newVersionUrl];
+                        [self handleUpgrade:isForceUpgrade withMessage:desc withUrl:newVersionUrl];
                     });
                 }
             }
@@ -134,8 +138,8 @@
     [dataTask resume];
 }
 
-- (void)handleUpgrade:(BOOL)isForceUpgrade withUrl:(NSString *)url {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"检测到新版本" message:nil preferredStyle:UIAlertControllerStyleAlert];
+- (void)handleUpgrade:(BOOL)isForceUpgrade withMessage:(NSString *)message withUrl:(NSString *)url {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"检测到新版本" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *update = [UIAlertAction actionWithTitle:@"立即更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }];

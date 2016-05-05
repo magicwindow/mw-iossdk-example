@@ -76,6 +76,7 @@
 		379F232B1CCDB7DD0074929D /* o2oDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F23281CCDB7DD0074929D /* o2oDetail.json */; };
 		379F232C1CCDB7DD0074929D /* shopDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F23291CCDB7DD0074929D /* shopDetail.json */; };
 		379F232D1CCDB7DD0074929D /* travelDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 379F232A1CCDB7DD0074929D /* travelDetail.json */; };
+		379F24661CD3B35B0074929D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F24651CD3B35A0074929D /* libxml2.tbd */; };
 		37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B21C771C7471FB00C85C5C /* libSDWebImage.a */; };
 		37B4040D1BA2C63000393EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040C1BA2C63000393EA0 /* main.m */; };
 		37B404101BA2C63000393EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4040F1BA2C63000393EA0 /* AppDelegate.m */; };
@@ -249,6 +250,7 @@
 		379F23281CCDB7DD0074929D /* o2oDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = o2oDetail.json; sourceTree = "<group>"; };
 		379F23291CCDB7DD0074929D /* shopDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopDetail.json; sourceTree = "<group>"; };
 		379F232A1CCDB7DD0074929D /* travelDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = travelDetail.json; sourceTree = "<group>"; };
+		379F24651CD3B35A0074929D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		37B21C771C7471FB00C85C5C /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		37B404071BA2C63000393EA0 /* MagicWindowShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicWindowShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B4040B1BA2C63000393EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379F24661CD3B35B0074929D /* libxml2.tbd in Frameworks */,
 				374812A11C748B1400C6F49A /* libJASidePanels.a in Frameworks */,
 				37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */,
 				3779F33B1BB6882B00CD446A /* libsqlite3.tbd in Frameworks */,
@@ -362,6 +365,7 @@
 		0477D39ADEFF1091CF935AED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				379F24651CD3B35A0074929D /* libxml2.tbd */,
 				3723BF611C7A090E00B25508 /* libsqlite3.0.tbd */,
 				3723BF5F1C7A090200B25508 /* libz.tbd */,
 				3723BF5D1C7A08FB00B25508 /* CoreLocation.framework */,
