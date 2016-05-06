@@ -822,6 +822,12 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = LVB5NG7NJ5;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
 							};

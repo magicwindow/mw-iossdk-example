@@ -106,5 +106,9 @@
 #define mLink_NewsDetail        @"NewsDetail"
 #define mLink_VideoDetail       @"VideoDetail"
 
+// 个推
+#define kGtAppId                @"w6FW31HnvE6lEGRBPT2Iy"
+#define kGtAppKey               @"zLoqLMRCnl5x1wkVwUT3l8"
+#define kGtAppSecret            @"0m9DdCaO3tA47RgXBkAT73"
 
 #endif /* GlobalDefine_h */
