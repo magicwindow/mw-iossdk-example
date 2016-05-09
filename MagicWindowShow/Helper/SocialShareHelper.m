@@ -59,4 +59,17 @@
     [WXApi sendReq:req];
 }
 
+#pragma mark - 分享图片到微信
+- (void)sendWeChatWithScene:(MWShareType)scene imageData:(NSData *)imageData ThumbImageData:(NSData *)thumbImageData {
+    WXImageObject *imageObject = [[WXImageObject alloc] init];
+    imageObject.imageData = imageData;
+    
+    WXMediaMessage *message = [[WXMediaMessage alloc] init];
+    message.mediaObject = imageObject;
+    message.thumbData = thumbImageData;
+    
+    [self sendMediaMessageToWXWithWithScene:(MWShareType)scene Message:message];
+}
+
+
 @end
