@@ -339,5 +339,15 @@
     NSLog(@"\n>>>[GexinSdk error]:%@\n\n", [error localizedDescription]);
 }
 
+// 处理 remoteNotification
+- (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
+{
+    NSLog(@"userInfo is %@", userInfo);
+    NSString *urlString = [userInfo objectForKey:@"url"];
+    NSURL *url = [NSURL URLWithString:urlString];
+    [MWApi routeMLink:url];
+    [MWApi handleOpenURL:url delegate:self];
+}
+
 
 @end
