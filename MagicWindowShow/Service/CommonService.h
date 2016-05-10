@@ -16,5 +16,6 @@
 - (void)saveUserName:(nullable NSString *)userName;
 - (BOOL)hasLogin;
 - (void)checkUpdate;
+- (void)getRemoteNotification;
 
 @end

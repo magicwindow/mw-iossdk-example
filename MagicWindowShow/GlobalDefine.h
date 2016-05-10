@@ -111,4 +111,6 @@
 #define kGtAppKey               @"zLoqLMRCnl5x1wkVwUT3l8"
 #define kGtAppSecret            @"0m9DdCaO3tA47RgXBkAT73"
 
+#define kGtDeviceToken          @"RemoteNotificationsDeviceToken"
+
 #endif /* GlobalDefine_h */

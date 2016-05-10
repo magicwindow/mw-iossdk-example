@@ -211,6 +211,12 @@
     {
         [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HelpVC"] animated:YES];
     }
+    
+    if (indexPath.row == 11)
+    {
+        CommonService *service = [[CommonService alloc] init];
+        [service performSelector:@selector(getRemoteNotification) withObject:nil afterDelay:5];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

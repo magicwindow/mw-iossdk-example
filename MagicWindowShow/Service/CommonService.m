@@ -7,6 +7,7 @@
 //
 
 #import "CommonService.h"
+#import "GlobalDefine.h"
 #import <UIKit/UIKit.h>
 
 #define KEY_FIRST_LAUCH             @"key_first_lauch"
@@ -156,6 +157,35 @@
     }
     
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)getRemoteNotification {
+    NSURL *url = [NSURL URLWithString:@"http://demoapp.test.magicwindow.cn/v1/demoapp/pushMessage"];
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:kGtDeviceToken];
+    if (deviceToken == nil) {
+        NSLog(@"deviceToken is nil");
+        return;
+    }
+    NSDictionary *parameter = @{@"os":@"1", @"cid":deviceToken};
+    NSError *error = nil;
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:parameter options:0 error:&error];
+    [request setHTTPBody:postData];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"error:%@", error);
+            return;
+        }
+    }];
+    [dataTask resume];
 }
 
 @end

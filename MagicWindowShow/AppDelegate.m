@@ -319,6 +319,8 @@
     
     //向个推服务器注册deviceToken
     [GeTuiSdk registerDeviceToken:token];
+    [[NSUserDefaults standardUserDefaults] setObject:token forKey:kGtDeviceToken];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
@@ -342,6 +344,14 @@
 // 处理 remoteNotification
 - (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
 {
+    NSLog(@"userInfo is %@", userInfo);
+    NSString *urlString = [userInfo objectForKey:@"url"];
+    NSURL *url = [NSURL URLWithString:urlString];
+    [MWApi routeMLink:url];
+    [MWApi handleOpenURL:url delegate:self];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     NSLog(@"userInfo is %@", userInfo);
     NSString *urlString = [userInfo objectForKey:@"url"];
     NSURL *url = [NSURL URLWithString:urlString];
