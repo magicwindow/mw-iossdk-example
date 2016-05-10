@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -109,19 +109,20 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xc-P5-6ky" userLabel="MoreFood">
                         <rect key="frame" x="0.0" y="225" width="400" height="89"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PO1-Oi-r12">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-8x-GCu">
                                 <rect key="frame" x="101" y="19" width="199" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="IUN-jQ-1IL"/>
-                                    <constraint firstAttribute="width" secondItem="PO1-Oi-r12" secondAttribute="height" multiplier="199:52" id="MBB-jA-X57"/>
+                                    <constraint firstAttribute="width" secondItem="q6o-8x-GCu" secondAttribute="height" multiplier="199:52" id="fmY-If-qSr"/>
+                                    <constraint firstAttribute="width" constant="199" id="kj9-jy-V41"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="更多美食"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PO1-Oi-r12" firstAttribute="centerX" secondItem="4xc-P5-6ky" secondAttribute="centerX" id="PlL-T1-EID"/>
-                            <constraint firstItem="PO1-Oi-r12" firstAttribute="centerY" secondItem="4xc-P5-6ky" secondAttribute="centerY" id="SaM-SX-NYO"/>
+                            <constraint firstItem="q6o-8x-GCu" firstAttribute="centerY" secondItem="4xc-P5-6ky" secondAttribute="centerY" id="cWq-1k-GdC"/>
                             <constraint firstAttribute="width" secondItem="4xc-P5-6ky" secondAttribute="height" multiplier="20:3" id="cww-4h-9OI"/>
+                            <constraint firstItem="q6o-8x-GCu" firstAttribute="centerX" secondItem="4xc-P5-6ky" secondAttribute="centerX" id="iiz-QO-393"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -152,12 +153,13 @@
                 <outlet property="food2ImageView" destination="nkY-1J-B6r" id="Ama-ZX-azD"/>
                 <outlet property="food3ImageView" destination="uBB-6x-fa3" id="DCa-Ps-dGX"/>
                 <outlet property="foodImageWidthConstraint" destination="9jN-Nm-4mF" id="PCJ-Z4-BxE"/>
-                <outlet property="moreFoodImageView" destination="PO1-Oi-r12" id="ycn-15-fOm"/>
+                <outlet property="moreFoodButton" destination="q6o-8x-GCu" id="fse-xV-NvX"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="更多美食" width="473" height="124"/>
         <image name="线条01" width="211" height="43"/>
         <image name="线条02" width="210" height="40"/>
     </resources>
