@@ -342,19 +342,26 @@
 }
 
 // 处理 remoteNotification
-- (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
-{
-    NSLog(@"userInfo is %@", userInfo);
-    NSString *urlString = [userInfo objectForKey:@"url"];
-    NSURL *url = [NSURL URLWithString:urlString];
-    [MWApi routeMLink:url];
-    [MWApi handleOpenURL:url delegate:self];
-}
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     NSLog(@"userInfo is %@", userInfo);
     NSString *urlString = [userInfo objectForKey:@"url"];
     NSURL *url = [NSURL URLWithString:urlString];
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"收到一条推送" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *go = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [MWApi routeMLink:url];
+            [MWApi handleOpenURL:url delegate:self];
+        }];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        
+        [alert addAction:go];
+        [alert addAction:cancel];
+        [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        return;
+    }
     [MWApi routeMLink:url];
     [MWApi handleOpenURL:url delegate:self];
 }

@@ -160,7 +160,13 @@
 }
 
 - (void)getRemoteNotification {
+    
+#ifdef DEBUG
     NSURL *url = [NSURL URLWithString:@"http://demoapp.test.magicwindow.cn/v1/demoapp/pushMessage"];
+#else
+    NSURL *url = [NSURL URLWithString:@"http://demoapp.test.magicwindow.cn/v1/demoapp/pushMessageForIosTest"];
+#endif
+    
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
     

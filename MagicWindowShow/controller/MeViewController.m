@@ -215,7 +215,7 @@
     if (indexPath.row == 11)
     {
         CommonService *service = [[CommonService alloc] init];
-        [service performSelector:@selector(getRemoteNotification) withObject:nil afterDelay:5];
+        [service getRemoteNotification];
     }
 }
 
