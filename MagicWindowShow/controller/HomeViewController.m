@@ -34,8 +34,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+/* 暂时不添加此引导页
     CommonService *service = [CommonService new];
     if ([service isLvyouFirstLauch])
     {
@@ -43,7 +43,7 @@
         helpView.frame = [[UIScreen mainScreen] bounds];
         [self.navigationController.view addSubview:helpView];
     }
-    
+*/
     [[ResourceService sharedInstance] getTourismResource:^(TourismDomain *domain) {
         
         _tourismResource = domain;

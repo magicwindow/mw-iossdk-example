@@ -135,8 +135,8 @@
             case 11:
             {
                 mwkey = me_07;
-                title = @"去App Store给我们个好评吧!";
-                imgName = @"icon-7";
+                title = @"推送演示";
+                imgName = @"icon_push";
                 break;
             }
             case 12:
@@ -210,6 +210,12 @@
     if (indexPath.row == 12)
     {
         [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"HelpVC"] animated:YES];
+    }
+    
+    if (indexPath.row == 11)
+    {
+        CommonService *service = [[CommonService alloc] init];
+        [service getRemoteNotification];
     }
 }
 

@@ -98,6 +98,7 @@
 		CD22FD851CB7844200D83A19 /* GoodsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD831CB7844100D83A19 /* GoodsShowCell.m */; };
 		CD22FD861CB7844200D83A19 /* GoodsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */; };
 		CD22FD891CB78C2200D83A19 /* DiaperDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */; };
+		CD91F8A21CE06CC00013BB67 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91F8A11CE06CC00013BB67 /* ContactViewController.m */; };
 		CDE2EA2C1CC8702A008DEECB /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */; };
 		CDEAB9B21CBDFBB000AFA1FE /* O2OShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9B01CBDFBB000AFA1FE /* O2OShowCell.m */; };
 		CDEAB9B31CBDFBB000AFA1FE /* O2OShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9B11CBDFBB000AFA1FE /* O2OShowCell.xib */; };
@@ -289,6 +290,8 @@
 		CD22FD841CB7844100D83A19 /* GoodsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsShowCell.xib; sourceTree = "<group>"; };
 		CD22FD871CB78C2200D83A19 /* DiaperDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaperDetailController.h; sourceTree = "<group>"; };
 		CD22FD881CB78C2200D83A19 /* DiaperDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaperDetailController.m; sourceTree = "<group>"; };
+		CD91F8A01CE06CC00013BB67 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		CD91F8A11CE06CC00013BB67 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		CDE2EA2A1CC8702A008DEECB /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		CDEAB9AF1CBDFBB000AFA1FE /* O2OShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2OShowCell.h; sourceTree = "<group>"; };
@@ -455,6 +458,8 @@
 				CDEAB9E21CBF739100AFA1FE /* CommunityViewController.m */,
 				CDE2EA2A1CC8702A008DEECB /* MovieViewController.h */,
 				CDE2EA2B1CC8702A008DEECB /* MovieViewController.m */,
+				CD91F8A01CE06CC00013BB67 /* ContactViewController.h */,
+				CD91F8A11CE06CC00013BB67 /* ContactViewController.m */,
 			);
 			name = controller;
 			path = MagicWindowShow/controller;
@@ -822,6 +827,12 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = LVB5NG7NJ5;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
@@ -1067,6 +1078,7 @@
 				378DE28F1C8D1F0C0053F169 /* DianShangViewController.m in Sources */,
 				37B404101BA2C63000393EA0 /* AppDelegate.m in Sources */,
 				CD22FD801CB64BFF00D83A19 /* SanyaPlaneCell.m in Sources */,
+				CD91F8A21CE06CC00013BB67 /* ContactViewController.m in Sources */,
 				378DE2B31C8D1F0C0053F169 /* NewsCell.m in Sources */,
 				378DE29D1C8D1F0C0053F169 /* TukuViewController.m in Sources */,
 				CDE2EA2C1CC8702A008DEECB /* MovieViewController.m in Sources */,

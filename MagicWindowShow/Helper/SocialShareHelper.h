@@ -23,4 +23,5 @@ typedef enum
 
 - (void)sendWeChatWithScene:(MWShareType)scene Title:(NSString *)title Content:(NSString *)content ThumbImageData:(NSData *)thumbImageData Url:(NSString *)url;
 
+- (void)sendWeChatWithScene:(MWShareType)scene imageData:(NSData *)imageData ThumbImageData:(NSData *)thumbImageData;
 @end

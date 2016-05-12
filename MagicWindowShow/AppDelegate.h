@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeTuiSdk.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, GeTuiSdkDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

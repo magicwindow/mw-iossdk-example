@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SanyaHotelCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *bookImageView;
+@property (strong, nonatomic) IBOutlet UIButton *bookButton;
 @property (strong, nonatomic) IBOutlet UIImageView *mapImgview;
 
 @end

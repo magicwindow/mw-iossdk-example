@@ -37,13 +37,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     CommonService *service = [CommonService new];
     if (self.navigationController.view.tag != 1007 && [service isDianshangFirstLauch])
     {
         DianshangHelpView *helpView = (DianshangHelpView *)[[NSBundle mainBundle] loadNibNamed:@"DianshangHelpView" owner:self options:nil][0];
         helpView.frame = [[UIScreen mainScreen] bounds];
-        [self.navigationController.view addSubview:helpView];
+//        [self.navigationController.view addSubview:helpView]; 暂时不添加引导页
     }
     else if (self.navigationController.view.tag == 1007)
     {

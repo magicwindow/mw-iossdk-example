@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -127,22 +127,23 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bVN-mL-X5f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYX-ej-ygJ">
                                 <rect key="frame" x="306" y="9" width="86" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="lVd-5L-Z73"/>
-                                    <constraint firstAttribute="width" secondItem="bVN-mL-X5f" secondAttribute="height" multiplier="43:21" id="xet-n7-YE7"/>
+                                    <constraint firstAttribute="height" constant="42" id="NZb-YR-ASP"/>
+                                    <constraint firstAttribute="width" secondItem="bYX-ej-ygJ" secondAttribute="height" multiplier="43:21" id="c4H-Op-mt5"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="预定按钮"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="9Xu-zc-J6B"/>
                             <constraint firstAttribute="bottom" secondItem="jeJ-Dv-ho4" secondAttribute="bottom" constant="8" id="AWD-PP-qXb"/>
-                            <constraint firstItem="bVN-mL-X5f" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="trailing" constant="8" id="FbD-Rk-Efl"/>
-                            <constraint firstAttribute="trailing" secondItem="bVN-mL-X5f" secondAttribute="trailing" constant="8" id="Khv-OY-I6e"/>
+                            <constraint firstAttribute="trailing" secondItem="bYX-ej-ygJ" secondAttribute="trailing" constant="8" id="BEO-e3-hMt"/>
+                            <constraint firstItem="bYX-ej-ygJ" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="Esl-Pn-0nI"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="top" secondItem="5um-L2-aDK" secondAttribute="top" constant="9" id="LaC-0v-N0H"/>
-                            <constraint firstItem="bVN-mL-X5f" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="giD-bc-rgN"/>
+                            <constraint firstItem="bYX-ej-ygJ" firstAttribute="leading" secondItem="jeJ-Dv-ho4" secondAttribute="trailing" constant="8" id="R4g-E3-XZa"/>
                             <constraint firstAttribute="width" secondItem="5um-L2-aDK" secondAttribute="height" multiplier="20:3" id="nWh-QK-pal"/>
                             <constraint firstItem="jeJ-Dv-ho4" firstAttribute="leading" secondItem="bPq-Dn-Gk0" secondAttribute="trailing" constant="8" id="qPw-vF-JV7"/>
                             <constraint firstItem="bPq-Dn-Gk0" firstAttribute="centerY" secondItem="5um-L2-aDK" secondAttribute="centerY" id="yTb-kv-PkQ"/>
@@ -172,7 +173,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="bookImageView" destination="bVN-mL-X5f" id="W2T-rY-Uo8"/>
+                <outlet property="bookButton" destination="bYX-ej-ygJ" id="Jmh-aO-FOZ"/>
                 <outlet property="mapImgview" destination="ms4-5F-5RR" id="gNt-CJ-ENN"/>
             </connections>
             <point key="canvasLocation" x="343" y="331.5"/>
@@ -183,5 +184,6 @@
         <image name="线条02" width="210" height="40"/>
         <image name="订酒店地图" width="1080" height="716"/>
         <image name="酒店icon" width="88" height="85"/>
+        <image name="预定按钮" width="186" height="87"/>
     </resources>
 </document>

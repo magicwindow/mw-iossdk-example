@@ -27,7 +27,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 通过个推平台分配的appId、 appKey 、appSecret 启动SDK
+    [GeTuiSdk startSdkWithAppId:kGtAppId appKey:kGtAppKey appSecret:kGtAppSecret delegate:self];
+    
+    // 注册APNS
+    [self registerRemoteNotification];
     
     CommonService *service = [CommonService new];
 
@@ -277,5 +282,89 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/** 注册APNS */
+- (void)registerRemoteNotification {
+#ifdef __IPHONE_8_0
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        
+        UIUserNotificationType types = (UIUserNotificationTypeAlert |
+                                        UIUserNotificationTypeSound |
+                                        UIUserNotificationTypeBadge);
+        
+        UIUserNotificationSettings *settings;
+        settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        
+    } else {
+        UIRemoteNotificationType apn_type = (UIRemoteNotificationType)(UIRemoteNotificationTypeAlert |
+                                                                       UIRemoteNotificationTypeSound |
+                                                                       UIRemoteNotificationTypeBadge);
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:apn_type];
+    }
+#else
+    UIRemoteNotificationType apn_type = (UIRemoteNotificationType)(UIRemoteNotificationTypeAlert |
+                                                                   UIRemoteNotificationTypeSound |
+                                                                   UIRemoteNotificationTypeBadge);
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:apn_type];
+#endif
+}
+
+/** 远程通知注册成功委托 */
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"\n>>>[DeviceToken Success]:%@\n\n", token);
+    
+    //向个推服务器注册deviceToken
+    [GeTuiSdk registerDeviceToken:token];
+    [[NSUserDefaults standardUserDefaults] setObject:token forKey:kGtDeviceToken];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    /// Background Fetch 恢复SDK 运行
+    [GeTuiSdk resume];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
+/** SDK启动成功返回cid */
+- (void)GeTuiSdkDidRegisterClient:(NSString *)clientId {
+    //个推SDK已注册，返回clientId
+    NSLog(@"\n>>>[GeTuiSdk RegisterClient]:%@\n\n", clientId);
+}
+
+/** SDK遇到错误回调 */
+- (void)GeTuiSdkDidOccurError:(NSError *)error {
+    //个推错误报告，集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知。
+    NSLog(@"\n>>>[GexinSdk error]:%@\n\n", [error localizedDescription]);
+}
+
+// 处理 remoteNotification
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+    NSLog(@"userInfo is %@", userInfo);
+    NSString *urlString = [userInfo objectForKey:@"url"];
+    NSURL *url = [NSURL URLWithString:urlString];
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"收到一条推送" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *go = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [MWApi routeMLink:url];
+            [MWApi handleOpenURL:url delegate:self];
+        }];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        
+        [alert addAction:go];
+        [alert addAction:cancel];
+        [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        return;
+    }
+    [MWApi routeMLink:url];
+    [MWApi handleOpenURL:url delegate:self];
+}
+
 
 @end
