@@ -2,6 +2,7 @@
 
 本App为[魔窗](http://www.magicwindow.cn)演示demo，您可以在App中体验魔窗mLink功能。
 因为iOS版本使用的是企业证书，在您首次打开Demo前，需要到将应用设置为“信任状态”，进入“设置”-“通用”-“设备管理”，选择“Shanghai Liehong Infotech Co., Ltd”，点击“信任”即可。
+
 ![](images/pic0.png)
 
 #一、	功能简述
