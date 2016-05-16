@@ -1,6 +1,9 @@
 #Demo App使用说明
 
 本App为[魔窗](http://www.magicwindow.cn)演示demo，您可以在App中体验魔窗mLink功能。
+因为iOS版本使用的是企业证书，在您首次打开Demo前，需要到将应用设置为“信任状态”，进入“设置”-“通用”-“设备管理”，选择“Shanghai Liehong Infotech Co., Ltd”，点击“信任”即可。
+![](images/pic0.PNG)
+
 #一、	功能简述
 mLink，通过URL Scheme和URI，将App中具体的内容页面作为一个服务（比如滴滴的打车服务），以链接的形式分享出来，通过这个链接，可以从外部唤起App并自动进入App中的指定服务页。<br>
 具体表现方式：<br>
@@ -31,7 +34,10 @@ mLink，通过URL Scheme和URI，将App中具体的内容页面作为一个服�
 
 ![](images/pic7.png)
 
-##3、App间端到端的跳转
+##3、App推送通知一键直达App内容页
+右划划出菜单，点击头像，点击“推送演示”，5秒内会受到一条推送通知，点击前往，唤起App内O2O按摩项目页面。
+
+##4、App间端到端的跳转
 点击“旅游”菜单下的“东方的夏威夷”，进入三亚旅游介绍页。
 
 ![](images/pic8.png)
