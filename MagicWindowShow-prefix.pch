@@ -1,0 +1,16 @@
+//
+//  MagicWindowShow-prefix.pch
+//  MagicWindowShow
+//
+//  Created by 刘家飞 on 16/5/19.
+//  Copyright © 2016年 cafei. All rights reserved.
+//
+
+#ifndef MagicWindowShow_prefix_pch
+#define MagicWindowShow_prefix_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#endif /* MagicWindowShow_prefix_pch */

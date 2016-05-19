@@ -92,7 +92,7 @@
         UINavigationController *nav = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"o2oNav"];
         nav.view.tag = 1007;
         [rootVC setCenterPanel: nav];
-        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC2"] animated:YES];
+        [nav pushViewController:[rootVC.storyboard instantiateViewControllerWithIdentifier:@"O2OVC"] animated:YES];
     }
     else if ([self.mLinkKey isEqualToString:mLink_NewsDetail])
     {

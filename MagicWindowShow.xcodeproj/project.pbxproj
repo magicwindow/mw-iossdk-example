@@ -262,6 +262,7 @@
 		37B404201BA2C63000393EA0 /* MagicWindowShow.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicWindowShow.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B404251BA2C63000393EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B404261BA2C63000393EA0 /* MagicWindowShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicWindowShowTests.m; sourceTree = "<group>"; };
+		37C68B7D1CED8D9400DE9A6F /* MagicWindowShow-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicWindowShow-prefix.pch"; sourceTree = "<group>"; };
 		37E5F0C71C842BB90085B7DE /* LoginViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController2.h; sourceTree = "<group>"; };
 		37E5F0C81C842BB90085B7DE /* LoginViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController2.m; sourceTree = "<group>"; };
 		37E5F0CA1C842FB10085B7DE /* CommonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonService.h; sourceTree = "<group>"; };
@@ -605,6 +606,7 @@
 		37B403FE1BA2C63000393EA0 = {
 			isa = PBXGroup;
 			children = (
+				37C68B7D1CED8D9400DE9A6F /* MagicWindowShow-prefix.pch */,
 				3779F33D1BB68F5200CD446A /* framework */,
 				37B404091BA2C63000393EA0 /* MagicWindowShow */,
 				37B404231BA2C63000393EA0 /* MagicWindowShowTests */,
@@ -1380,6 +1382,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "MagicWindowShow-prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MagicWindowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1408,6 +1411,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "MagicWindowShow-prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MagicWindowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
