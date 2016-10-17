@@ -21,6 +21,7 @@
 #import "HomeHelpView.h"
 #import "CityPickerViewController.h"
 #import "ResourceService.h"
+#import <MagicWindowSDK/MWFloatView.h>
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,CityPickerDelegate>
 
@@ -70,6 +71,13 @@
         }];
     }
     
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    MWFloatView *view = [[MWFloatView alloc] initWithYPoint:75];
+    [view showInView:self.view];
 }
 
 - (void)updateCampaign

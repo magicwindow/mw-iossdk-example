@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <libWeChatSDK/WXApi.h>
+#import <MagicWindowSDK/WXApi.h>
 
 typedef enum
 {

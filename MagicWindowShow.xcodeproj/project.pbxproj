@@ -85,7 +85,7 @@
 		37B404271BA2C63000393EA0 /* MagicWindowShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B404261BA2C63000393EA0 /* MagicWindowShowTests.m */; };
 		37E5F0C91C842BB90085B7DE /* LoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C81C842BB90085B7DE /* LoginViewController2.m */; };
 		37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0CB1C842FB10085B7DE /* CommonService.m */; };
-		597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */; };
+		9A4DBEFFBDFE36F3C64D3D3E /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6F46610FFCFAB2A93BA2FF /* libPods-MagicWindowShow2.a */; };
 		CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */; };
 		CD22FD6F1CB6259200D83A19 /* SanyaMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */; };
 		CD22FD721CB62D1200D83A19 /* SanyaMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD711CB62D1200D83A19 /* SanyaMapCell.m */; };
@@ -111,7 +111,8 @@
 		CDEAB9ED1CBF8D8600AFA1FE /* CommunityAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9EB1CBF8D8600AFA1FE /* CommunityAuthorCell.xib */; };
 		CDEAB9F11CBF94EA00AFA1FE /* CommunityCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAB9EF1CBF94EA00AFA1FE /* CommunityCommentCell.m */; };
 		CDEAB9F21CBF94EA00AFA1FE /* CommunityCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEAB9F01CBF94EA00AFA1FE /* CommunityCommentCell.xib */; };
-		E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */; };
+		DFE879BDBA74AF8A56F7856F /* libPods-MagicWindowShowTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7231410A990393A5BA9DB6BB /* libPods-MagicWindowShowTests.a */; };
+		FF29993B280BA1200240AAFF /* libPods-MagicWindowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9505B0C9C4D07554B6641C /* libPods-MagicWindowShow.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00283C6EAC906E596ECBF078 /* Pods-MagicWindowShowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShowTests/Pods-MagicWindowShowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12DF250BFB74F8E551FD76EB /* Pods-MagicWindowShow2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.release.xcconfig"; sourceTree = "<group>"; };
 		371B35071C1A6D5800610673 /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		3723BF551C7A08C600B25508 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3723BF571C7A08CF00B25508 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -269,9 +272,12 @@
 		37E5F0CB1C842FB10085B7DE /* CommonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonService.m; sourceTree = "<group>"; };
 		37E5F0D71C84445D0085B7DE /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		37E5F0D81C845BB80085B7DE /* MagicWindowShow2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MagicWindowShow2.entitlements; sourceTree = "<group>"; };
-		560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.debug.xcconfig"; sourceTree = "<group>"; };
-		79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.release.xcconfig"; sourceTree = "<group>"; };
-		AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E229DF1F2CE2705C8DE01A6 /* Pods-MagicWindowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.debug.xcconfig"; sourceTree = "<group>"; };
+		3E9505B0C9C4D07554B6641C /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6F46610FFCFAB2A93BA2FF /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7231410A990393A5BA9DB6BB /* libPods-MagicWindowShowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BEF518F88DD5FD523FC67D /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
+		BA96AB85E9C60825E58AA4C6 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaViewController.h; sourceTree = "<group>"; };
 		CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanyaViewController.m; sourceTree = "<group>"; };
 		CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SanyaMapCell.xib; sourceTree = "<group>"; };
@@ -313,9 +319,7 @@
 		CDEAB9EE1CBF94EA00AFA1FE /* CommunityCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityCommentCell.h; sourceTree = "<group>"; };
 		CDEAB9EF1CBF94EA00AFA1FE /* CommunityCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityCommentCell.m; sourceTree = "<group>"; };
 		CDEAB9F01CBF94EA00AFA1FE /* CommunityCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityCommentCell.xib; sourceTree = "<group>"; };
-		E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
-		FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
+		FDCD22B45E76CE3A3B49E5C7 /* Pods-MagicWindowShowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShowTests/Pods-MagicWindowShowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +327,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				597E876B8348E403EE357AD9 /* libPods-MagicWindowShow2.a in Frameworks */,
+				9A4DBEFFBDFE36F3C64D3D3E /* libPods-MagicWindowShow2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +353,7 @@
 				37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */,
 				3779F33B1BB6882B00CD446A /* libsqlite3.tbd in Frameworks */,
 				3779F3391BB6881E00CD446A /* libstdc++.tbd in Frameworks */,
-				E33603ACF59E6235A0B784B5 /* libPods-MagicWindowShow.a in Frameworks */,
+				FF29993B280BA1200240AAFF /* libPods-MagicWindowShow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE879BDBA74AF8A56F7856F /* libPods-MagicWindowShowTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,8 +380,9 @@
 				3723BF551C7A08C600B25508 /* AdSupport.framework */,
 				374812A01C748B1400C6F49A /* libJASidePanels.a */,
 				37B21C771C7471FB00C85C5C /* libSDWebImage.a */,
-				E831A5107C9C8EC053A6F1A2 /* libPods-MagicWindowShow.a */,
-				AA10AAC96E437077873482D6 /* libPods-MagicWindowShow2.a */,
+				3E9505B0C9C4D07554B6641C /* libPods-MagicWindowShow.a */,
+				4D6F46610FFCFAB2A93BA2FF /* libPods-MagicWindowShow2.a */,
+				7231410A990393A5BA9DB6BB /* libPods-MagicWindowShowTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -614,8 +620,8 @@
 				379A0CF91C7EAB97007A3A8F /* MagicWindowShow2Tests */,
 				379A0D041C7EAB97007A3A8F /* MagicWindowShow2UITests */,
 				37B404081BA2C63000393EA0 /* Products */,
-				8F3B1F57CA819C70250CC5C4 /* Pods */,
 				0477D39ADEFF1091CF935AED /* Frameworks */,
+				E7F4D9B6DEE176A0D084CBD0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -681,17 +687,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8F3B1F57CA819C70250CC5C4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */,
-				F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */,
-				FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */,
-				79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CDEAB9B71CBE3C9500AFA1FE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -702,6 +697,19 @@
 			path = MagicWindowShow/Helper;
 			sourceTree = SOURCE_ROOT;
 		};
+		E7F4D9B6DEE176A0D084CBD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E229DF1F2CE2705C8DE01A6 /* Pods-MagicWindowShow.debug.xcconfig */,
+				BA96AB85E9C60825E58AA4C6 /* Pods-MagicWindowShow.release.xcconfig */,
+				A9BEF518F88DD5FD523FC67D /* Pods-MagicWindowShow2.debug.xcconfig */,
+				12DF250BFB74F8E551FD76EB /* Pods-MagicWindowShow2.release.xcconfig */,
+				00283C6EAC906E596ECBF078 /* Pods-MagicWindowShowTests.debug.xcconfig */,
+				FDCD22B45E76CE3A3B49E5C7 /* Pods-MagicWindowShowTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -709,12 +717,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379A0D0E1C7EAB97007A3A8F /* Build configuration list for PBXNativeTarget "MagicWindowShow2" */;
 			buildPhases = (
-				8A704CA91599DCE97EEB76EA /* Check Pods Manifest.lock */,
+				40FDB6CC2A28B00A6B3D6940 /* [CP] Check Pods Manifest.lock */,
 				379A0CDA1C7EAB97007A3A8F /* Sources */,
 				379A0CDB1C7EAB97007A3A8F /* Frameworks */,
 				379A0CDC1C7EAB97007A3A8F /* Resources */,
-				C27352E859B09B9C756E1639 /* Embed Pods Frameworks */,
-				F8938C5199487752CE32F49D /* Copy Pods Resources */,
+				407D80646977F371141B8D94 /* [CP] Embed Pods Frameworks */,
+				74D415192A97244E3CC6F12B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -765,12 +773,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B4042A1BA2C63000393EA0 /* Build configuration list for PBXNativeTarget "MagicWindowShow" */;
 			buildPhases = (
-				B4ECDF304FAD84567A4BE921 /* Check Pods Manifest.lock */,
+				A845C5503E9127A372DBA815 /* [CP] Check Pods Manifest.lock */,
 				37B404031BA2C63000393EA0 /* Sources */,
 				37B404041BA2C63000393EA0 /* Frameworks */,
 				37B404051BA2C63000393EA0 /* Resources */,
-				FF7B3B843899B786992608BB /* Embed Pods Frameworks */,
-				C293D4D5CE59B5C0D3FA29AF /* Copy Pods Resources */,
+				C1D73C74224D6A3428F60510 /* [CP] Embed Pods Frameworks */,
+				5107F7A750EB8C2D0F860582 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,9 +793,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B4042D1BA2C63000393EA0 /* Build configuration list for PBXNativeTarget "MagicWindowShowTests" */;
 			buildPhases = (
+				4E3216E07A1EB4676486404F /* [CP] Check Pods Manifest.lock */,
 				37B4041C1BA2C63000393EA0 /* Sources */,
 				37B4041D1BA2C63000393EA0 /* Frameworks */,
 				37B4041E1BA2C63000393EA0 /* Resources */,
+				599996DDBD51DA55B24A8BF2 /* [CP] Embed Pods Frameworks */,
+				54E28FA52F252282B8F0D8F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -946,44 +957,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A704CA91599DCE97EEB76EA /* Check Pods Manifest.lock */ = {
+		407D80646977F371141B8D94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B4ECDF304FAD84567A4BE921 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C27352E859B09B9C756E1639 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -991,14 +972,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C293D4D5CE59B5C0D3FA29AF /* Copy Pods Resources */ = {
+		40FDB6CC2A28B00A6B3D6940 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E3216E07A1EB4676486404F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5107F7A750EB8C2D0F860582 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1006,14 +1017,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8938C5199487752CE32F49D /* Copy Pods Resources */ = {
+		54E28FA52F252282B8F0D8F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShowTests/Pods-MagicWindowShowTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		599996DDBD51DA55B24A8BF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShowTests/Pods-MagicWindowShowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D415192A97244E3CC6F12B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1021,14 +1062,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF7B3B843899B786992608BB /* Embed Pods Frameworks */ = {
+		A845C5503E9127A372DBA815 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D73C74224D6A3428F60510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1196,7 +1252,7 @@
 /* Begin XCBuildConfiguration section */
 		379A0D081C7EAB97007A3A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCB9A29B6085CC59BF10E48A /* Pods-MagicWindowShow2.debug.xcconfig */;
+			baseConfigurationReference = A9BEF518F88DD5FD523FC67D /* Pods-MagicWindowShow2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MagicWindowShow2/MagicWindowShow2.entitlements;
@@ -1217,7 +1273,7 @@
 		};
 		379A0D091C7EAB97007A3A8F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79C3ADF3DF978936E7AEE235 /* Pods-MagicWindowShow2.release.xcconfig */;
+			baseConfigurationReference = 12DF250BFB74F8E551FD76EB /* Pods-MagicWindowShow2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MagicWindowShow2/MagicWindowShow2.entitlements;
@@ -1372,7 +1428,7 @@
 		};
 		37B4042B1BA2C63000393EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 560F193E5385C4125A190BE2 /* Pods-MagicWindowShow.debug.xcconfig */;
+			baseConfigurationReference = 3E229DF1F2CE2705C8DE01A6 /* Pods-MagicWindowShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1387,10 +1443,7 @@
 				INFOPLIST_FILE = MagicWindowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MagicWindowSDK/Share/otherSDK/WeChatSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mw.MagicWIndowShow;
 				PRODUCT_NAME = MagicWindowShow;
@@ -1401,7 +1454,7 @@
 		};
 		37B4042C1BA2C63000393EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F27E35DF021E287E04920738 /* Pods-MagicWindowShow.release.xcconfig */;
+			baseConfigurationReference = BA96AB85E9C60825E58AA4C6 /* Pods-MagicWindowShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1416,10 +1469,7 @@
 				INFOPLIST_FILE = MagicWindowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MagicWindowSDK/Share/otherSDK/WeChatSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mw.MagicWIndowShow;
 				PRODUCT_NAME = MagicWindowShow;
@@ -1430,6 +1480,7 @@
 		};
 		37B4042E1BA2C63000393EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00283C6EAC906E596ECBF078 /* Pods-MagicWindowShowTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1449,6 +1500,7 @@
 		};
 		37B4042F1BA2C63000393EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCD22B45E76CE3A3B49E5C7 /* Pods-MagicWindowShowTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
