@@ -38,7 +38,7 @@
     [MWApi registerApp:APP_KEY];
     //注册魔窗mlink事件
     [self registerMlink];
-    
+    NSLog(@"%@",[MWApi sdkVersion]);
     return YES;
 }
 

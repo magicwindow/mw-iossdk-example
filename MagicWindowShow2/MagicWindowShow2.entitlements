@@ -5,6 +5,7 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:s.mlinks.cc</string>
+		<string>applinks:couchbase-test00.magicwindow.cn</string>
 	</array>
 </dict>
 </plist>

@@ -9,7 +9,9 @@
 #ifndef GlobalDefine_h
 #define GlobalDefine_h
 
-#define APP_KEY                 @"YM5NPWD8ADA7P9PPEERY2ZIUJOB8WE2M"
+//#define APP_KEY                 @"YM5NPWD8ADA7P9PPEERY2ZIUJOB8WE2M"
 
+//test jiafei.liu@magicwindow.cn
+#define APP_KEY                 @"M5TCQLVL8XZJJYF8NFTBQEJ9CVJRV9AD"
 
 #endif /* GlobalDefine_h */

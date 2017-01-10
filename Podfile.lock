@@ -1,9 +1,9 @@
 PODS:
-  - GTSDK (1.5.0)
+  - GTSDK (1.5.3)
   - JASidePanels (1.3.2)
-  - MagicWindowSDK (3.90.161012):
-    - MagicWindowSDK/WeChat (= 3.90.161012)
-  - MagicWindowSDK/WeChat (3.90.161012)
+  - MagicWindowSDK (3.90.161205):
+    - MagicWindowSDK/WeChat (= 3.90.161205)
+  - MagicWindowSDK/WeChat (3.90.161205)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -15,9 +15,9 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC CHECKSUMS:
-  GTSDK: 4380de452178d8ba2a67189f10c6743d0f9536b9
+  GTSDK: 1b55fc5b0f29c7ea9061946f07aeee49ef70c90e
   JASidePanels: c8f5b130e18d51ee3de988d1c1fad2f88e0b0d21
-  MagicWindowSDK: 4034aacb836d52603a54ac24b2a38ce391e7531a
+  MagicWindowSDK: e4851fe7510d719117f506503d8f556bcb19118e
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
 PODFILE CHECKSUM: cbfb3d8f7da759eaf68ec661afcfc3b0e8402e37

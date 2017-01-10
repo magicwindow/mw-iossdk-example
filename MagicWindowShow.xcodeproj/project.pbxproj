@@ -85,6 +85,7 @@
 		37B404271BA2C63000393EA0 /* MagicWindowShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B404261BA2C63000393EA0 /* MagicWindowShowTests.m */; };
 		37E5F0C91C842BB90085B7DE /* LoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0C81C842BB90085B7DE /* LoginViewController2.m */; };
 		37E5F0CC1C842FB10085B7DE /* CommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E5F0CB1C842FB10085B7DE /* CommonService.m */; };
+		947239571E22516E00E53A93 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947239561E22516E00E53A93 /* WebKit.framework */; };
 		9A4DBEFFBDFE36F3C64D3D3E /* libPods-MagicWindowShow2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6F46610FFCFAB2A93BA2FF /* libPods-MagicWindowShow2.a */; };
 		CD22FD6B1CB5FCDB00D83A19 /* SanyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22FD6A1CB5FCDB00D83A19 /* SanyaViewController.m */; };
 		CD22FD6F1CB6259200D83A19 /* SanyaMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22FD6E1CB6259200D83A19 /* SanyaMapCell.xib */; };
@@ -276,6 +277,7 @@
 		3E9505B0C9C4D07554B6641C /* libPods-MagicWindowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6F46610FFCFAB2A93BA2FF /* libPods-MagicWindowShow2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShow2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7231410A990393A5BA9DB6BB /* libPods-MagicWindowShowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicWindowShowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		947239561E22516E00E53A93 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A9BEF518F88DD5FD523FC67D /* Pods-MagicWindowShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow2/Pods-MagicWindowShow2.debug.xcconfig"; sourceTree = "<group>"; };
 		BA96AB85E9C60825E58AA4C6 /* Pods-MagicWindowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicWindowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicWindowShow/Pods-MagicWindowShow.release.xcconfig"; sourceTree = "<group>"; };
 		CD22FD691CB5FCDB00D83A19 /* SanyaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanyaViewController.h; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947239571E22516E00E53A93 /* WebKit.framework in Frameworks */,
 				374812A11C748B1400C6F49A /* libJASidePanels.a in Frameworks */,
 				37B21C781C7471FB00C85C5C /* libSDWebImage.a in Frameworks */,
 				3779F33B1BB6882B00CD446A /* libsqlite3.tbd in Frameworks */,
@@ -371,6 +374,7 @@
 		0477D39ADEFF1091CF935AED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				947239561E22516E00E53A93 /* WebKit.framework */,
 				3723BF611C7A090E00B25508 /* libsqlite3.0.tbd */,
 				3723BF5F1C7A090200B25508 /* libz.tbd */,
 				3723BF5D1C7A08FB00B25508 /* CoreLocation.framework */,

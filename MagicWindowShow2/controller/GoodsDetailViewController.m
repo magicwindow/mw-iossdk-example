@@ -7,6 +7,10 @@
 //
 
 #import "GoodsDetailViewController.h"
+#import <MagicWindowSDK/MWFloatView.h>
+
+#define Status_height                                   20
+#define Nav_height                                      44
 
 @interface DCell : UITableViewCell
 
@@ -31,7 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    MWFloatView *floatView = [[MWFloatView alloc] initWithYPoint:CGRectGetHeight(self.view.frame)/3*2-Nav_height];
+    [floatView setMinY:Status_height+Nav_height andMaxY:CGRectGetHeight(self.view.frame)];
+    [floatView show];
 }
 
 - (void)viewWillAppear:(BOOL)animated

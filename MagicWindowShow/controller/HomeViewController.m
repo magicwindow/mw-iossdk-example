@@ -77,7 +77,7 @@
 {
     [super viewDidLayoutSubviews];
     MWFloatView *view = [[MWFloatView alloc] initWithYPoint:75];
-    [view showInView:self.view];
+    [view show];
 }
 
 - (void)updateCampaign
